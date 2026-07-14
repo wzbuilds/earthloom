@@ -1,0 +1,59 @@
+name: Publish Earthloom collections
+
+on:
+  workflow_dispatch:
+    inputs:
+      collection:
+        description: Collection to generate
+        required: true
+        type: choice
+        default: weekly
+        options:
+          - weekly
+          - monthly
+  schedule:
+    - cron: "18 8 * * 0"
+      timezone: "Asia/Shanghai"
+    - cron: "28 8 1 * *"
+      timezone: "Asia/Shanghai"
+
+concurrency:
+  group: scheduled-collection
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Generate collection
+        shell: bash
+        run: |
+          if [[ "${{ inputs.collection }}" == "monthly" || "${{ github.event.schedule }}" == "28 8 1 * *" ]]; then
+            npm run weave:monthly
+          else
+            npm run weave:weekly
+          fi
+
+      - name: Commit the collection
+        shell: bash
+        run: |
+          git add public/cards/weekly.svg reports
+          if git diff --cached --quiet; then
+            echo "No new collection to publish."
+            exit 0
+          fi
+          git config user.name "earthloom-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "art: publish the latest Earthloom collection"
+          git push

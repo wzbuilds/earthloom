@@ -1,0 +1,525 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-14",
+  "generatedAt": "2026-07-14T09:43:33.994Z",
+  "timeZone": "Asia/Shanghai",
+  "status": "live",
+  "seed": 3353214575,
+  "summary": "深处的震动在织面上留下了宽阔回声。",
+  "metrics": {
+    "earthquakeCount": 45,
+    "maxMagnitude": 6.3,
+    "averageDepth": 37.6,
+    "kpIndex": 2,
+    "solarWind": 352,
+    "meanTemperature": 19.2,
+    "meanWind": 11.3,
+    "moonPhase": 0.9901
+  },
+  "palette": {
+    "void": "hsl(233 38% 5%)",
+    "ink": "hsl(211 44% 9%)",
+    "aurora": "hsl(210.55555555555554 88% 65%)",
+    "tide": "hsl(277 76% 58.666666666666664%)",
+    "ember": "hsl(37.57333333333333 96% 66%)",
+    "mist": "hsl(7 42% 87%)"
+  },
+  "earthquakes": [
+    {
+      "id": "us7000t01n",
+      "latitude": -22.7889,
+      "longitude": 171.5199,
+      "depth": 10,
+      "magnitude": 6.3,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-13T14:45:49.203Z"
+    },
+    {
+      "id": "us7000t0a3",
+      "latitude": -14.5779,
+      "longitude": -71.4358,
+      "depth": 140.088,
+      "magnitude": 5.6,
+      "place": "11 km N of Pichigua, Peru",
+      "time": "2026-07-14T08:21:06.499Z"
+    },
+    {
+      "id": "us7000t09m",
+      "latitude": 12.7967,
+      "longitude": 123.136,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "14 km WSW of Mabiton, Philippines",
+      "time": "2026-07-14T07:04:54.275Z"
+    },
+    {
+      "id": "us7000t02f",
+      "latitude": -22.8289,
+      "longitude": 171.3991,
+      "depth": 10,
+      "magnitude": 5.1,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-13T16:31:30.321Z"
+    },
+    {
+      "id": "us7000t09u",
+      "latitude": 40.1338,
+      "longitude": 143.1932,
+      "depth": 11.338,
+      "magnitude": 5,
+      "place": "117 km E of Noda, Japan",
+      "time": "2026-07-14T07:44:09.565Z"
+    },
+    {
+      "id": "us7000t07s",
+      "latitude": 14.7717,
+      "longitude": -92.3316,
+      "depth": 80.448,
+      "magnitude": 5,
+      "place": "2 km WSW of Congregación Reforma, Mexico",
+      "time": "2026-07-14T01:19:59.535Z"
+    },
+    {
+      "id": "us7000t06d",
+      "latitude": -22.9464,
+      "longitude": 171.5098,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-13T21:03:37.178Z"
+    },
+    {
+      "id": "us7000t048",
+      "latitude": 5.577,
+      "longitude": 125.4626,
+      "depth": 20.408,
+      "magnitude": 5,
+      "place": "5 km SE of Butulan, Philippines",
+      "time": "2026-07-13T17:44:29.061Z"
+    },
+    {
+      "id": "us7000t09z",
+      "latitude": 40.1657,
+      "longitude": 142.4075,
+      "depth": 44.48,
+      "magnitude": 4.9,
+      "place": "50 km E of Noda, Japan",
+      "time": "2026-07-14T08:07:30.199Z"
+    },
+    {
+      "id": "us7000t083",
+      "latitude": -22.7425,
+      "longitude": 171.4439,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-14T01:27:30.487Z"
+    },
+    {
+      "id": "us7000t04b",
+      "latitude": -58.601,
+      "longitude": -25.0342,
+      "depth": 35,
+      "magnitude": 4.9,
+      "place": "South Sandwich Islands region",
+      "time": "2026-07-13T17:45:19.903Z"
+    },
+    {
+      "id": "us7000t09r",
+      "latitude": 12.7846,
+      "longitude": 123.0967,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "18 km WSW of Mabiton, Philippines",
+      "time": "2026-07-14T07:18:47.994Z"
+    },
+    {
+      "id": "us7000t097",
+      "latitude": -14.9372,
+      "longitude": 66.9107,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "Mid-Indian Ridge",
+      "time": "2026-07-14T06:15:06.359Z"
+    },
+    {
+      "id": "us7000t05y",
+      "latitude": -23.0777,
+      "longitude": 171.5441,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-13T19:48:32.876Z"
+    },
+    {
+      "id": "us7000t014",
+      "latitude": -24.1915,
+      "longitude": -176.3145,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "south of the Fiji Islands",
+      "time": "2026-07-13T12:19:58.505Z"
+    },
+    {
+      "id": "us7000t042",
+      "latitude": -22.8424,
+      "longitude": 171.5924,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-13T17:20:59.816Z"
+    },
+    {
+      "id": "us7000t01w",
+      "latitude": -22.8636,
+      "longitude": 171.5407,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-13T15:14:34.815Z"
+    },
+    {
+      "id": "us7000t09h",
+      "latitude": 14.7321,
+      "longitude": 108.227,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "48 km NNE of Kon Tum, Vietnam",
+      "time": "2026-07-14T06:48:05.687Z"
+    },
+    {
+      "id": "us7000t085",
+      "latitude": 5.1842,
+      "longitude": 125.6791,
+      "depth": 66.185,
+      "magnitude": 4.6,
+      "place": "34 km SE of Sarangani, Philippines",
+      "time": "2026-07-14T01:38:24.646Z"
+    },
+    {
+      "id": "us7000t07r",
+      "latitude": 13.1309,
+      "longitude": 122.9157,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "6 km NW of San Rafael, Philippines",
+      "time": "2026-07-14T01:03:15.881Z"
+    },
+    {
+      "id": "us7000t06f",
+      "latitude": 0.3702,
+      "longitude": 131.6675,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "145 km NNE of Sorong, Indonesia",
+      "time": "2026-07-13T21:06:07.520Z"
+    },
+    {
+      "id": "us7000t044",
+      "latitude": -22.8062,
+      "longitude": 171.5971,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-13T17:24:11.392Z"
+    },
+    {
+      "id": "us7000t046",
+      "latitude": -22.8403,
+      "longitude": 171.5259,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-07-13T17:15:34.252Z"
+    },
+    {
+      "id": "us7000t09g",
+      "latitude": 3.4609,
+      "longitude": 128.0077,
+      "depth": 107.53,
+      "magnitude": 4.4,
+      "place": "191 km N of Tobelo, Indonesia",
+      "time": "2026-07-14T06:37:37.880Z"
+    },
+    {
+      "id": "us7000t06z",
+      "latitude": 73.7141,
+      "longitude": 7.8819,
+      "depth": 10,
+      "magnitude": 4.4,
+      "place": "Greenland Sea",
+      "time": "2026-07-13T22:00:50.419Z"
+    },
+    {
+      "id": "ci41292687",
+      "latitude": 35.3121666666667,
+      "longitude": -117.814833333333,
+      "depth": 7.55,
+      "magnitude": 4.31762677888687,
+      "place": "18 km WSW of Johannesburg, CA",
+      "time": "2026-07-13T16:40:55.170Z"
+    },
+    {
+      "id": "us7000t06l",
+      "latitude": 73.6953,
+      "longitude": 8.2919,
+      "depth": 10,
+      "magnitude": 4.3,
+      "place": "Greenland Sea",
+      "time": "2026-07-13T21:30:18.011Z"
+    },
+    {
+      "id": "us7000t08m",
+      "latitude": 36.8385,
+      "longitude": 70.9297,
+      "depth": 211.576,
+      "magnitude": 4.2,
+      "place": "9 km ESE of Jurm, Afghanistan",
+      "time": "2026-07-14T03:22:25.677Z"
+    },
+    {
+      "id": "us7000t01l",
+      "latitude": 41.0854,
+      "longitude": 73.9665,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "35 km S of Kazarman, Kyrgyzstan",
+      "time": "2026-07-13T14:43:00.761Z"
+    },
+    {
+      "id": "us7000t04s",
+      "latitude": 37.8376,
+      "longitude": 134.5791,
+      "depth": 412.725,
+      "magnitude": 4,
+      "place": "215 km WNW of Anamizu, Japan",
+      "time": "2026-07-13T17:58:26.654Z"
+    },
+    {
+      "id": "aka2026nuxyrh",
+      "latitude": 56.984,
+      "longitude": -155.49,
+      "depth": 0,
+      "magnitude": 3.8,
+      "place": "80 km W of Akhiok, Alaska",
+      "time": "2026-07-14T07:51:01.013Z"
+    },
+    {
+      "id": "aka2026ntydlg",
+      "latitude": 50.373,
+      "longitude": 177.703,
+      "depth": 172.3,
+      "magnitude": 3.7,
+      "place": "Rat Islands, Aleutian Islands, Alaska",
+      "time": "2026-07-13T19:01:02.766Z"
+    },
+    {
+      "id": "tx2026nrbozw",
+      "latitude": 31.544,
+      "longitude": -104.135,
+      "depth": 9.3683,
+      "magnitude": 3.2,
+      "place": "41 km NW of Toyah, Texas",
+      "time": "2026-07-13T10:16:23.042Z"
+    },
+    {
+      "id": "nn00921593",
+      "latitude": 39.3475,
+      "longitude": -119.0017,
+      "depth": 6.8656,
+      "magnitude": 2.97,
+      "place": "20 km ESE of Silver Springs, Nevada",
+      "time": "2026-07-13T09:46:03.725Z"
+    },
+    {
+      "id": "nc75395151",
+      "latitude": 40.4591674804688,
+      "longitude": -124.480331420898,
+      "depth": 18.6000003814697,
+      "magnitude": 2.8,
+      "place": "22 km NW of Petrolia, CA",
+      "time": "2026-07-13T18:44:28.260Z"
+    },
+    {
+      "id": "hv75002156",
+      "latitude": 19.1771659851074,
+      "longitude": -155.495666503906,
+      "depth": 29.2199993133545,
+      "magnitude": 2.75,
+      "place": "3 km SSW of Pāhala, Hawaii",
+      "time": "2026-07-14T06:32:08.370Z"
+    },
+    {
+      "id": "aka2026nugnky",
+      "latitude": 61.972,
+      "longitude": -149.178,
+      "depth": 29.2,
+      "magnitude": 2.7,
+      "place": "25 km N of Fishhook, Alaska",
+      "time": "2026-07-13T23:08:20.930Z"
+    },
+    {
+      "id": "pr71523833",
+      "latitude": 17.9288333333333,
+      "longitude": -66.9151666666667,
+      "depth": 14.48,
+      "magnitude": 2.69,
+      "place": "4 km S of Guánica, Puerto Rico",
+      "time": "2026-07-13T21:38:23.850Z"
+    },
+    {
+      "id": "hv75002021",
+      "latitude": 19.3595008850098,
+      "longitude": -155.031997680664,
+      "depth": 4.11999988555908,
+      "magnitude": 2.67,
+      "place": "16 km SE of Fern Forest, Hawaii",
+      "time": "2026-07-14T01:07:50.770Z"
+    },
+    {
+      "id": "ci41292855",
+      "latitude": 35.2945,
+      "longitude": -117.807333333333,
+      "depth": 7.77,
+      "magnitude": 2.58,
+      "place": "18 km WSW of Johannesburg, CA",
+      "time": "2026-07-13T18:29:13.590Z"
+    },
+    {
+      "id": "nc75394876",
+      "latitude": 40.1813316345215,
+      "longitude": -124.603332519531,
+      "depth": 1.0900000333786,
+      "magnitude": 2.53,
+      "place": "31 km WSW of Petrolia, CA",
+      "time": "2026-07-13T10:53:39.800Z"
+    },
+    {
+      "id": "pr71523713",
+      "latitude": 17.9725,
+      "longitude": -66.9005,
+      "depth": 13.73,
+      "magnitude": 2.51,
+      "place": "0 km E of Guánica, Puerto Rico",
+      "time": "2026-07-13T13:31:16.010Z"
+    },
+    {
+      "id": "hv75002101",
+      "latitude": 19.0601673126221,
+      "longitude": -155.386169433594,
+      "depth": 35.6699981689453,
+      "magnitude": 2.47,
+      "place": "18 km SSE of Pāhala, Hawaii",
+      "time": "2026-07-14T05:19:11.790Z"
+    },
+    {
+      "id": "ci41293535",
+      "latitude": 35.31,
+      "longitude": -117.820166666667,
+      "depth": 8.29,
+      "magnitude": 2.46,
+      "place": "18 km WSW of Johannesburg, CA",
+      "time": "2026-07-14T05:44:51.870Z"
+    },
+    {
+      "id": "pr71523738",
+      "latitude": 17.9685,
+      "longitude": -66.9135,
+      "depth": 13.97,
+      "magnitude": 2.46,
+      "place": "0 km WSW of Guánica, Puerto Rico",
+      "time": "2026-07-13T14:23:01.950Z"
+    }
+  ],
+  "weatherSamples": [
+    {
+      "latitude": 64.15,
+      "longitude": -21.94,
+      "temperature": 11.5,
+      "wind": 20.5
+    },
+    {
+      "latitude": 35.68,
+      "longitude": 139.69,
+      "temperature": 28.5,
+      "wind": 5.4
+    },
+    {
+      "latitude": 1.35,
+      "longitude": 103.82,
+      "temperature": 29.4,
+      "wind": 10.9
+    },
+    {
+      "latitude": -33.87,
+      "longitude": 151.21,
+      "temperature": 14.2,
+      "wind": 18.3
+    },
+    {
+      "latitude": -1.29,
+      "longitude": 36.82,
+      "temperature": 23.4,
+      "wind": 6.8
+    },
+    {
+      "latitude": 51.51,
+      "longitude": -0.13,
+      "temperature": 20.9,
+      "wind": 15.5
+    },
+    {
+      "latitude": 40.71,
+      "longitude": -74.01,
+      "temperature": 20.7,
+      "wind": 13.6
+    },
+    {
+      "latitude": -23.55,
+      "longitude": -46.63,
+      "temperature": 10.6,
+      "wind": 7.5
+    },
+    {
+      "latitude": 31.23,
+      "longitude": 121.47,
+      "temperature": 33.2,
+      "wind": 11.2
+    },
+    {
+      "latitude": 19.43,
+      "longitude": -99.13,
+      "temperature": 14.1,
+      "wind": 6.5
+    },
+    {
+      "latitude": 37.77,
+      "longitude": -122.42,
+      "temperature": 15.8,
+      "wind": 4.1
+    },
+    {
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "temperature": 8.2,
+      "wind": 14.8
+    }
+  ],
+  "sources": [
+    {
+      "label": "USGS Earthquake Hazards Program",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "status": "live"
+    },
+    {
+      "label": "NOAA Space Weather Prediction Center",
+      "url": "https://services.swpc.noaa.gov/",
+      "status": "live"
+    },
+    {
+      "label": "Open-Meteo",
+      "url": "https://open-meteo.com/",
+      "status": "live"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+name: Weave today's Earth
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "8 8 * * *"
+      timezone: "Asia/Shanghai"
+
+concurrency:
+  group: daily-weave
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  weave:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the loom
+        uses: actions/checkout@v6
+
+      - name: Use Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install the project
+        run: npm ci --ignore-scripts --no-audit --no-fund
+
+      - name: Collect signals and weave the portrait
+        run: npm run weave
+
+      - name: Validate generated data
+        run: node --test --test-name-pattern="traceable|source data" tests/earthloom.test.mjs
+
+      - name: Commit a meaningful daily snapshot
+        shell: bash
+        run: |
+          git add data public/data public/cards/latest.svg
+          if git diff --cached --quiet; then
+            echo "The signals have not changed; nothing to commit."
+            exit 0
+          fi
+          portrait_date="$(node -p "JSON.parse(require('fs').readFileSync('data/latest.json')).date")"
+          git config user.name "earthloom-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "art: weave Earth for ${portrait_date}"
+          git push

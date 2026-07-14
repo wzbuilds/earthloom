@@ -1,0 +1,16 @@
+{
+  "name": "Earthloom · 地球织机",
+  "short_name": "Earthloom",
+  "description": "The Earth weaves one portrait a day.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#07080f",
+  "theme_color": "#07080f",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
