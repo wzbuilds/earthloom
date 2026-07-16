@@ -58,4 +58,6 @@ test("includes automation and deployment contracts", async () => {
   assert.match(weave, /npm run weave/);
   assert.match(pages, /actions\/deploy-pages/);
   assert.match(pages, /GITHUB_PAGES: true/);
+  assert.match(pages, /workflow_run:/);
+  assert.match(pages, /Weave today's Earth/);
 });
