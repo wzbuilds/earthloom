@@ -16,7 +16,7 @@
     "weave:monthly": "node scripts/weave.mjs --monthly",
     "check": "tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern out --ignore-pattern .vinext"
   },
   "dependencies": {
     "next": "16.2.6",

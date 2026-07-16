@@ -2,8 +2,6 @@ import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
-const root = new URL("../", import.meta.url);
-
 async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
@@ -50,9 +48,13 @@ test("server-renders the finished Earthloom experience", async () => {
 });
 
 test("includes automation and deployment contracts", async () => {
-  const [weave, pages] = await Promise.all([
+  const [weave, pages, productCi, agentGuide, iterationPolicy, guard] = await Promise.all([
     readFile(new URL("../.github/workflows/weave.yml", import.meta.url), "utf8"),
     readFile(new URL("../.github/workflows/pages.yml", import.meta.url), "utf8"),
+    readFile(new URL("../.github/workflows/ci.yml", import.meta.url), "utf8"),
+    readFile(new URL("../AGENTS.md", import.meta.url), "utf8"),
+    readFile(new URL("../docs/AUTONOMOUS_ITERATION.md", import.meta.url), "utf8"),
+    readFile(new URL("../scripts/autonomy-guard.mjs", import.meta.url), "utf8"),
   ]);
   assert.match(weave, /Asia\/Shanghai/);
   assert.match(weave, /npm run weave/);
@@ -60,4 +62,12 @@ test("includes automation and deployment contracts", async () => {
   assert.match(pages, /GITHUB_PAGES: true/);
   assert.match(pages, /workflow_run:/);
   assert.match(pages, /Weave today's Earth/);
+  assert.match(productCi, /pull_request:/);
+  assert.match(productCi, /npm run lint/);
+  assert.match(productCi, /npm run build:pages/);
+  assert.match(agentGuide, /choose exactly one small requirement/i);
+  assert.match(iterationPolicy, /AUTO-MERGE/);
+  assert.match(iterationPolicy, /draft pull request/i);
+  assert.match(guard, /reviewOnly/);
+  assert.match(guard, /maxChangedLines/);
 });
