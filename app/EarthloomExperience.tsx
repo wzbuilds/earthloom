@@ -18,6 +18,90 @@ function randomFactory(seed: number) {
   };
 }
 
+type GeoPoint = readonly [latitude: number, longitude: number];
+
+const landMasses: readonly (readonly GeoPoint[])[] = [
+  [
+    [37, -17], [36, 0], [32, 12], [33, 28], [27, 34], [14, 43], [2, 42], [-11, 40],
+    [-23, 35], [-35, 20], [-34, 8], [-25, 2], [-15, -8], [0, -17], [13, -17], [22, -16], [32, -10],
+  ],
+  [
+    [36, -10], [43, -9], [51, -5], [58, 5], [71, 20], [69, 30], [60, 40], [50, 32],
+    [45, 28], [40, 22], [36, 15],
+  ],
+  [
+    [40, 22], [50, 32], [60, 40], [70, 60], [72, 100], [66, 140], [55, 165], [45, 150],
+    [38, 130], [20, 122], [8, 110], [20, 100], [25, 80], [8, 77], [20, 60], [30, 50],
+  ],
+  [
+    [72, -168], [68, -140], [58, -125], [48, -124], [32, -117], [18, -105], [8, -82],
+    [18, -72], [30, -82], [42, -67], [53, -55], [62, -64], [70, -95],
+  ],
+  [
+    [12, -81], [6, -77], [-5, -80], [-18, -70], [-34, -72], [-55, -68], [-48, -54],
+    [-28, -48], [-8, -35], [5, -51],
+  ],
+  [
+    [-11, 113], [-22, 114], [-35, 116], [-39, 146], [-28, 154], [-12, 143], [-10, 126],
+  ],
+  [[59, -52], [68, -54], [82, -42], [79, -18], [66, -24]],
+];
+
+const graticules: readonly (readonly GeoPoint[])[] = [
+  ...[-60, -30, 0, 30, 60].map((latitude) =>
+    Array.from({ length: 73 }, (_, index) => [latitude, -180 + index * 5] as GeoPoint),
+  ),
+  ...[-150, -120, -90, -60, -30, 0, 30, 60, 90, 120, 150, 180].map((longitude) =>
+    Array.from({ length: 33 }, (_, index) => [-80 + index * 5, longitude] as GeoPoint),
+  ),
+];
+
+function withAlpha(color: string, alpha: number) {
+  return color.replace(/\)$/, ` / ${alpha})`);
+}
+
+function projectGeoPoint(
+  [latitude, longitude]: GeoPoint,
+  rotationDegrees: number,
+  centerX: number,
+  centerY: number,
+  radius: number,
+) {
+  const latitudeRadians = (latitude * Math.PI) / 180;
+  const longitudeRadians = ((longitude + rotationDegrees) * Math.PI) / 180;
+  const depth = Math.cos(latitudeRadians) * Math.cos(longitudeRadians);
+  return {
+    visible: depth >= 0,
+    x: centerX + Math.cos(latitudeRadians) * Math.sin(longitudeRadians) * radius,
+    y: centerY - Math.sin(latitudeRadians) * radius,
+  };
+}
+
+function traceGeoPath(
+  context: CanvasRenderingContext2D,
+  points: readonly GeoPoint[],
+  rotationDegrees: number,
+  centerX: number,
+  centerY: number,
+  radius: number,
+) {
+  let drawing = false;
+  let visiblePoints = 0;
+  context.beginPath();
+  for (const point of points) {
+    const projected = projectGeoPoint(point, rotationDegrees, centerX, centerY, radius);
+    if (!projected.visible) {
+      drawing = false;
+      continue;
+    }
+    if (drawing) context.lineTo(projected.x, projected.y);
+    else context.moveTo(projected.x, projected.y);
+    drawing = true;
+    visiblePoints += 1;
+  }
+  return visiblePoints;
+}
+
 export function EarthloomExperience({ snapshot }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointerRef = useRef({ x: 0, y: 0 });
@@ -38,11 +122,14 @@ export function EarthloomExperience({ snapshot }: Props) {
       alpha: 0.12 + random() * 0.52,
       drift: random() * 1.7,
     }));
-    const threadOffsets = Array.from({ length: 34 }, () => ({
+    const stormEnergy = Math.min(1, Math.max(0, snapshot.metrics.kpIndex / 9));
+    const weatherFlow = Math.min(1.6, Math.max(0.65, snapshot.metrics.meanWind / 12));
+    const threadCount = 24 + Math.round(snapshot.metrics.kpIndex * 3.5);
+    const threadOffsets = Array.from({ length: threadCount }, () => ({
       offset: random() * Math.PI * 2,
-      amplitude: 0.02 + random() * 0.09,
+      amplitude: (0.018 + random() * 0.075) * weatherFlow,
       weight: 0.35 + random() * 1.5,
-      alpha: 0.05 + random() * 0.22,
+      alpha: 0.07 + random() * (0.18 + stormEnergy * 0.18),
     }));
 
     let frame = 0;
@@ -92,6 +179,7 @@ export function EarthloomExperience({ snapshot }: Props) {
       const radius = Math.min(width, height) * 0.335;
       const centerX = width * 0.52 + pointerRef.current.x * 8;
       const centerY = height * 0.49 + pointerRef.current.y * 7;
+      const rotationDegrees = -15 + motion * Math.min(4, Math.max(1.2, snapshot.metrics.solarWind / 180));
 
       context.save();
       context.globalCompositeOperation = "screen";
@@ -111,11 +199,37 @@ export function EarthloomExperience({ snapshot }: Props) {
       context.clip();
 
       const sphere = context.createLinearGradient(centerX - radius, centerY - radius, centerX + radius, centerY + radius);
-      sphere.addColorStop(0, snapshot.palette.ink);
-      sphere.addColorStop(0.55, "#101523");
+      sphere.addColorStop(0, "#173044");
+      sphere.addColorStop(0.42, snapshot.palette.ink);
+      sphere.addColorStop(0.7, "#0d1728");
       sphere.addColorStop(1, snapshot.palette.void);
       context.fillStyle = sphere;
       context.fillRect(centerX - radius, centerY - radius, radius * 2, radius * 2);
+
+      context.save();
+      context.globalCompositeOperation = "screen";
+      context.strokeStyle = withAlpha(snapshot.palette.mist, 0.13);
+      context.lineWidth = 0.55;
+      for (const graticule of graticules) {
+        traceGeoPath(context, graticule, rotationDegrees, centerX, centerY, radius * 0.93);
+        context.stroke();
+      }
+      context.restore();
+
+      context.save();
+      context.globalCompositeOperation = "screen";
+      context.fillStyle = withAlpha(snapshot.palette.aurora, 0.095 + stormEnergy * 0.055);
+      context.strokeStyle = withAlpha(snapshot.palette.aurora, 0.46);
+      context.lineWidth = 0.85;
+      for (const landMass of landMasses) {
+        const visiblePoints = traceGeoPath(context, landMass, rotationDegrees, centerX, centerY, radius * 0.9);
+        if (visiblePoints === landMass.length) {
+          context.closePath();
+          context.fill();
+        }
+        context.stroke();
+      }
+      context.restore();
 
       context.globalCompositeOperation = "screen";
       threadOffsets.forEach((thread, index) => {
@@ -126,7 +240,11 @@ export function EarthloomExperience({ snapshot }: Props) {
         for (let step = 0; step <= 92; step += 1) {
           const ratio = step / 92;
           const x = centerX - span + ratio * span * 2;
-          const wave = Math.sin(ratio * Math.PI * (2.5 + index % 4) + thread.offset + motion * 0.07);
+          const wave = Math.sin(
+            ratio * Math.PI * (2.5 + index % 4) +
+              thread.offset +
+              motion * (0.12 + snapshot.metrics.meanWind / 60),
+          );
           const drift = Math.cos(ratio * Math.PI * 1.4 + index * 0.43) * radius * thread.amplitude;
           const py = y + wave * radius * thread.amplitude * 0.55 + drift;
           if (step === 0) context.moveTo(x, py);
@@ -138,16 +256,17 @@ export function EarthloomExperience({ snapshot }: Props) {
         context.stroke();
       });
 
-      snapshot.earthquakes.slice(0, 24).forEach((quake, index) => {
-        const longitude = ((quake.longitude + 180 + motion * 0.45) % 360) - 180;
+      snapshot.earthquakes.forEach((quake, index) => {
+        const longitude = ((quake.longitude + rotationDegrees + 540) % 360) - 180;
         const longitudeRadians = (longitude * Math.PI) / 180;
         const latitudeRadians = (quake.latitude * Math.PI) / 180;
-        const depth = Math.cos(longitudeRadians);
-        if (depth < -0.12) return;
+        const visibility = Math.cos(longitudeRadians);
+        if (visibility < -0.12) return;
         const x = centerX + Math.sin(longitudeRadians) * Math.cos(latitudeRadians) * radius * 0.87;
         const y = centerY - Math.sin(latitudeRadians) * radius * 0.87;
         const base = 2 + quake.magnitude * 1.45;
-        context.globalAlpha = 0.16 + Math.max(0, depth) * 0.46;
+        const depthFade = 1 - Math.min(1, quake.depth / 700);
+        context.globalAlpha = (0.16 + Math.max(0, visibility) * 0.46) * (0.42 + depthFade * 0.58);
         context.strokeStyle = snapshot.palette.ember;
         context.lineWidth = index === 0 ? 1.4 : 0.75;
         context.beginPath();
@@ -183,12 +302,31 @@ export function EarthloomExperience({ snapshot }: Props) {
       );
       shadow.addColorStop(0, "rgba(3, 4, 10, .02)");
       shadow.addColorStop(0.68, "rgba(3, 4, 10, .2)");
-      shadow.addColorStop(1, "rgba(3, 4, 10, .72)");
+      shadow.addColorStop(1, "rgba(3, 4, 10, .62)");
       context.fillStyle = shadow;
       context.fillRect(centerX - radius, centerY - radius, radius * 2, radius * 2);
       context.restore();
 
-      frame = window.requestAnimationFrame(draw);
+      context.save();
+      context.beginPath();
+      context.arc(centerX, centerY, radius * 0.99, 0, Math.PI * 2);
+      context.clip();
+      context.globalCompositeOperation = "screen";
+      context.strokeStyle = withAlpha(snapshot.palette.mist, 0.16);
+      context.lineWidth = 0.5;
+      for (const graticule of graticules) {
+        traceGeoPath(context, graticule, rotationDegrees, centerX, centerY, radius * 0.93);
+        context.stroke();
+      }
+      context.strokeStyle = withAlpha(snapshot.palette.aurora, 0.56);
+      context.lineWidth = 0.9;
+      for (const landMass of landMasses) {
+        traceGeoPath(context, landMass, rotationDegrees, centerX, centerY, radius * 0.9);
+        context.stroke();
+      }
+      context.restore();
+
+      if (!paused && !reducedMotion) frame = window.requestAnimationFrame(draw);
     };
 
     const observer = new ResizeObserver(resize);
@@ -216,10 +354,18 @@ export function EarthloomExperience({ snapshot }: Props) {
         pointerRef.current = { x: 0, y: 0 };
       }}
     >
-      <canvas ref={canvasRef} aria-hidden="true" />
+      <canvas
+        ref={canvasRef}
+        aria-label={`今日地球数据画像：${snapshot.metrics.earthquakeCount} 次地震、Kp ${snapshot.metrics.kpIndex}、太阳风 ${snapshot.metrics.solarWind} 公里每秒。`}
+        role="img"
+      />
       <div className="canvas-index" aria-hidden="true">
-        <span>LAT 31.2304° N</span>
-        <span>LON 121.4737° E</span>
+        <span>ORTHOGRAPHIC / PLANET VIEW</span>
+        <span>{snapshot.metrics.earthquakeCount} EVENTS · LAST 24H</span>
+      </div>
+      <div className="globe-key" aria-hidden="true">
+        <span><i className="globe-key-land" /> CONTINENTS / ROTATING</span>
+        <span><i className="globe-key-quake" /> SEISMIC PULSES / GEOLOCATED</span>
       </div>
       <button
         aria-label={paused ? "播放作品动画" : "暂停作品动画"}

@@ -9,7 +9,7 @@
   --soft-line: rgba(255, 255, 255, 0.075);
   --accent: #74ded0;
   --ember: #f6a35b;
-  --display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Songti SC", STSong, "Noto Serif CJK SC", SimSun, Georgia, serif;
   --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
@@ -210,15 +210,18 @@ a:focus-visible {
 }
 
 .hero h1 {
-  max-width: 8em;
-  font-size: clamp(4.6rem, 7.4vw, 8.7rem);
+  font-size: clamp(4.1rem, 6vw, 7.15rem);
 }
 
-.hero h1 span {
+.hero-title-line {
   display: block;
-  margin-left: 0.28em;
+  width: max-content;
+  white-space: nowrap;
+}
+
+.hero-title-accent {
+  margin-left: 0.12em;
   color: var(--accent);
-  font-style: italic;
 }
 
 .hero-summary {
@@ -351,6 +354,43 @@ a:focus-visible {
   font-size: 0.5rem;
   letter-spacing: 0.1em;
   pointer-events: none;
+}
+
+.globe-key {
+  position: absolute;
+  z-index: 3;
+  bottom: 2.65rem;
+  left: 1.15rem;
+  display: flex;
+  gap: 1.2rem;
+  color: rgba(238, 240, 235, 0.48);
+  font-family: var(--mono);
+  font-size: 0.47rem;
+  letter-spacing: 0.09em;
+  pointer-events: none;
+}
+
+.globe-key span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+}
+
+.globe-key i {
+  display: inline-block;
+  width: 12px;
+  height: 1px;
+  background: var(--accent);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--accent) 70%, transparent);
+}
+
+.globe-key .globe-key-quake {
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--ember);
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 8px color-mix(in srgb, var(--ember) 60%, transparent);
 }
 
 .motion-toggle {
@@ -651,17 +691,26 @@ a.archive-card:hover {
 
 .method-section {
   padding: 9rem 4.2vw 7rem;
+  background:
+    radial-gradient(circle at 76% 18%, rgba(116, 222, 208, 0.055), transparent 28rem),
+    #07080f;
 }
 
 .method-header {
   display: grid;
   grid-template-columns: 0.46fr 0.72fr 0.42fr;
   align-items: end;
-  margin-bottom: 6rem;
+  margin-bottom: 4.6rem;
 }
 
 .method-header .eyebrow {
   align-self: start;
+}
+
+.method-title-line {
+  display: block;
+  width: max-content;
+  white-space: nowrap;
 }
 
 .method-header > p:last-child {
@@ -673,15 +722,38 @@ a.archive-card:hover {
 }
 
 .mapping-row {
+  position: relative;
   display: grid;
-  grid-template-columns: 0.13fr 0.27fr 0.32fr 0.28fr;
+  grid-template-columns: minmax(9rem, 0.62fr) minmax(12rem, 0.88fr) minmax(20rem, 1.42fr) minmax(14rem, 0.88fr);
   align-items: center;
-  min-height: 118px;
+  gap: clamp(1.5rem, 3vw, 4rem);
+  min-height: 196px;
+  padding: 2.25rem 0;
   border-bottom: 1px solid var(--line);
 }
 
-.mapping-row > span,
-.mapping-row > strong {
+.mapping-row::before {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 4.5rem;
+  border-top: 1px solid var(--mapping-color);
+  content: "";
+  box-shadow: 0 0 14px color-mix(in srgb, var(--mapping-color) 36%, transparent);
+}
+
+.mapping-signal {
+  align-self: stretch;
+  display: grid;
+  align-content: space-between;
+  min-height: 118px;
+}
+
+.mapping-signal span,
+.mapping-signal strong,
+.mapping-reading > span,
+.mapping-output > span,
+.mapping-rule > span {
   color: var(--muted);
   font-family: var(--mono);
   font-size: 0.57rem;
@@ -689,18 +761,82 @@ a.archive-card:hover {
   letter-spacing: 0.12em;
 }
 
-.mapping-row h3 {
-  margin: 0;
+.mapping-signal span {
+  color: var(--mapping-color);
+}
+
+.mapping-reading b {
+  display: block;
+  margin-top: 0.8rem;
   font-family: var(--display);
-  font-size: clamp(1.6rem, 2.4vw, 2.7rem);
+  font-size: clamp(2.7rem, 4.4vw, 5.2rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+}
+
+.mapping-reading small {
+  display: block;
+  margin-top: 0.9rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.65;
+}
+
+.mapping-row h3 {
+  margin: 0.7rem 0 0;
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
   font-weight: 400;
 }
 
-.mapping-row p {
-  margin: 0;
+.mapping-output p,
+.mapping-rule p {
+  margin: 0.7rem 0 0;
   color: var(--muted);
   font-size: 0.77rem;
   line-height: 1.7;
+}
+
+.mapping-rule > div {
+  height: 2px;
+  margin-top: 1.25rem;
+  overflow: hidden;
+  background: var(--soft-line);
+}
+
+.mapping-rule i {
+  display: block;
+  width: var(--mapping-level);
+  height: 100%;
+  min-width: 3px;
+  background: var(--mapping-color);
+  box-shadow: 0 0 12px var(--mapping-color);
+}
+
+.mapping-rule p {
+  font-family: var(--mono);
+  font-size: 0.57rem;
+  letter-spacing: 0.04em;
+}
+
+.method-data-link {
+  display: flex;
+  justify-content: space-between;
+  width: min(100%, 28rem);
+  margin: 2.5rem 0 0 auto;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.method-data-link:hover {
+  border-color: var(--accent);
+  color: var(--paper);
 }
 
 .provenance-section {
@@ -858,6 +994,10 @@ a.archive-card:hover {
   .method-header > p:last-child {
     margin-left: 2rem;
   }
+
+  .mapping-row {
+    grid-template-columns: minmax(10rem, 0.75fr) minmax(15rem, 1.25fr);
+  }
 }
 
 @media (max-width: 720px) {
@@ -891,7 +1031,7 @@ a.archive-card:hover {
   }
 
   .hero h1 {
-    font-size: clamp(3.8rem, 18vw, 5.6rem);
+    font-size: clamp(3.1rem, 15vw, 5.6rem);
   }
 
   .hero-description {
@@ -912,6 +1052,15 @@ a.archive-card:hover {
     display: none;
   }
 
+  .globe-key {
+    right: 1rem;
+    bottom: 2.5rem;
+    left: 1rem;
+    justify-content: space-between;
+    gap: 0.6rem;
+    font-size: 0.4rem;
+  }
+
   .portrait-caption {
     font-size: 0.45rem;
   }
@@ -926,9 +1075,12 @@ a.archive-card:hover {
 
   .section-heading h2,
   .archive-intro h2,
-  .method-header h2,
   .provenance-section h2 {
     font-size: clamp(3rem, 14vw, 4.8rem);
+  }
+
+  .method-header h2 {
+    font-size: clamp(2.8rem, 11.5vw, 4.2rem);
   }
 
   .metric-grid,
@@ -961,14 +1113,20 @@ a.archive-card:hover {
   }
 
   .mapping-row {
-    grid-template-columns: 0.18fr 0.82fr;
-    gap: 0.6rem;
-    padding: 1.6rem 0;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 2rem 0 2.4rem;
   }
 
-  .mapping-row h3,
-  .mapping-row p {
-    grid-column: 2;
+  .mapping-signal {
+    grid-template-columns: auto 1fr;
+    align-content: start;
+    gap: 1rem;
+    min-height: auto;
+  }
+
+  .mapping-reading b {
+    font-size: clamp(3.4rem, 17vw, 5rem);
   }
 
   .source-list a {
