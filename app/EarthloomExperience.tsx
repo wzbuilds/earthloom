@@ -49,7 +49,7 @@ export function EarthloomExperience({ snapshot }: Props) {
     let width = 0;
     let height = 0;
     let dpr = 1;
-    let start = performance.now();
+    const start = performance.now();
 
     const resize = () => {
       const rect = canvas.getBoundingClientRect();
