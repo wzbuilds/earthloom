@@ -12,6 +12,7 @@ Earthloom should feel alive in three ways:
 
 ## Now — suitable for autonomous iteration
 
+- [x] Make the hero unmistakably planetary and explain today’s live input → drawing rule → visible mark. Completed 2026-07-16.
 - [ ] Add a compact “why today looks different” explanation derived only from the current and previous snapshots.
 - [ ] Let visitors compare two archived portraits without losing the gallery context.
 - [ ] Add keyboard navigation and visible focus states to every interactive gallery control.

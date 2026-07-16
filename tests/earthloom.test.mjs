@@ -36,6 +36,8 @@ test("keeps the public portrait and its source data together", async () => {
 });
 
 test("server-renders the finished Earthloom experience", async () => {
+  const latest = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
+  const experienceSource = await readFile(new URL("../app/EarthloomExperience.tsx", import.meta.url), "utf8");
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -44,7 +46,20 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(html, /地球，今天/);
   assert.match(html, /TODAY'S SIGNALS/);
   assert.match(html, /OPEN BY DESIGN/);
+  assert.match(html, /今日读数/);
+  assert.match(html, /画面结果/);
+  assert.match(html, new RegExp(`${latest.metrics.earthquakeCount} 次`));
+  assert.match(html, new RegExp(`Kp ${latest.metrics.kpIndex}`));
+  assert.match(html, new RegExp(`${latest.metrics.solarWind} km/s`));
+  assert.match(html, new RegExp(`${latest.metrics.meanTemperature}°C`));
+  assert.match(html, /位置 → 坐标/);
+  assert.match(html, /打开今日完整快照/);
+  assert.doesNotMatch(html, /色温与流向/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/);
+  assert.match(experienceSource, /const landMasses/);
+  assert.match(experienceSource, /const graticules/);
+  assert.match(experienceSource, /quake\.depth/);
+  assert.match(experienceSource, /role="img"/);
 });
 
 test("includes automation and deployment contracts", async () => {

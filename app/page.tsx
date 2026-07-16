@@ -39,11 +39,54 @@ const metricCards = [
   },
 ];
 
+const threadCount = 24 + Math.round(snapshot.metrics.kpIndex * 3.5);
+const lunarPosition = Math.round(snapshot.metrics.moonPhase * 100);
+
 const mappings = [
-  { index: "01", signal: "地震 / SEISMIC", form: "涟漪与结点", detail: "震级决定半径，深度决定透明度。" },
-  { index: "02", signal: "地磁 / GEOMAGNETIC", form: "极光与明度", detail: "Kp 越高，光带越密、色彩越亮。" },
-  { index: "03", signal: "气象 / WEATHER", form: "色温与流向", detail: "十二个全球采样点共同决定织物的呼吸。" },
-  { index: "04", signal: "月相 / LUNAR", form: "留白与暗面", detail: "月相塑造画面中心的可见边界。" },
+  {
+    index: "01",
+    signal: "地震 / USGS",
+    reading: `${snapshot.metrics.earthquakeCount} 次`,
+    context: `最强 M${snapshot.metrics.maxMagnitude} · 平均深度 ${snapshot.metrics.averageDepth} km`,
+    form: `${snapshot.metrics.earthquakeCount} 个定位脉冲`,
+    detail: "经纬度决定脉冲位置，震级放大圆环，震源越深则痕迹越淡。",
+    rule: "位置 → 坐标 · 半径 → 震级 · 透明度 → 深度",
+    level: Math.min(100, snapshot.metrics.earthquakeCount),
+    color: snapshot.palette.ember,
+  },
+  {
+    index: "02",
+    signal: "太空天气 / NOAA",
+    reading: `Kp ${snapshot.metrics.kpIndex}`,
+    context: `太阳风 ${snapshot.metrics.solarWind} km/s`,
+    form: `${threadCount} 条极光织线`,
+    detail: "Kp 改变织线密度与亮度，太阳风把当前速度换算成地球旋转节奏。",
+    rule: "密度 → Kp · 转速 → 太阳风",
+    level: Math.round((snapshot.metrics.kpIndex / 9) * 100),
+    color: snapshot.palette.aurora,
+  },
+  {
+    index: "03",
+    signal: "全球天气 / OPEN-METEO",
+    reading: `${snapshot.metrics.meanTemperature}°C`,
+    context: `12 点均值 · 平均风速 ${snapshot.metrics.meanWind} km/h`,
+    form: "色温与流速",
+    detail: "十二个全球采样点的均温调节暖色，平均风速放大织线的摆幅与漂移。",
+    rule: "暖色 → 均温 · 摆幅 → 平均风速",
+    level: Math.round(Math.min(1, Math.max(0, (snapshot.metrics.meanTemperature + 10) / 45)) * 100),
+    color: snapshot.palette.tide,
+  },
+  {
+    index: "04",
+    signal: "月相 / LOCAL EPHEMERIS",
+    reading: `${lunarPosition}%`,
+    context: lunarPosition < 10 || lunarPosition > 90 ? "月相周期 · 新月附近" : "月相周期位置",
+    form: "偏移的明暗边界",
+    detail: "月相周期移动球面遮罩的中心；它描述周期位置，不冒充月面照明度。",
+    rule: "暗面边界 → 月相周期",
+    level: lunarPosition,
+    color: snapshot.palette.mist,
+  },
 ];
 
 function dateLabel(value: string) {
@@ -78,8 +121,8 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">ONE EARTH · ONE PORTRAIT · EVERY DAY</p>
           <h1 id="hero-title">
-            地球，今天
-            <span>织成这样。</span>
+            <span className="hero-title-line">地球，今天</span>
+            <span className="hero-title-line hero-title-accent">织成这样。</span>
           </h1>
           <p className="hero-summary">{snapshot.summary}</p>
           <p className="hero-description">
@@ -184,19 +227,47 @@ export default function Home() {
       <section className="method-section" id="method" aria-labelledby="method-title">
         <div className="method-header">
           <p className="eyebrow">THE LOOM / 生成方法</p>
-          <h2 id="method-title">数据不是注脚，<br />数据就是画笔。</h2>
-          <p>Earthloom 不让算法凭空幻想。每个颜色、结点和运动都有真实读数作为理由。</p>
+          <h2 id="method-title">
+            <span className="method-title-line">今天的数据，</span>
+            <span className="method-title-line">怎样落到画面。</span>
+          </h2>
+          <p>每一行都从今日快照出发：先读输入，再看它变成什么视觉痕迹。数值更新，规则不变。</p>
         </div>
         <div className="mapping-list">
           {mappings.map((mapping) => (
-            <article className="mapping-row" key={mapping.index}>
-              <span>{mapping.index}</span>
-              <strong>{mapping.signal}</strong>
-              <h3>{mapping.form}</h3>
-              <p>{mapping.detail}</p>
+            <article
+              className="mapping-row"
+              key={mapping.index}
+              style={{
+                "--mapping-level": `${mapping.level}%`,
+                "--mapping-color": mapping.color,
+              } as CSSProperties}
+            >
+              <header className="mapping-signal">
+                <span>{mapping.index}</span>
+                <strong>{mapping.signal}</strong>
+              </header>
+              <div className="mapping-reading">
+                <span>TODAY&apos;S INPUT / 今日读数</span>
+                <b>{mapping.reading}</b>
+                <small>{mapping.context}</small>
+              </div>
+              <div className="mapping-output">
+                <span>VISIBLE MARK / 画面结果</span>
+                <h3>{mapping.form}</h3>
+                <p>{mapping.detail}</p>
+              </div>
+              <div className="mapping-rule">
+                <span>DRAWING RULE / 绘制规则</span>
+                <div aria-hidden="true"><i /></div>
+                <p>{mapping.rule}</p>
+              </div>
             </article>
           ))}
         </div>
+        <a className="method-data-link" href="data/latest.json">
+          打开今日完整快照 <span aria-hidden="true">↗</span>
+        </a>
       </section>
 
       <section className="provenance-section" aria-labelledby="provenance-title">
