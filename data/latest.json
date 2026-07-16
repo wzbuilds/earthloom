@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
   "date": "2026-07-16",
-  "generatedAt": "2026-07-16T03:55:11.546Z",
+  "generatedAt": "2026-07-16T03:58:33.863Z",
   "timeZone": "Asia/Shanghai",
   "status": "live",
-  "seed": 1641950745,
+  "seed": 1755752421,
   "summary": "新月留下一块安静的暗面。",
   "metrics": {
     "earthquakeCount": 58,
     "maxMagnitude": 5.8,
     "averageDepth": 51.2,
     "kpIndex": 3,
-    "solarWind": 464,
+    "solarWind": 468,
     "meanTemperature": 20.2,
     "meanWind": 11.3,
     "moonPhase": 0.0578
   },
   "palette": {
-    "void": "hsl(237 38% 5%)",
-    "ink": "hsl(215 44% 9%)",
-    "aurora": "hsl(220.33333333333334 88% 65%)",
-    "tide": "hsl(281 76% 60%)",
+    "void": "hsl(225 38% 5%)",
+    "ink": "hsl(203 44% 9%)",
+    "aurora": "hsl(208.33333333333334 88% 65%)",
+    "tide": "hsl(269 76% 60%)",
     "ember": "hsl(38.10666666666667 96% 66%)",
-    "mist": "hsl(11 42% 87%)"
+    "mist": "hsl(359 42% 87%)"
   },
   "earthquakes": [
     {
