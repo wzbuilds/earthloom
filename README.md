@@ -4,8 +4,8 @@
   <h1>Earthloom · 地球织机</h1>
   <p><strong>The Earth weaves one portrait a day.</strong><br />地球每天用开放数据织出一幅自己的画像。</p>
 
-  [![Daily weave](https://github.com/zhang987af/earthloom/actions/workflows/weave.yml/badge.svg)](https://github.com/zhang987af/earthloom/actions/workflows/weave.yml)
-  [![GitHub Pages](https://github.com/zhang987af/earthloom/actions/workflows/pages.yml/badge.svg)](https://github.com/zhang987af/earthloom/actions/workflows/pages.yml)
+  [![Daily weave](https://github.com/wzbuilds/earthloom/actions/workflows/weave.yml/badge.svg)](https://github.com/wzbuilds/earthloom/actions/workflows/weave.yml)
+  [![GitHub Pages](https://github.com/wzbuilds/earthloom/actions/workflows/pages.yml/badge.svg)](https://github.com/wzbuilds/earthloom/actions/workflows/pages.yml)
   [![MIT License](https://img.shields.io/badge/license-MIT-74ded0.svg)](./LICENSE)
 </div>
 
@@ -66,7 +66,7 @@ npm run weave:monthly  # publish the previous month's report
 Add this to a GitHub profile README:
 
 ```md
-[![Earthloom today](https://raw.githubusercontent.com/zhang987af/earthloom/main/public/cards/latest.svg)](https://zhang987af.github.io/earthloom/)
+[![Earthloom today](https://raw.githubusercontent.com/wzbuilds/earthloom/main/public/cards/latest.svg)](https://wzbuilds.github.io/earthloom/)
 ```
 
 ## Automation without empty commits
