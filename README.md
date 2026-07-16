@@ -3,6 +3,10 @@
 
   <h1>Earthloom · 地球织机</h1>
   <p><strong>The Earth weaves one portrait a day.</strong><br />地球每天用开放数据织出一幅自己的画像。</p>
+
+  [![Daily weave](https://github.com/zhang987af/earthloom/actions/workflows/weave.yml/badge.svg)](https://github.com/zhang987af/earthloom/actions/workflows/weave.yml)
+  [![GitHub Pages](https://github.com/zhang987af/earthloom/actions/workflows/pages.yml/badge.svg)](https://github.com/zhang987af/earthloom/actions/workflows/pages.yml)
+  [![MIT License](https://img.shields.io/badge/license-MIT-74ded0.svg)](./LICENSE)
 </div>
 
 Earthloom turns earthquakes, space weather, global weather samples, and the lunar phase into a deterministic work of generative art. Every portrait is backed by a versioned JSON snapshot: the artwork is poetic, but its inputs are inspectable.
@@ -59,10 +63,10 @@ npm run weave:monthly  # publish the previous month's report
 
 ## Put today's Earth on a profile
 
-Once the repository is published, add this to a GitHub profile README and replace `YOUR_NAME`:
+Add this to a GitHub profile README:
 
 ```md
-[![Earthloom today](https://raw.githubusercontent.com/YOUR_NAME/earthloom/main/public/cards/latest.svg)](https://YOUR_NAME.github.io/earthloom/)
+[![Earthloom today](https://raw.githubusercontent.com/zhang987af/earthloom/main/public/cards/latest.svg)](https://zhang987af.github.io/earthloom/)
 ```
 
 ## Automation without empty commits
@@ -76,4 +80,3 @@ The website is deployed separately, with the minimum `pages: write` and `id-toke
 Application code is released under the [MIT License](./LICENSE). Source services retain their own terms; Open-Meteo data requires attribution under CC BY 4.0. Read [DATA_SOURCES.md](./DATA_SOURCES.md) before redistributing the archived observations.
 
 Earthloom is an artwork and is not intended for earthquake warning, navigation, space-weather operations, or emergency decisions.
-

@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://earthloom.djingyu.chatgpt.site";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://earthloom.pages.dev"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Earthloom · 地球织机",
     template: "%s · Earthloom",
