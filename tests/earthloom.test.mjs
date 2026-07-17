@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
+import { deriveSoundscapePlan } from "../app/soundscape-plan.js";
 
 async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -35,9 +36,28 @@ test("keeps the public portrait and its source data together", async () => {
   await access(new URL(`../data/archive/${latest.date}.json`, import.meta.url));
 });
 
+test("derives one bounded and repeatable score from the snapshot", async () => {
+  const snapshot = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
+  const firstPlan = deriveSoundscapePlan(snapshot);
+  const repeatedPlan = deriveSoundscapePlan(snapshot);
+  assert.deepEqual(repeatedPlan, firstPlan);
+  assert.equal(firstPlan.scoreSteps, 16);
+  assert.ok(firstPlan.tempo >= 42 && firstPlan.tempo <= 68);
+  assert.ok(firstPlan.voiceIntervals.length >= 2 && firstPlan.voiceIntervals.length <= 4);
+  assert.ok(firstPlan.pulseEvents.length <= 10);
+  assert.ok(firstPlan.pulseEvents.every((pulse) => snapshot.earthquakes.some((quake) => quake.id === pulse.id)));
+  assert.notDeepEqual(deriveSoundscapePlan({ ...snapshot, seed: snapshot.seed + 1 }), firstPlan);
+  assert.deepEqual(deriveSoundscapePlan({
+    ...snapshot,
+    metrics: { ...snapshot.metrics, earthquakeCount: 0 },
+    earthquakes: [],
+  }).pulseEvents, []);
+});
+
 test("server-renders the finished Earthloom experience", async () => {
   const latest = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
   const experienceSource = await readFile(new URL("../app/EarthloomExperience.tsx", import.meta.url), "utf8");
+  const soundscapeSource = await readFile(new URL("../app/EarthloomSoundscape.tsx", import.meta.url), "utf8");
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -54,12 +74,18 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(html, new RegExp(`${latest.metrics.meanTemperature}°C`));
   assert.match(html, /位置 → 坐标/);
   assert.match(html, /打开今日完整快照/);
+  assert.match(html, /开启今日声景/);
+  assert.match(html, /这是艺术映射，不是科学声学读数/);
   assert.doesNotMatch(html, /色温与流向/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/);
   assert.match(experienceSource, /const landMasses/);
   assert.match(experienceSource, /const graticules/);
   assert.match(experienceSource, /quake\.depth/);
   assert.match(experienceSource, /role="img"/);
+  assert.match(soundscapeSource, /new AudioContextClass/);
+  assert.match(soundscapeSource, /context\.suspend\(\)/);
+  assert.match(soundscapeSource, /aria-label="今日声景音量"/);
+  assert.doesNotMatch(soundscapeSource, /Math\.random/);
 });
 
 test("includes automation and deployment contracts", async () => {

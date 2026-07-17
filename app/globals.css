@@ -281,6 +281,89 @@ a:focus-visible {
   color: var(--paper);
 }
 
+.soundscape-slot { min-height: 118px; margin-top: 1.35rem; }
+
+.soundscape-control {
+  position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.8rem 1.25rem; max-width: 34rem; padding: 0.9rem 1rem;
+  border: 1px solid var(--soft-line); background: rgba(9, 11, 18, 0.7);
+}
+
+.soundscape-copy strong {
+  display: block; margin-top: 0.35rem; font: 400 1.05rem var(--display);
+}
+
+.soundscape-copy p {
+  max-width: 29rem; margin: 0.32rem 0 0; color: var(--muted);
+  font-size: 0.68rem; line-height: 1.55;
+}
+
+.soundscape-kicker, .soundscape-readings, .soundscape-status, .soundscape-volume {
+  font: 0.5rem var(--mono); letter-spacing: 0.08em;
+}
+
+.soundscape-kicker { display: flex; align-items: center; gap: 0.55rem; color: var(--accent); }
+
+.soundscape-kicker > i, .soundscape-toggle-mark {
+  display: inline-flex; align-items: center; gap: 2px; height: 13px;
+}
+
+.soundscape-kicker b, .soundscape-toggle-mark i { width: 2px; height: 45%; background: currentColor; }
+
+.soundscape-kicker b:nth-child(2),
+.soundscape-toggle-mark i:nth-child(2) { height: 100%; }
+
+.soundscape-actions { display: flex; align-items: center; align-self: center; gap: 0.8rem; }
+
+.soundscape-toggle {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.65rem;
+  min-height: 44px; padding: 0 0.9rem; border: 1px solid rgba(116, 222, 208, 0.48);
+  background: rgba(116, 222, 208, 0.07); color: var(--paper); cursor: pointer;
+  font: 0.64rem var(--mono); letter-spacing: 0.06em;
+}
+
+.soundscape-toggle:hover { background: rgba(116, 222, 208, 0.14); }
+.soundscape-toggle:disabled { cursor: wait; opacity: 0.68; }
+.soundscape-control[data-state="playing"] .soundscape-toggle-mark i { animation: sound-wave 0.85s ease-in-out infinite alternate; }
+.soundscape-control[data-state="playing"] .soundscape-toggle-mark i:nth-child(2) { animation-delay: -0.28s; }
+.soundscape-control[data-state="playing"] .soundscape-toggle-mark i:nth-child(3) { animation-delay: -0.56s; }
+
+.soundscape-readings {
+  display: flex; gap: 0.9rem; padding-top: 0.7rem;
+  border-top: 1px solid var(--soft-line); color: rgba(238, 240, 235, 0.56);
+}
+
+.soundscape-status {
+  align-self: end; margin: 0; color: var(--muted); text-align: right;
+}
+
+.soundscape-volume {
+  display: grid; grid-template-columns: auto minmax(72px, 1fr) 2.5rem;
+  align-items: center; gap: 0.45rem; color: var(--muted);
+}
+
+.soundscape-volume input { width: 100%; accent-color: var(--accent); cursor: pointer; }
+.soundscape-volume input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.soundscape-volume output { color: var(--paper); text-align: right; }
+
+.soundscape-control.is-docked {
+  position: fixed; z-index: 30; right: clamp(1rem, 4.2vw, 4rem);
+  bottom: max(1rem, env(safe-area-inset-bottom)); width: min(26rem, calc(100vw - 2rem));
+  max-width: none; padding: 0.8rem; border-color: rgba(116, 222, 208, 0.3);
+  background: rgba(7, 8, 15, 0.93); box-shadow: 0 18px 50px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(16px);
+}
+
+.soundscape-control.is-docked .soundscape-copy p,
+.soundscape-control.is-docked .soundscape-readings { display: none; }
+.soundscape-control.is-docked .soundscape-actions { grid-column: 1 / -1; }
+.soundscape-control.is-docked .soundscape-volume { flex: 1; }
+
+@keyframes sound-wave {
+  from { transform: scaleY(0.38); }
+  to { transform: scaleY(1); }
+}
+
 .hero-date {
   position: absolute;
   z-index: 4;
@@ -1043,6 +1126,21 @@ a.archive-card:hover {
     flex-direction: column;
     gap: 1.2rem;
   }
+
+  .soundscape-slot { min-height: 154px; }
+  .soundscape-control { grid-template-columns: 1fr; }
+  .soundscape-actions { justify-content: flex-start; }
+  .soundscape-status { text-align: left; }
+  .soundscape-control.is-docked {
+    right: 1.1rem;
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+    left: 1.1rem;
+    width: auto;
+    grid-template-columns: 1fr;
+  }
+  .soundscape-control.is-docked .soundscape-copy strong,
+  .soundscape-control.is-docked .soundscape-status { display: none; }
+  .soundscape-control.is-docked .soundscape-actions { display: grid; grid-template-columns: auto 1fr; }
 
   .portrait-stage {
     min-height: 82vw;

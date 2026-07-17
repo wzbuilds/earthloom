@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 import archive from "@/data/archive-index.json";
 import latest from "@/data/latest.json";
 import { EarthloomExperience } from "./EarthloomExperience";
+import { EarthloomSoundscape } from "./EarthloomSoundscape";
 import type { EarthloomSnapshot } from "./types";
 
 const snapshot = latest as EarthloomSnapshot;
@@ -136,6 +137,7 @@ export default function Home() {
               VIEW RAW DATA
             </a>
           </div>
+          <EarthloomSoundscape snapshot={snapshot} />
         </div>
 
         <div className="hero-date" aria-label={`今日作品日期 ${dateLabel(snapshot.date)}`}>
