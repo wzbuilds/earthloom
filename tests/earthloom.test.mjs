@@ -2,6 +2,12 @@ import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import { deriveSoundscapePlan } from "../app/soundscape-plan.js";
+import {
+  buildPortraitShareDetails,
+  CANONICAL_SITE_URL,
+  formatPortraitShareText,
+  performPortraitShare,
+} from "../app/share-details.js";
 
 async function render() {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -54,6 +60,30 @@ test("derives one bounded and repeatable score from the snapshot", async () => {
   }).pulseEvents, []);
 });
 
+test("shares the current portrait date with the canonical Pages URL", async () => {
+  const date = "2026-07-17";
+  const details = buildPortraitShareDetails(date);
+  assert.equal(details.url, "https://wzbuilds.github.io/earthloom/");
+  assert.equal(details.url, CANONICAL_SITE_URL);
+  assert.match(details.title, new RegExp(date));
+  assert.match(details.text, new RegExp(date));
+
+  let nativePayload;
+  assert.equal(await performPortraitShare(details, {
+    async share(payload) { nativePayload = payload; },
+  }), "shared");
+  assert.deepEqual(nativePayload, details);
+
+  let copiedPayload;
+  assert.equal(await performPortraitShare(details, {
+    clipboard: { async writeText(payload) { copiedPayload = payload; } },
+  }), "copied");
+  assert.equal(copiedPayload, formatPortraitShareText(details));
+  assert.match(copiedPayload, new RegExp(date));
+  assert.ok(copiedPayload.includes(CANONICAL_SITE_URL));
+  assert.equal(await performPortraitShare(details, {}), "fallback");
+});
+
 test("server-renders the finished Earthloom experience", async () => {
   const latest = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
   const experienceSource = await readFile(new URL("../app/EarthloomExperience.tsx", import.meta.url), "utf8");
@@ -75,6 +105,8 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(html, /位置 → 坐标/);
   assert.match(html, /打开今日完整快照/);
   assert.match(html, /开启今日声景/);
+  assert.match(html, /SHARE TODAY/);
+  assert.match(html, new RegExp(`将分享 ${latest.date} 与官方链接`));
   assert.match(html, /这是艺术映射，不是科学声学读数/);
   assert.doesNotMatch(html, /色温与流向/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/);
