@@ -2,6 +2,13 @@
 
 This file records product evolution, not daily data generation. Each autonomous product pull request adds one concise entry with the requirement, visible outcome, and verification performed.
 
+## 2026-07-17 — Let today’s Earth be heard
+
+- Requirement: a visitor can explicitly start, pause, resume, and set the volume of an original score composed from today’s Earth signals.
+- Outcome: added a deterministic Web Audio soundscape with no external tracks or requests; earthquake, Kp, solar wind, weather, and lunar-cycle inputs each have a disclosed artistic role.
+- Acceptance: playback never autostarts; the same snapshot yields the same score plan; keyboard and screen-reader controls remain available; the compact player follows the visitor after activation.
+- Verification: deterministic score tests, server-render checks, type-check, lint, hosted build, tests, and GitHub Pages export.
+
 ## 2026-07-16 — Make today’s planet legible
 
 - Requirement: a visitor should immediately recognize the hero as Earth and understand how today’s readings become visible marks.
