@@ -281,6 +281,42 @@ a:focus-visible {
   color: var(--paper);
 }
 
+.share-control {
+  display: inline-grid;
+  gap: 0.45rem;
+}
+
+.share-action {
+  width: max-content;
+  padding-right: 0;
+  padding-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.share-action:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.share-status {
+  max-width: 14rem;
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+}
+
+.share-status a {
+  color: var(--paper);
+  border-bottom: 1px solid var(--accent);
+}
+
 .soundscape-slot { min-height: 118px; margin-top: 1.35rem; }
 
 .soundscape-control {

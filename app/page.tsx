@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 import archive from "@/data/archive-index.json";
 import latest from "@/data/latest.json";
 import { EarthloomExperience } from "./EarthloomExperience";
+import { EarthloomShare } from "./EarthloomShare";
 import { EarthloomSoundscape } from "./EarthloomSoundscape";
 import type { EarthloomSnapshot } from "./types";
 
@@ -136,6 +137,7 @@ export default function Home() {
             <a className="text-action" href="data/latest.json">
               VIEW RAW DATA
             </a>
+            <EarthloomShare date={snapshot.date} />
           </div>
           <EarthloomSoundscape snapshot={snapshot} />
         </div>
