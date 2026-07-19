@@ -1,643 +1,625 @@
 {
   "schemaVersion": 1,
-  "date": "2026-07-18",
-  "generatedAt": "2026-07-18T03:20:33.694Z",
+  "date": "2026-07-19",
+  "generatedAt": "2026-07-19T03:41:23.571Z",
   "timeZone": "Asia/Shanghai",
   "status": "live",
-  "seed": 1292873193,
-  "summary": "深处的震动在织面上留下了宽阔回声。",
+  "seed": 2319307957,
+  "summary": "今天的地球，在低声而持续地呼吸。",
   "metrics": {
-    "earthquakeCount": 60,
-    "maxMagnitude": 7.3,
-    "averageDepth": 48.9,
-    "kpIndex": 2,
-    "solarWind": 341,
-    "meanTemperature": 19.8,
-    "meanWind": 9.9,
-    "moonPhase": 0.1255
+    "earthquakeCount": 58,
+    "maxMagnitude": 5.7,
+    "averageDepth": 56.4,
+    "kpIndex": 1,
+    "solarWind": 323,
+    "meanTemperature": 19.4,
+    "meanWind": 11.1,
+    "moonPhase": 0.1594
   },
   "palette": {
-    "void": "hsl(225 38% 5%)",
-    "ink": "hsl(203 44% 9%)",
-    "aurora": "hsl(202.55555555555554 88% 65%)",
-    "tide": "hsl(269 76% 58.666666666666664%)",
-    "ember": "hsl(37.89333333333333 96% 66%)",
-    "mist": "hsl(359 42% 87%)"
+    "void": "hsl(223 38% 5%)",
+    "ink": "hsl(201 44% 9%)",
+    "aurora": "hsl(194.77777777777777 88% 65%)",
+    "tide": "hsl(267 76% 57.333333333333336%)",
+    "ember": "hsl(37.68 96% 66%)",
+    "mist": "hsl(357 42% 87%)"
   },
   "earthquakes": [
     {
-      "id": "us7000t1bu",
-      "latitude": 14.6043,
-      "longitude": -92.9517,
-      "depth": 18.584,
-      "magnitude": 7.3,
-      "place": "58 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T14:48:39.769Z"
-    },
-    {
-      "id": "us7000t1cc",
-      "latitude": 14.2369,
-      "longitude": -93.0929,
+      "id": "us7000t1n5",
+      "latitude": 14.2392,
+      "longitude": -92.8805,
       "depth": 10,
-      "magnitude": 6,
-      "place": "90 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T15:20:06.868Z"
-    },
-    {
-      "id": "us7000t1it",
-      "latitude": 4.5057,
-      "longitude": 124.8574,
-      "depth": 10,
-      "magnitude": 5.3,
-      "place": "119 km SW of Sarangani, Philippines",
-      "time": "2026-07-18T02:23:40.127Z"
-    },
-    {
-      "id": "us7000t1c1",
-      "latitude": 14.189,
-      "longitude": -93.0992,
-      "depth": 10,
-      "magnitude": 5.3,
-      "place": "93 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T15:14:55.773Z"
-    },
-    {
-      "id": "us7000t19u",
-      "latitude": 14.4873,
-      "longitude": 54.1453,
-      "depth": 10,
-      "magnitude": 5.3,
-      "place": "203 km N of Hadibu, Yemen",
-      "time": "2026-07-17T12:01:14.725Z"
-    },
-    {
-      "id": "us7000t1fk",
-      "latitude": 14.3713,
-      "longitude": -92.9332,
-      "depth": 10,
-      "magnitude": 5.2,
-      "place": "67 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T18:26:43.919Z"
-    },
-    {
-      "id": "us7000t1e8",
-      "latitude": 5.7602,
-      "longitude": 125.378,
-      "depth": 79.819,
-      "magnitude": 5.2,
-      "place": "11 km SE of Kiupo, Philippines",
-      "time": "2026-07-17T16:12:57.547Z"
-    },
-    {
-      "id": "us7000t1im",
-      "latitude": 14.3665,
-      "longitude": -93.2679,
-      "depth": 10,
-      "magnitude": 5.1,
-      "place": "99 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-18T01:49:01.780Z"
-    },
-    {
-      "id": "us7000t1f0",
-      "latitude": 14.3448,
-      "longitude": -92.9705,
-      "depth": 10,
-      "magnitude": 5.1,
+      "magnitude": 5.7,
       "place": "72 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T17:15:19.287Z"
+      "time": "2026-07-18T17:26:25.879Z"
     },
     {
-      "id": "us7000t1ey",
-      "latitude": 14.3368,
-      "longitude": -93.0323,
+      "id": "us7000t1q7",
+      "latitude": -12.0429,
+      "longitude": -75.3013,
       "depth": 10,
-      "magnitude": 5.1,
-      "place": "78 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T17:03:38.011Z"
+      "magnitude": 5.5,
+      "place": "2 km WSW of Sicaya, Peru",
+      "time": "2026-07-19T02:24:36.324Z"
     },
     {
-      "id": "us7000t1ep",
-      "latitude": 14.4643,
-      "longitude": -92.5836,
-      "depth": 64.924,
-      "magnitude": 5.1,
-      "place": "33 km SSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T16:01:26.495Z"
-    },
-    {
-      "id": "us7000t1dv",
-      "latitude": 14.4311,
-      "longitude": -93.0044,
+      "id": "us7000t1ng",
+      "latitude": -60.7066,
+      "longitude": -51.0559,
       "depth": 10,
-      "magnitude": 5.1,
-      "place": "70 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T15:57:15.051Z"
+      "magnitude": 5.5,
+      "place": "Scotia Sea",
+      "time": "2026-07-18T19:50:37.215Z"
     },
     {
-      "id": "us7000t1c2",
-      "latitude": 14.3986,
-      "longitude": -93.2998,
+      "id": "us7000t1q6",
+      "latitude": 14.292,
+      "longitude": -92.7591,
+      "depth": 19.593,
+      "magnitude": 5.3,
+      "place": "59 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-19T02:18:54.767Z"
+    },
+    {
+      "id": "us7000t1q3",
+      "latitude": 14.1155,
+      "longitude": -92.9167,
       "depth": 10,
-      "magnitude": 5.1,
-      "place": "101 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T15:19:46.384Z"
+      "magnitude": 5.3,
+      "place": "85 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-19T01:47:24.332Z"
     },
     {
-      "id": "us7000t1b3",
-      "latitude": -10.3499,
-      "longitude": 161.8112,
-      "depth": 66.187,
-      "magnitude": 5.1,
-      "place": "16 km NW of Kirakira, Solomon Islands",
-      "time": "2026-07-17T13:27:41.447Z"
+      "id": "us7000t1py",
+      "latitude": 51.3859,
+      "longitude": 159.6116,
+      "depth": 10,
+      "magnitude": 5.3,
+      "place": "190 km SSE of Vilyuchinsk, Russia",
+      "time": "2026-07-19T00:39:39.917Z"
     },
     {
-      "id": "us7000t1hd",
-      "latitude": 14.2237,
-      "longitude": -92.9584,
+      "id": "us7000t1jy",
+      "latitude": 14.3804,
+      "longitude": -93.1511,
       "depth": 35,
-      "magnitude": 5,
-      "place": "79 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T22:13:06.825Z"
+      "magnitude": 5.3,
+      "place": "87 km WSW of Puerto Madero, Mexico",
+      "time": "2026-07-18T06:51:50.543Z"
     },
     {
-      "id": "us7000t1f6",
-      "latitude": 14.2633,
-      "longitude": -92.713,
-      "depth": 35.128,
-      "magnitude": 5,
-      "place": "59 km SSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T17:23:30.902Z"
+      "id": "us7000t1l4",
+      "latitude": 14.3207,
+      "longitude": -92.9174,
+      "depth": 44.887,
+      "magnitude": 5.2,
+      "place": "69 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T09:59:22.033Z"
     },
     {
-      "id": "us7000t1du",
-      "latitude": 14.3476,
-      "longitude": -92.9089,
-      "depth": 53.729,
-      "magnitude": 5,
-      "place": "66 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T15:30:38.234Z"
-    },
-    {
-      "id": "us7000t1b0",
-      "latitude": -32.9894,
-      "longitude": -177.9086,
+      "id": "us7000t1jp",
+      "latitude": -32.8189,
+      "longitude": -178.1149,
       "depth": 10,
-      "magnitude": 5,
+      "magnitude": 5.2,
       "place": "south of the Kermadec Islands",
-      "time": "2026-07-17T13:16:59.268Z"
+      "time": "2026-07-18T05:46:47.673Z"
     },
     {
-      "id": "us7000t1dz",
-      "latitude": 14.4035,
-      "longitude": -92.7007,
-      "depth": 73.875,
+      "id": "us7000t1mu",
+      "latitude": 17.9439,
+      "longitude": -81.5431,
+      "depth": 10,
+      "magnitude": 5.1,
+      "place": "149 km S of George Town, Cayman Islands",
+      "time": "2026-07-18T16:08:44.116Z"
+    },
+    {
+      "id": "us7000t1q8",
+      "latitude": 32.5523,
+      "longitude": 48.8375,
+      "depth": 10,
       "magnitude": 4.9,
-      "place": "46 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T16:00:54.702Z"
+      "place": "40 km ENE of Shahrak-e Kūlūrī, Iran",
+      "time": "2026-07-19T02:25:20.255Z"
     },
     {
-      "id": "us7000t1ej",
-      "latitude": -4.8148,
-      "longitude": 153.6477,
-      "depth": 118.736,
-      "magnitude": 4.7,
-      "place": "161 km ESE of Kokopo, Papua New Guinea",
-      "time": "2026-07-17T16:22:50.731Z"
+      "id": "us7000t1ld",
+      "latitude": -24.3838,
+      "longitude": -116.1102,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "southern East Pacific Rise",
+      "time": "2026-07-18T11:12:57.724Z"
     },
     {
-      "id": "us7000t1ai",
-      "latitude": 14.6493,
-      "longitude": -92.9865,
+      "id": "us7000t1kf",
+      "latitude": -6.6034,
+      "longitude": 103.7876,
+      "depth": 23.732,
+      "magnitude": 4.9,
+      "place": "208 km SW of Bandar Lampung, Indonesia",
+      "time": "2026-07-18T08:21:42.737Z"
+    },
+    {
+      "id": "us7000t1jb",
+      "latitude": 14.5811,
+      "longitude": -93.0737,
       "depth": 35,
-      "magnitude": 4.7,
-      "place": "60 km WSW of Aquiles Serdán, Mexico",
-      "time": "2026-07-17T13:20:34.149Z"
+      "magnitude": 4.9,
+      "place": "71 km WSW of Puerto Madero, Mexico",
+      "time": "2026-07-18T04:28:52.579Z"
     },
     {
-      "id": "us7000t18g",
-      "latitude": -6.4676,
-      "longitude": 128.5326,
-      "depth": 309.906,
-      "magnitude": 4.7,
-      "place": "283 km NE of Lospalos, Timor Leste",
-      "time": "2026-07-17T07:41:25.884Z"
+      "id": "us7000t1q4",
+      "latitude": 2.7477,
+      "longitude": 128.5538,
+      "depth": 223.042,
+      "magnitude": 4.8,
+      "place": "127 km NNE of Tobelo, Indonesia",
+      "time": "2026-07-19T01:57:56.503Z"
     },
     {
-      "id": "us7000t1ie",
-      "latitude": 14.3751,
-      "longitude": -93.1726,
+      "id": "us7000t1n0",
+      "latitude": -59.4387,
+      "longitude": -26.2427,
+      "depth": 122.006,
+      "magnitude": 4.8,
+      "place": "South Sandwich Islands region",
+      "time": "2026-07-18T16:57:34.133Z"
+    },
+    {
+      "id": "us7000t1l8",
+      "latitude": 37.9146,
+      "longitude": 72.6745,
+      "depth": 136.85,
+      "magnitude": 4.8,
+      "place": "109 km ENE of Khorugh, Tajikistan",
+      "time": "2026-07-18T10:36:19.521Z"
+    },
+    {
+      "id": "us7000t1j4",
+      "latitude": -11.6863,
+      "longitude": -13.8232,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "Ascension Island region",
+      "time": "2026-07-18T04:07:11.863Z"
+    },
+    {
+      "id": "us7000t1ph",
+      "latitude": 11.3596,
+      "longitude": -87.1133,
+      "depth": 25.777,
+      "magnitude": 4.7,
+      "place": "80 km SW of Masachapa, Nicaragua",
+      "time": "2026-07-18T23:31:20.036Z"
+    },
+    {
+      "id": "us7000t1kh",
+      "latitude": -23.5937,
+      "longitude": -179.7416,
+      "depth": 529.091,
+      "magnitude": 4.7,
+      "place": "south of the Fiji Islands",
+      "time": "2026-07-18T08:28:43.339Z"
+    },
+    {
+      "id": "us7000t1jq",
+      "latitude": 38.6227,
+      "longitude": 75.1665,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "116 km ENE of Murghob, Tajikistan",
+      "time": "2026-07-18T05:47:22.550Z"
+    },
+    {
+      "id": "us7000t1p8",
+      "latitude": 14.2711,
+      "longitude": -93.4181,
       "depth": 10,
       "magnitude": 4.6,
-      "place": "89 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-18T00:21:04.699Z"
+      "place": "118 km WSW of Puerto Madero, Mexico",
+      "time": "2026-07-18T22:49:24.101Z"
     },
     {
-      "id": "us7000t1i9",
-      "latitude": 14.1324,
-      "longitude": -92.9573,
+      "id": "us7000t1jt",
+      "latitude": 14.2694,
+      "longitude": -92.9244,
       "depth": 35,
       "magnitude": 4.6,
-      "place": "87 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T23:48:00.827Z"
+      "place": "73 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T06:10:19.000Z"
     },
     {
-      "id": "us7000t1i4",
-      "latitude": 14.2309,
-      "longitude": -92.909,
+      "id": "us7000t1pk",
+      "latitude": 14.3539,
+      "longitude": -92.5399,
       "depth": 35,
-      "magnitude": 4.6,
-      "place": "75 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T23:35:10.281Z"
-    },
-    {
-      "id": "us7000t19p",
-      "latitude": 14.5147,
-      "longitude": 54.0877,
-      "depth": 10,
-      "magnitude": 4.6,
-      "place": "206 km N of Hadibu, Yemen",
-      "time": "2026-07-17T11:48:39.385Z"
-    },
-    {
-      "id": "us7000t19a",
-      "latitude": 19.2636,
-      "longitude": 121.0461,
-      "depth": 37.589,
-      "magnitude": 4.6,
-      "place": "72 km N of Claveria, Philippines",
-      "time": "2026-07-17T09:40:51.245Z"
-    },
-    {
-      "id": "us7000t1iu",
-      "latitude": 14.209,
-      "longitude": -92.8715,
-      "depth": 41.217,
       "magnitude": 4.5,
-      "place": "74 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-18T02:29:36.544Z"
+      "place": "39 km WSW of Brisas Barra de Suchiate, Mexico",
+      "time": "2026-07-18T23:38:01.171Z"
     },
     {
-      "id": "us7000t1hp",
-      "latitude": -21.6796,
-      "longitude": -67.3522,
-      "depth": 203.556,
-      "magnitude": 4.5,
-      "place": "106 km ESE of Ollagüe, Chile",
-      "time": "2026-07-17T22:59:11.529Z"
-    },
-    {
-      "id": "us7000t1hg",
-      "latitude": -24.1908,
-      "longitude": -66.9098,
-      "depth": 188.384,
-      "magnitude": 4.5,
-      "place": "60 km W of San Antonio de los Cobres, Argentina",
-      "time": "2026-07-17T22:35:28.122Z"
-    },
-    {
-      "id": "us7000t1gx",
-      "latitude": 53.3593,
-      "longitude": 78.2015,
+      "id": "us7000t1jw",
+      "latitude": -0.9196,
+      "longitude": -21.4952,
       "depth": 10,
       "magnitude": 4.5,
-      "place": "8 km WNW of Burla, Russia",
-      "time": "2026-07-17T21:09:04.495Z"
+      "place": "central Mid-Atlantic Ridge",
+      "time": "2026-07-18T06:26:08.899Z"
     },
     {
-      "id": "us7000t1gb",
-      "latitude": -48.2608,
-      "longitude": 165.4561,
-      "depth": 15.31,
-      "magnitude": 4.5,
-      "place": "284 km SW of Bluff, New Zealand",
-      "time": "2026-07-17T19:30:15.872Z"
+      "id": "us7000t1nr",
+      "latitude": 14.422,
+      "longitude": -92.7343,
+      "depth": 35,
+      "magnitude": 4.4,
+      "place": "47 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T21:35:29.338Z"
     },
     {
-      "id": "us7000t1g1",
-      "latitude": 14.1918,
-      "longitude": -93.008,
+      "id": "us7000t1m0",
+      "latitude": 16.8793,
+      "longitude": -94.9356,
+      "depth": 116.262,
+      "magnitude": 4.4,
+      "place": "10 km E of El Bajío, Mexico",
+      "time": "2026-07-18T13:14:35.776Z"
+    },
+    {
+      "id": "us7000t1kx",
+      "latitude": 14.761,
+      "longitude": -92.9169,
+      "depth": 39.854,
+      "magnitude": 4.4,
+      "place": "47 km WSW of Aquiles Serdán, Mexico",
+      "time": "2026-07-18T09:34:21.347Z"
+    },
+    {
+      "id": "us7000t1kk",
+      "latitude": 3.3274,
+      "longitude": -79.3719,
       "depth": 10,
       "magnitude": 4.4,
-      "place": "86 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T19:09:42.028Z"
+      "place": "136 km NW of Mosquera, Colombia",
+      "time": "2026-07-18T08:40:27.357Z"
     },
     {
-      "id": "us7000t1ek",
-      "latitude": 14.3695,
-      "longitude": -93.1365,
-      "depth": 10,
+      "id": "us7000t1k4",
+      "latitude": 14.2437,
+      "longitude": -92.9726,
+      "depth": 35,
       "magnitude": 4.4,
-      "place": "86 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T16:25:20.183Z"
+      "place": "79 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T07:20:47.704Z"
     },
     {
-      "id": "us7000t1a9",
-      "latitude": -10.277,
-      "longitude": 119.3318,
-      "depth": 37.197,
-      "magnitude": 4.4,
-      "place": "94 km S of Tambolaka, Indonesia",
-      "time": "2026-07-17T13:07:41.554Z"
-    },
-    {
-      "id": "us7000t18c",
-      "latitude": -21.0571,
-      "longitude": -178.5414,
-      "depth": 540.915,
-      "magnitude": 4.4,
-      "place": "Fiji region",
-      "time": "2026-07-17T06:44:10.451Z"
-    },
-    {
-      "id": "us7000t1hk",
-      "latitude": 14.2457,
-      "longitude": -93.0919,
+      "id": "us7000t1mz",
+      "latitude": 14.2321,
+      "longitude": -92.9189,
       "depth": 10,
       "magnitude": 4.3,
-      "place": "89 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T22:51:43.803Z"
+      "place": "76 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T16:55:57.788Z"
     },
     {
-      "id": "us7000t1f5",
-      "latitude": 14.2737,
-      "longitude": -93.2126,
+      "id": "us7000t1m2",
+      "latitude": 14.0152,
+      "longitude": -93.4317,
       "depth": 10,
       "magnitude": 4.3,
-      "place": "98 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T16:57:38.198Z"
+      "place": "134 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T13:28:37.704Z"
     },
     {
-      "id": "us7000t1em",
-      "latitude": 14.3279,
-      "longitude": -93.0117,
+      "id": "us7000t1l0",
+      "latitude": 14.1224,
+      "longitude": -92.564,
+      "depth": 35,
+      "magnitude": 4.3,
+      "place": "58 km SW of Brisas Barra de Suchiate, Mexico",
+      "time": "2026-07-18T09:51:33.269Z"
+    },
+    {
+      "id": "us7000t1kn",
+      "latitude": 35.5522,
+      "longitude": 25.029,
+      "depth": 18.491,
+      "magnitude": 4.3,
+      "place": "25 km N of Gázi, Greece",
+      "time": "2026-07-18T09:04:09.589Z"
+    },
+    {
+      "id": "aka2026ochauu",
+      "latitude": 56.124,
+      "longitude": -153.339,
+      "depth": 37.1,
+      "magnitude": 4.3,
+      "place": "104 km SSE of Akhiok, Alaska",
+      "time": "2026-07-18T07:20:42.361Z"
+    },
+    {
+      "id": "us7000t1jf",
+      "latitude": 14.2112,
+      "longitude": -92.9265,
       "depth": 10,
       "magnitude": 4.3,
-      "place": "77 km SW of Puerto Madero, Mexico",
-      "time": "2026-07-17T16:42:27.773Z"
+      "place": "78 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T04:40:32.464Z"
     },
     {
-      "id": "us7000t1ii",
-      "latitude": 14.323,
-      "longitude": -93.0381,
+      "id": "us7000t1km",
+      "latitude": 13.8966,
+      "longitude": -93.3043,
+      "depth": 40.932,
+      "magnitude": 4.2,
+      "place": "131 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T08:54:00.203Z"
+    },
+    {
+      "id": "us7000t1ke",
+      "latitude": 14.3626,
+      "longitude": -92.9198,
       "depth": 35,
       "magnitude": 4.2,
-      "place": "79 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-18T01:11:07.477Z"
+      "place": "66 km SW of Puerto Madero, Mexico",
+      "time": "2026-07-18T07:46:19.289Z"
     },
     {
-      "id": "us7000t1gz",
-      "latitude": 14.2976,
-      "longitude": -93.1146,
-      "depth": 10,
+      "id": "us7000t1jn",
+      "latitude": 14.4176,
+      "longitude": -93.1409,
+      "depth": 35,
       "magnitude": 4.2,
-      "place": "88 km WSW of Puerto Madero, Mexico",
-      "time": "2026-07-17T21:11:43.876Z"
+      "place": "84 km WSW of Puerto Madero, Mexico",
+      "time": "2026-07-18T05:26:28.623Z"
     },
     {
-      "id": "us7000t1g8",
-      "latitude": 36.5939,
-      "longitude": 71.066,
-      "depth": 211.309,
-      "magnitude": 4.2,
-      "place": "36 km SE of Jurm, Afghanistan",
-      "time": "2026-07-17T19:20:16.413Z"
+      "id": "us7000t1q1",
+      "latitude": 38.6177,
+      "longitude": 133.4192,
+      "depth": 459.817,
+      "magnitude": 4.1,
+      "place": "281 km N of Ama, Japan",
+      "time": "2026-07-19T01:40:05.933Z"
     },
     {
-      "id": "us7000t1b6",
-      "latitude": -7.4921,
-      "longitude": 128.1524,
-      "depth": 169.721,
+      "id": "us7000t1nw",
+      "latitude": 43.4944,
+      "longitude": 132.5101,
+      "depth": 502.747,
       "magnitude": 4,
-      "place": "170 km NE of Lospalos, Timor Leste",
-      "time": "2026-07-17T13:38:12.783Z"
+      "place": "4 km NE of Mnogoudobnoye, Russia",
+      "time": "2026-07-18T21:54:57.555Z"
     },
     {
-      "id": "aka2026oaijlt",
-      "latitude": 52.049,
-      "longitude": 176.4,
-      "depth": 5.4,
-      "magnitude": 3.6,
-      "place": "235 km ESE of Attu Station, Alaska",
-      "time": "2026-07-17T06:01:31.630Z"
+      "id": "aka2026ocmjtm",
+      "latitude": 56.159,
+      "longitude": -153.294,
+      "depth": 23.9,
+      "magnitude": 4,
+      "place": "102 km SSE of Akhiok, Alaska",
+      "time": "2026-07-18T10:00:54.382Z"
     },
     {
-      "id": "aka2026oaidkn",
-      "latitude": 51.977,
-      "longitude": 176.19,
-      "depth": 20,
-      "magnitude": 3.3,
-      "place": "226 km ESE of Attu Station, Alaska",
-      "time": "2026-07-17T05:54:33.781Z"
+      "id": "us7000t1jl",
+      "latitude": 51.4953,
+      "longitude": 16.06,
+      "depth": 10,
+      "magnitude": 4,
+      "place": "1 km SW of Polkowice, Poland",
+      "time": "2026-07-18T05:17:02.086Z"
     },
     {
-      "id": "us7000t1h3",
-      "latitude": 66.5927,
-      "longitude": -140.8563,
-      "depth": 14.36,
+      "id": "nn00921891",
+      "latitude": 36.6764,
+      "longitude": -116.3333,
+      "depth": 9.2472,
+      "magnitude": 3.64,
+      "place": "45 km SE of Beatty, Nevada",
+      "time": "2026-07-18T07:34:03.252Z"
+    },
+    {
+      "id": "aka2026occhwe",
+      "latitude": 55.01,
+      "longitude": -156.367,
+      "depth": 21.6,
+      "magnitude": 3.5,
+      "place": "192 km SE of Chignik, Alaska",
+      "time": "2026-07-18T04:59:00.667Z"
+    },
+    {
+      "id": "pr71524833",
+      "latitude": 18.887,
+      "longitude": -65.8885,
+      "depth": 40.1,
+      "magnitude": 3.26,
+      "place": "50 km N of Loíza, Puerto Rico",
+      "time": "2026-07-18T09:49:21.690Z"
+    },
+    {
+      "id": "aka2026ocbkcs",
+      "latitude": 63.098,
+      "longitude": -150.678,
+      "depth": 122.4,
+      "magnitude": 3.2,
+      "place": "67 km N of Petersville, Alaska",
+      "time": "2026-07-18T04:31:42.126Z"
+    },
+    {
+      "id": "aka2026ocjqde",
+      "latitude": 60.272,
+      "longitude": -141.24,
+      "depth": 3,
       "magnitude": 3.1,
-      "place": "127 km E of Chalkyitsik, Alaska",
-      "time": "2026-07-17T21:29:25.442Z"
+      "place": "116 km NW of Yakutat, Alaska",
+      "time": "2026-07-18T08:38:32.180Z"
     },
     {
-      "id": "aka2026oahoel",
-      "latitude": 63.373,
-      "longitude": -144.825,
-      "depth": 5,
-      "magnitude": 3,
-      "place": "32 km SSW of Dry Creek, Alaska",
-      "time": "2026-07-17T05:37:01.781Z"
+      "id": "pr71524908",
+      "latitude": 18.8685,
+      "longitude": -64.6695,
+      "depth": 23.99,
+      "magnitude": 3.04,
+      "place": "60 km NNE of Cruz Bay, U.S. Virgin Islands",
+      "time": "2026-07-18T21:53:24.760Z"
     },
     {
-      "id": "nc75397551",
-      "latitude": 36.9318351745605,
-      "longitude": -121.68766784668,
-      "depth": 11.6099996566772,
-      "magnitude": 2.96,
-      "place": "5 km ESE of Interlaken, CA",
-      "time": "2026-07-17T07:52:08.130Z"
+      "id": "pr71524913",
+      "latitude": 19.0203333333333,
+      "longitude": -65.0758333333333,
+      "depth": 20.45,
+      "magnitude": 2.93,
+      "place": "76 km NNW of Charlotte Amalie, U.S. Virgin Islands",
+      "time": "2026-07-19T00:27:47.640Z"
     },
     {
-      "id": "pr71524788",
-      "latitude": 19.0481666666667,
-      "longitude": -64.7043333333333,
-      "depth": 20.12,
-      "magnitude": 2.86,
-      "place": "79 km N of Cruz Bay, U.S. Virgin Islands",
-      "time": "2026-07-17T21:37:57.410Z"
+      "id": "pr71524858",
+      "latitude": 18.4775,
+      "longitude": -67.462,
+      "depth": 18.53,
+      "magnitude": 2.91,
+      "place": "27 km NW of Rincón, Puerto Rico",
+      "time": "2026-07-18T15:47:56.500Z"
     },
     {
-      "id": "aka2026oaievo",
-      "latitude": 53.025,
-      "longitude": -166.902,
-      "depth": 18.8,
+      "id": "pr71524848",
+      "latitude": 18.995,
+      "longitude": -65.5345,
+      "depth": 6.97,
+      "magnitude": 2.83,
+      "place": "70 km NNE of Vieques, Puerto Rico",
+      "time": "2026-07-18T13:27:51.770Z"
+    },
+    {
+      "id": "ci40657786",
+      "latitude": 31.8913333333333,
+      "longitude": -116.550833333333,
+      "depth": 11.29,
+      "magnitude": 2.82,
+      "place": "7 km ENE of Ensenada, B.C., MX",
+      "time": "2026-07-19T00:37:24.090Z"
+    },
+    {
+      "id": "us7000t1jr",
+      "latitude": 54.8267,
+      "longitude": -156.3333,
+      "depth": 10,
       "magnitude": 2.8,
-      "place": "97 km SSW of Unalaska, Alaska",
-      "time": "2026-07-17T05:56:14.726Z"
+      "place": "209 km SE of Chignik, Alaska",
+      "time": "2026-07-18T05:59:12.330Z"
     },
     {
-      "id": "hv75003082",
-      "latitude": 19.1535,
-      "longitude": -155.489,
-      "depth": 30.07,
-      "magnitude": 2.74,
-      "place": "5 km SSW of Pāhala, Hawaii",
-      "time": "2026-07-17T03:37:53.910Z"
-    },
-    {
-      "id": "aka2026oagswx",
-      "latitude": 53.7,
-      "longitude": -163.328,
-      "depth": 5.5,
-      "magnitude": 2.7,
-      "place": "128 km S of False Pass, Alaska",
-      "time": "2026-07-17T05:12:29.323Z"
-    },
-    {
-      "id": "aka2026oaggou",
-      "latitude": 53.728,
-      "longitude": -163.324,
-      "depth": 19.1,
-      "magnitude": 2.7,
-      "place": "125 km S of False Pass, Alaska",
-      "time": "2026-07-17T04:58:25.791Z"
-    },
-    {
-      "id": "us7000t1if",
-      "latitude": 42.9293,
-      "longitude": -109.6336,
-      "depth": 10.42,
+      "id": "aka2026occkjx",
+      "latitude": 57.421,
+      "longitude": -150.476,
+      "depth": 48.2,
       "magnitude": 2.6,
-      "place": "19 km ENE of Pinedale, Wyoming",
-      "time": "2026-07-18T00:39:23.537Z"
+      "place": "110 km ESE of Chiniak, Alaska",
+      "time": "2026-07-18T05:02:04.641Z"
     },
     {
-      "id": "aka2026obemtt",
-      "latitude": 61.035,
-      "longitude": -151.177,
-      "depth": 70.2,
+      "id": "aka2026ocbilm",
+      "latitude": 54.992,
+      "longitude": -156.387,
+      "depth": 14.5,
       "magnitude": 2.6,
-      "place": "4 km SSW of Tyonek, Alaska",
-      "time": "2026-07-17T17:04:59.716Z"
+      "place": "192 km SE of Chignik, Alaska",
+      "time": "2026-07-18T04:29:41.309Z"
     },
     {
-      "id": "aka2026oagrvb",
-      "latitude": 52.594,
-      "longitude": -166.555,
-      "depth": 3.2,
-      "magnitude": 2.6,
-      "place": "142 km S of Unalaska, Alaska",
-      "time": "2026-07-17T05:11:14.159Z"
-    },
-    {
-      "id": "nc75397611",
-      "latitude": 40.8508338928223,
-      "longitude": -121.548164367676,
-      "depth": 13.8999996185303,
-      "magnitude": 2.58,
-      "place": "10 km ESE of Burney, CA",
-      "time": "2026-07-17T10:08:48.230Z"
-    },
-    {
-      "id": "nc75397501",
-      "latitude": 40.2263336181641,
-      "longitude": -124.481330871582,
-      "depth": 13.3000001907349,
-      "magnitude": 2.58,
-      "place": "20 km WSW of Petrolia, CA",
-      "time": "2026-07-17T06:38:32.630Z"
-    },
-    {
-      "id": "nc75397636",
-      "latitude": 40.2586669921875,
-      "longitude": -124.369499206543,
-      "depth": 16.9400005340576,
-      "magnitude": 2.56,
-      "place": "10 km SW of Petrolia, CA",
-      "time": "2026-07-17T12:39:32.500Z"
-    },
-    {
-      "id": "aka2026oaeptv",
-      "latitude": 52.243,
-      "longitude": -169.79,
-      "depth": 16.3,
+      "id": "nc75398646",
+      "latitude": 37.1113319396973,
+      "longitude": -121.474502563477,
+      "depth": 22.6399993896484,
       "magnitude": 2.5,
-      "place": "99 km SW of Nikolski, Alaska",
-      "time": "2026-07-17T04:08:54.328Z"
+      "place": "12 km ENE of San Martin, CA",
+      "time": "2026-07-18T23:50:26.270Z"
+    },
+    {
+      "id": "hv75003807",
+      "latitude": 19.1308326721191,
+      "longitude": -155.390670776367,
+      "depth": 40.9599990844727,
+      "magnitude": 2.47,
+      "place": "12 km SE of Pāhala, Hawaii",
+      "time": "2026-07-18T14:10:08.080Z"
     }
   ],
   "weatherSamples": [
     {
       "latitude": 64.15,
       "longitude": -21.94,
-      "temperature": 10.5,
-      "wind": 6.1
+      "temperature": 10.8,
+      "wind": 10.4
     },
     {
       "latitude": 35.68,
       "longitude": 139.69,
-      "temperature": 27.7,
-      "wind": 5.6
+      "temperature": 30.5,
+      "wind": 8
     },
     {
       "latitude": 1.35,
       "longitude": 103.82,
-      "temperature": 30.7,
-      "wind": 9
+      "temperature": 31.4,
+      "wind": 8.8
     },
     {
       "latitude": -33.87,
       "longitude": 151.21,
-      "temperature": 17.1,
-      "wind": 16.2
+      "temperature": 17.4,
+      "wind": 12.6
     },
     {
       "latitude": -1.29,
       "longitude": 36.82,
-      "temperature": 12.6,
-      "wind": 0.5
+      "temperature": 12.9,
+      "wind": 8.3
     },
     {
       "latitude": 51.51,
       "longitude": -0.13,
-      "temperature": 17.1,
-      "wind": 11.9
+      "temperature": 14.2,
+      "wind": 10.8
     },
     {
       "latitude": 40.71,
       "longitude": -74.01,
-      "temperature": 22.8,
-      "wind": 6.2
+      "temperature": 24,
+      "wind": 21.2
     },
     {
       "latitude": -23.55,
       "longitude": -46.63,
-      "temperature": 14.7,
-      "wind": 10.6
+      "temperature": 15.9,
+      "wind": 10.4
     },
     {
       "latitude": 31.23,
       "longitude": 121.47,
-      "temperature": 37,
-      "wind": 10.6
+      "temperature": 32.7,
+      "wind": 3.6
     },
     {
       "latitude": 19.43,
       "longitude": -99.13,
-      "temperature": 15.5,
-      "wind": 6.6
+      "temperature": 17.3,
+      "wind": 2.8
     },
     {
       "latitude": 37.77,
       "longitude": -122.42,
-      "temperature": 13.8,
-      "wind": 24.6
+      "temperature": 13.5,
+      "wind": 21.6
     },
     {
       "latitude": -34.6,
       "longitude": -58.38,
-      "temperature": 18,
-      "wind": 10.4
+      "temperature": 12.6,
+      "wind": 14.7
     }
   ],
   "sources": [
