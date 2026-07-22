@@ -2,6 +2,13 @@
 
 This file records product evolution, not daily data generation. Each autonomous product pull request adds one concise entry with the requirement, visible outcome, and verification performed.
 
+## 2026-07-22 — Make daily change legible
+
+- Requirement: a visitor can understand why today’s portrait differs from the immediately previous archived portrait.
+- Outcome: added a compact comparison of the three strongest normalized metric changes, their signed values, and the visual marks they affect, with direct links to both source snapshots.
+- Acceptance: both dates and raw snapshots remain explicit; explanations use only recorded metrics and existing drawing rules; a missing previous day receives an honest empty state.
+- Verification: comparison-policy tests, server-render checks, type-check, lint, hosted build, tests, and GitHub Pages export.
+
 ## 2026-07-17 — Let today's portrait travel with its identity
 
 - Requirement: a visitor can share today's portrait without losing its date or official Earthloom address.

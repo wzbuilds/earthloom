@@ -14,7 +14,8 @@ Earthloom should feel alive in three ways:
 
 - [x] Make the hero unmistakably planetary and explain today’s live input → drawing rule → visible mark. Completed 2026-07-16.
 - [x] Let visitors opt into an original soundscape deterministically composed from today’s traceable signals. Completed 2026-07-17.
-- [ ] Add a compact “why today looks different” explanation derived only from the current and previous snapshots.
+- [x] Add a compact “why today looks different” explanation derived only from the current and previous snapshots. Completed 2026-07-22.
+  - Acceptance: name both snapshot dates; show the three largest normalized metric changes with signed values and their existing visual effects; link to both raw snapshots; if no previous snapshot exists, say comparison is not yet available. Auto-merge eligible.
 - [ ] Let visitors compare two archived portraits without losing the gallery context.
 - [ ] Add keyboard navigation and visible focus states to every interactive gallery control.
 - [x] Create a share action that includes the portrait date and canonical GitHub Pages URL. Completed 2026-07-17.

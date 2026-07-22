@@ -5,9 +5,12 @@ import latest from "@/data/latest.json";
 import { EarthloomExperience } from "./EarthloomExperience";
 import { EarthloomShare } from "./EarthloomShare";
 import { EarthloomSoundscape } from "./EarthloomSoundscape";
+import { deriveSnapshotComparison, findPreviousSnapshot } from "./snapshot-comparison";
 import type { EarthloomSnapshot } from "./types";
 
 const snapshot = latest as EarthloomSnapshot;
+const previousSnapshot = findPreviousSnapshot(snapshot, archive) as (typeof archive)[number] | null;
+const comparison = deriveSnapshotComparison(snapshot, previousSnapshot);
 
 export const metadata: Metadata = {
   title: `今日地球 · ${snapshot.date}`,
@@ -182,6 +185,39 @@ export default function Home() {
           <p>最强震级 M{snapshot.metrics.maxMagnitude} · 平均深度 {snapshot.metrics.averageDepth} km · 平均风速 {snapshot.metrics.meanWind} km/h</p>
           <p>CAPTURED {new Date(snapshot.generatedAt).toISOString().slice(11, 16)} UTC · SEED {snapshot.seed.toString(16).toUpperCase()}</p>
         </div>
+        <section className="difference-panel" aria-labelledby="difference-title">
+          <header className="difference-header">
+            <div>
+              <p className="eyebrow">WHY TODAY LOOKS DIFFERENT / 今日为何不同</p>
+              <h3 id="difference-title">与上一幅相比，<br />变化落在这些地方。</h3>
+            </div>
+            {comparison ? (
+              <p>
+                只比较 <strong>{comparison.currentDate}</strong> 与紧邻的 <strong>{comparison.previousDate}</strong>，
+                按指标在现有绘制规则中的变化幅度排序，不推断原因或趋势。
+              </p>
+            ) : (
+              <p>还没有更早的快照可供比较；下一幅作品归档后，这里会出现可验证的差异。</p>
+            )}
+          </header>
+          {comparison && comparison.changes.length > 0 ? (
+            <ol className="difference-list">
+              {comparison.changes.map((change) => (
+                <li className="difference-card" key={change.key}>
+                  <span>{change.label}</span>
+                  <strong>{change.change}</strong>
+                  <p>{change.effect}</p>
+                </li>
+              ))}
+            </ol>
+          ) : comparison ? (
+            <p className="difference-empty">两份快照记录的绘制指标相同，今日变化仅来自新的日期与确定性种子。</p>
+          ) : null}
+          <div className="difference-links">
+            <a href={`data/archive/${snapshot.date}.json`}>今日原始快照 ↗</a>
+            {comparison ? <a href={`data/archive/${comparison.previousDate}.json`}>上一幅原始快照 ↗</a> : null}
+          </div>
+        </section>
       </section>
 
       <section className="archive-section" id="archive" aria-labelledby="archive-title">
