@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
+import { deriveSnapshotComparison, findPreviousSnapshot } from "../app/snapshot-comparison.js";
 import { deriveSoundscapePlan } from "../app/soundscape-plan.js";
 import {
   buildPortraitShareDetails,
@@ -84,8 +85,48 @@ test("shares the current portrait date with the canonical Pages URL", async () =
   assert.equal(await performPortraitShare(details, {}), "fallback");
 });
 
+test("explains the three strongest visual changes from adjacent snapshots", () => {
+  const previous = {
+    date: "2026-07-20",
+    metrics: {
+      earthquakeCount: 49,
+      maxMagnitude: 5.5,
+      averageDepth: 53,
+      kpIndex: 1,
+      solarWind: 273,
+      meanTemperature: 19.1,
+      meanWind: 10.1,
+      moonPhase: 0.1933,
+    },
+  };
+  const current = {
+    date: "2026-07-21",
+    metrics: {
+      earthquakeCount: 53,
+      maxMagnitude: 5.6,
+      averageDepth: 39.2,
+      kpIndex: 2,
+      solarWind: 279,
+      meanTemperature: 19.9,
+      meanWind: 8,
+      moonPhase: 0.2271,
+    },
+  };
+  const comparison = deriveSnapshotComparison(current, previous);
+
+  assert.equal(comparison.currentDate, current.date);
+  assert.equal(comparison.previousDate, previous.date);
+  assert.deepEqual(comparison.changes.map((change) => change.key), ["meanWind", "kpIndex", "earthquakeCount"]);
+  assert.deepEqual(comparison.changes.map((change) => change.change), ["−2.1 km/h", "+1 Kp", "+4 次"]);
+  assert.match(comparison.changes[0].effect, /织线摆幅与漂移/);
+  assert.equal(deriveSnapshotComparison(current, null), null);
+  assert.equal(findPreviousSnapshot(current, [current, { ...previous, date: "2026-07-18" }, previous]), previous);
+});
+
 test("server-renders the finished Earthloom experience", async () => {
   const latest = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
+  const archive = JSON.parse(await readFile(new URL("../data/archive-index.json", import.meta.url), "utf8"));
+  const previous = findPreviousSnapshot(latest, archive);
   const experienceSource = await readFile(new URL("../app/EarthloomExperience.tsx", import.meta.url), "utf8");
   const soundscapeSource = await readFile(new URL("../app/EarthloomSoundscape.tsx", import.meta.url), "utf8");
   const response = await render();
@@ -107,6 +148,10 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(html, /开启今日声景/);
   assert.match(html, /SHARE TODAY/);
   assert.match(html, new RegExp(`将分享 ${latest.date} 与官方链接`));
+  assert.match(html, /WHY TODAY LOOKS DIFFERENT/);
+  assert.match(html, new RegExp(`只比较 <strong>${latest.date}<\/strong> 与紧邻的 <strong>${previous.date}<\/strong>`));
+  assert.match(html, new RegExp(`data/archive/${latest.date}\\.json`));
+  assert.match(html, new RegExp(`data/archive/${previous.date}\\.json`));
   assert.match(html, /这是艺术映射，不是科学声学读数/);
   assert.doesNotMatch(html, /色温与流向/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/);
