@@ -2,6 +2,13 @@
 
 This file records product evolution, not daily data generation. Each autonomous product pull request adds one concise entry with the requirement, visible outcome, and verification performed.
 
+## 2026-07-29 — Make the living archive keyboard-readable
+
+- Requirement: a keyboard visitor can move through every archived portrait and always see which portrait has focus.
+- Outcome: kept every dated portrait in the Tab order, added adjacent and first/last keyboard movement, and gave archive focus a high-contrast treatment plus concise on-page instructions.
+- Acceptance: arrow keys move one portrait at a time; Home and End reach the archive boundaries; unsupported keys retain their native behavior; focus visibility does not depend on animation.
+- Verification: deterministic navigation-policy tests, server-render checks, type-check, lint, hosted build, tests, and GitHub Pages export.
+
 ## 2026-07-22 — Make daily change legible
 
 - Requirement: a visitor can understand why today’s portrait differs from the immediately previous archived portrait.

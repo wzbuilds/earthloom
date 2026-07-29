@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
+import { getArchiveNavigationTarget } from "../app/archive-navigation.js";
 import { deriveSnapshotComparison, findPreviousSnapshot } from "../app/snapshot-comparison.js";
 import { deriveSoundscapePlan } from "../app/soundscape-plan.js";
 import {
@@ -85,6 +86,19 @@ test("shares the current portrait date with the canonical Pages URL", async () =
   assert.equal(await performPortraitShare(details, {}), "fallback");
 });
 
+test("moves keyboard focus through every archived portrait", () => {
+  assert.equal(getArchiveNavigationTarget("ArrowRight", 1, 5), 2);
+  assert.equal(getArchiveNavigationTarget("ArrowDown", 1, 5), 2);
+  assert.equal(getArchiveNavigationTarget("ArrowLeft", 1, 5), 0);
+  assert.equal(getArchiveNavigationTarget("ArrowUp", 1, 5), 0);
+  assert.equal(getArchiveNavigationTarget("ArrowLeft", 0, 5), 0);
+  assert.equal(getArchiveNavigationTarget("ArrowRight", 4, 5), 4);
+  assert.equal(getArchiveNavigationTarget("Home", 3, 5), 0);
+  assert.equal(getArchiveNavigationTarget("End", 1, 5), 4);
+  assert.equal(getArchiveNavigationTarget("Enter", 1, 5), null);
+  assert.equal(getArchiveNavigationTarget("ArrowRight", -1, 5), null);
+});
+
 test("explains the three strongest visual changes from adjacent snapshots", () => {
   const previous = {
     date: "2026-07-20",
@@ -128,6 +142,7 @@ test("server-renders the finished Earthloom experience", async () => {
   const archive = JSON.parse(await readFile(new URL("../data/archive-index.json", import.meta.url), "utf8"));
   const previous = findPreviousSnapshot(latest, archive);
   const experienceSource = await readFile(new URL("../app/EarthloomExperience.tsx", import.meta.url), "utf8");
+  const archiveGallerySource = await readFile(new URL("../app/ArchiveGallery.tsx", import.meta.url), "utf8");
   const soundscapeSource = await readFile(new URL("../app/EarthloomSoundscape.tsx", import.meta.url), "utf8");
   const response = await render();
   assert.equal(response.status, 200);
@@ -149,6 +164,8 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(html, /SHARE TODAY/);
   assert.match(html, new RegExp(`将分享 ${latest.date} 与官方链接`));
   assert.match(html, /WHY TODAY LOOKS DIFFERENT/);
+  assert.match(html, /键盘：Tab 进入画廊/);
+  assert.match(html, /aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown Home End"/);
   assert.match(html, new RegExp(`只比较 <strong>${latest.date}<\/strong> 与紧邻的 <strong>${previous.date}<\/strong>`));
   assert.match(html, new RegExp(`data/archive/${latest.date}\\.json`));
   assert.match(html, new RegExp(`data/archive/${previous.date}\\.json`));
@@ -163,6 +180,8 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(soundscapeSource, /context\.suspend\(\)/);
   assert.match(soundscapeSource, /aria-label="今日声景音量"/);
   assert.doesNotMatch(soundscapeSource, /Math\.random/);
+  assert.match(archiveGallerySource, /data-archive-card/);
+  assert.match(archiveGallerySource, /\.focus\(\)/);
 });
 
 test("includes automation and deployment contracts", async () => {

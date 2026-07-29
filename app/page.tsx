@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import archive from "@/data/archive-index.json";
 import latest from "@/data/latest.json";
+import { ArchiveGallery } from "./ArchiveGallery";
 import { EarthloomExperience } from "./EarthloomExperience";
 import { EarthloomShare } from "./EarthloomShare";
 import { EarthloomSoundscape } from "./EarthloomSoundscape";
@@ -224,44 +225,10 @@ export default function Home() {
         <div className="archive-intro">
           <p className="eyebrow">THE LIVING ARCHIVE / 生长中的档案</p>
           <h2 id="archive-title">每天一幅，<br />把时间织成收藏。</h2>
-          <p>每张作品都保存生成参数与原始快照。相同数据、相同日期，永远得到同一幅纹理。</p>
+          <p className="archive-description">每张作品都保存生成参数与原始快照。相同数据、相同日期，永远得到同一幅纹理。</p>
+          <p className="archive-keyboard-help" id="archive-keyboard-help">键盘：Tab 进入画廊，方向键逐日浏览，Home / End 跳到首尾。</p>
         </div>
-        <div className="archive-list">
-          {archive.map((item, index) => (
-            <a
-              className="archive-card"
-              href={`data/archive/${item.date}.json`}
-              key={item.date}
-              style={{
-                "--archive-ink": item.palette.ink,
-                "--archive-aurora": item.palette.aurora,
-                "--archive-ember": item.palette.ember,
-              } as CSSProperties}
-            >
-              <div className="archive-art" aria-hidden="true">
-                <span className="archive-orbit orbit-one" />
-                <span className="archive-orbit orbit-two" />
-                <span className="archive-moon" />
-              </div>
-              <div className="archive-meta">
-                <span>NO. {String(archive.length - index).padStart(3, "0")}</span>
-                <strong>{item.date}</strong>
-                <small>M{item.metrics.maxMagnitude} · KP {item.metrics.kpIndex}</small>
-              </div>
-            </a>
-          ))}
-          <article className="archive-card next-card">
-            <div>
-              <span className="next-pulse" aria-hidden="true" />
-              <p>NEXT WEAVE</p>
-            </div>
-            <div className="archive-meta">
-              <span>北京时间</span>
-              <strong>明日 08:08</strong>
-              <small>等待下一批地球信号</small>
-            </div>
-          </article>
-        </div>
+        <ArchiveGallery items={archive} />
       </section>
 
       <section className="method-section" id="method" aria-labelledby="method-title">
