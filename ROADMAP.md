@@ -17,7 +17,8 @@ Earthloom should feel alive in three ways:
 - [x] Add a compact “why today looks different” explanation derived only from the current and previous snapshots. Completed 2026-07-22.
   - Acceptance: name both snapshot dates; show the three largest normalized metric changes with signed values and their existing visual effects; link to both raw snapshots; if no previous snapshot exists, say comparison is not yet available. Auto-merge eligible.
 - [ ] Let visitors compare two archived portraits without losing the gallery context.
-- [ ] Add keyboard navigation and visible focus states to every interactive gallery control.
+- [x] Add keyboard navigation and visible focus states to every interactive gallery control. Completed 2026-07-29.
+  - Acceptance: Tab reaches every archived portrait; arrow keys move to the adjacent portrait; Home and End move to the first and last portrait; keyboard focus remains clearly visible without relying on motion. Auto-merge eligible.
 - [x] Create a share action that includes the portrait date and canonical GitHub Pages URL. Completed 2026-07-17.
   - Acceptance: the action shares the current snapshot date and `https://wzbuilds.github.io/earthloom/`; browsers without Web Share copy the same payload; cancellation and failure receive accessible, non-blocking feedback. Auto-merge eligible.
 - [ ] Add a source-inspector panel connecting each visual layer to its exact metric and provider.
