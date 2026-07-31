@@ -2,6 +2,13 @@
 
 This file records product evolution, not daily data generation. Each autonomous product pull request adds one concise entry with the requirement, visible outcome, and verification performed.
 
+## 2026-07-31 — Compare two days without leaving the archive
+
+- Requirement: a visitor can compare any two archived portraits while keeping the surrounding collection in view.
+- Outcome: gave every archive card a separate comparison toggle and added an in-gallery panel that keeps the selected dates, strongest recorded drawing changes, and both raw snapshots together.
+- Acceptance: raw snapshot links remain available; selection is visible and announced; a third selection predictably replaces the oldest; comparison claims use only archived metrics and existing drawing rules.
+- Verification: bounded selection-policy tests, server-render checks, type-check, lint, hosted build, tests, and GitHub Pages export.
+
 ## 2026-07-29 — Make the living archive keyboard-readable
 
 - Requirement: a keyboard visitor can move through every archived portrait and always see which portrait has focus.

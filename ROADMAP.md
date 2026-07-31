@@ -16,7 +16,8 @@ Earthloom should feel alive in three ways:
 - [x] Let visitors opt into an original soundscape deterministically composed from today’s traceable signals. Completed 2026-07-17.
 - [x] Add a compact “why today looks different” explanation derived only from the current and previous snapshots. Completed 2026-07-22.
   - Acceptance: name both snapshot dates; show the three largest normalized metric changes with signed values and their existing visual effects; link to both raw snapshots; if no previous snapshot exists, say comparison is not yet available. Auto-merge eligible.
-- [ ] Let visitors compare two archived portraits without losing the gallery context.
+- [x] Let visitors compare two archived portraits without losing the gallery context. Completed 2026-07-31.
+  - Acceptance: every archived portrait keeps its raw snapshot link and has an independent compare toggle; selecting a second portrait reveals both dates, the three strongest recorded metric changes, and both raw snapshot links inside the gallery; removing a selection or choosing a third portrait updates the pair predictably; selection state is conveyed visually and to assistive technology. Auto-merge eligible.
 - [x] Add keyboard navigation and visible focus states to every interactive gallery control. Completed 2026-07-29.
   - Acceptance: Tab reaches every archived portrait; arrow keys move to the adjacent portrait; Home and End move to the first and last portrait; keyboard focus remains clearly visible without relying on motion. Auto-merge eligible.
 - [x] Create a share action that includes the portrait date and canonical GitHub Pages URL. Completed 2026-07-17.
