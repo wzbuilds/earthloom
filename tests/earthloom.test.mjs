@@ -5,6 +5,7 @@ import { getArchiveNavigationTarget } from "../app/archive-navigation.js";
 import { toggleArchiveSelection } from "../app/archive-selection.js";
 import { deriveSnapshotComparison, findPreviousSnapshot } from "../app/snapshot-comparison.js";
 import { deriveSoundscapePlan } from "../app/soundscape-plan.js";
+import { buildSourceInspector } from "../app/source-inspector.js";
 import {
   buildPortraitShareDetails,
   CANONICAL_SITE_URL,
@@ -158,6 +159,38 @@ test("explains the three strongest visual changes from adjacent snapshots", () =
   assert.equal(findPreviousSnapshot(current, [current, { ...previous, date: "2026-07-18" }, previous]), previous);
 });
 
+test("connects every portrait layer to recorded metrics and providers", async () => {
+  const snapshot = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
+  const sources = snapshot.sources.map((source) =>
+    source.label.includes("NOAA") ? { ...source, status: "cached" } : source,
+  );
+  const layers = buildSourceInspector({ ...snapshot, sources });
+
+  assert.deepEqual(layers.map((layer) => layer.id), [
+    "seismic-pulses",
+    "aurora-threads",
+    "weather-flow",
+    "lunar-shadow",
+  ]);
+  assert.deepEqual(layers.flatMap((layer) => layer.fields.map((field) => field.path)), [
+    "metrics.earthquakeCount",
+    "metrics.maxMagnitude",
+    "metrics.averageDepth",
+    "metrics.kpIndex",
+    "metrics.solarWind",
+    "metrics.meanTemperature",
+    "metrics.meanWind",
+    "metrics.moonPhase",
+  ]);
+  assert.equal(layers[0].providerLabel, snapshot.sources[0].label);
+  assert.equal(layers[0].providerUrl, snapshot.sources[0].url);
+  assert.equal(layers[1].providerStatus, "cached");
+  assert.equal(layers[3].providerStatus, "local");
+  assert.equal(layers[3].providerUrl, null);
+  assert.match(layers[0].fields[0].value, new RegExp(`${snapshot.metrics.earthquakeCount}`));
+  assert.match(layers[3].fields[0].value, /%$/);
+});
+
 test("server-renders the finished Earthloom experience", async () => {
   const latest = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
   const archive = JSON.parse(await readFile(new URL("../data/archive-index.json", import.meta.url), "utf8"));
@@ -181,6 +214,11 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(html, new RegExp(`${latest.metrics.meanTemperature}°C`));
   assert.match(html, /位置 → 坐标/);
   assert.match(html, /打开今日完整快照/);
+  assert.match(html, /SOURCE INSPECTOR/);
+  assert.match(html, /逐层检查今日画面/);
+  assert.match(html, /metrics\.earthquakeCount/);
+  assert.match(html, /metrics\.moonPhase/);
+  assert.match(html, /Earthloom 本地周期计算/);
   assert.match(html, /开启今日声景/);
   assert.match(html, /SHARE TODAY/);
   assert.match(html, new RegExp(`将分享 ${latest.date} 与官方链接`));

@@ -2,6 +2,13 @@
 
 This file records product evolution, not daily data generation. Each autonomous product pull request adds one concise entry with the requirement, visible outcome, and verification performed.
 
+## 2026-08-04 — Trace every portrait layer to its source
+
+- Requirement: a visitor can inspect which recorded values and providers produced each existing layer of today’s portrait.
+- Outcome: added a native disclosure that keeps four visual layers, eight exact snapshot fields, current readings, drawing effects, provider links, and recorded source status in one inspectable chain.
+- Acceptance: external sources use the snapshot’s `live`, `cached`, or `fallback` state; the lunar layer is clearly local; the disclosure is keyboard-native and responsive; portrait rendering remains unchanged.
+- Verification: source-inspector policy tests, server-render checks, type-check, lint, hosted build, tests, and GitHub Pages export.
+
 ## 2026-07-31 — Compare two days without leaving the archive
 
 - Requirement: a visitor can compare any two archived portraits while keeping the surrounding collection in view.
