@@ -7,11 +7,13 @@ import { EarthloomExperience } from "./EarthloomExperience";
 import { EarthloomShare } from "./EarthloomShare";
 import { EarthloomSoundscape } from "./EarthloomSoundscape";
 import { deriveSnapshotComparison, findPreviousSnapshot } from "./snapshot-comparison";
+import { buildSourceInspector } from "./source-inspector";
 import type { EarthloomSnapshot } from "./types";
 
 const snapshot = latest as EarthloomSnapshot;
 const previousSnapshot = findPreviousSnapshot(snapshot, archive) as (typeof archive)[number] | null;
 const comparison = deriveSnapshotComparison(snapshot, previousSnapshot);
+const inspectorLayers = buildSourceInspector(snapshot);
 
 export const metadata: Metadata = {
   title: `今日地球 · ${snapshot.date}`,
@@ -272,6 +274,64 @@ export default function Home() {
             </article>
           ))}
         </div>
+        <details className="source-inspector">
+          <summary>
+            <span className="source-inspector-summary-copy">
+              <span className="eyebrow">SOURCE INSPECTOR / 来源检查器</span>
+              <strong>逐层检查今日画面</strong>
+              <small>展开字段、今日读数、画面作用与实际来源。</small>
+            </span>
+            <i aria-hidden="true" />
+          </summary>
+          <div className="source-inspector-body">
+            <p className="source-inspector-note">
+              这里只解释已经用于绘制的四个图层。字段名对应今日原始快照；来源状态也随快照记录，不把缓存或回退值冒充实时读数。
+            </p>
+            <ol className="source-inspector-list">
+              {inspectorLayers.map((layer, index) => (
+                <li key={layer.id}>
+                  <header>
+                    <span>{String(index + 1).padStart(2, "0")} / LAYER</span>
+                    <h3>{layer.name}</h3>
+                  </header>
+                  <div className="source-inspector-fields">
+                    <span>SNAPSHOT FIELDS / 快照字段</span>
+                    <dl>
+                      {layer.fields.map((field) => (
+                        <div key={field.path}>
+                          <dt><code>{field.path}</code></dt>
+                          <dd>{field.value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </div>
+                  <div className="source-inspector-effect">
+                    <span>VISIBLE EFFECT / 画面作用</span>
+                    <p>{layer.effect}</p>
+                  </div>
+                  <footer>
+                    <span className={`source-inspector-status is-${layer.providerStatus}`}>
+                      {layer.providerStatus}
+                    </span>
+                    <div>
+                      <span>PROVIDER / 提供方</span>
+                      {layer.providerUrl ? (
+                        <a href={layer.providerUrl} rel="noreferrer" target="_blank">
+                          {layer.providerLabel} <i aria-hidden="true">↗</i>
+                        </a>
+                      ) : (
+                        <strong>{layer.providerLabel}</strong>
+                      )}
+                    </div>
+                  </footer>
+                </li>
+              ))}
+            </ol>
+            <a className="source-inspector-raw" href="data/latest.json">
+              核对今日完整快照 <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </details>
         <a className="method-data-link" href="data/latest.json">
           打开今日完整快照 <span aria-hidden="true">↗</span>
         </a>

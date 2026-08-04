@@ -22,7 +22,8 @@ Earthloom should feel alive in three ways:
   - Acceptance: Tab reaches every archived portrait; arrow keys move to the adjacent portrait; Home and End move to the first and last portrait; keyboard focus remains clearly visible without relying on motion. Auto-merge eligible.
 - [x] Create a share action that includes the portrait date and canonical GitHub Pages URL. Completed 2026-07-17.
   - Acceptance: the action shares the current snapshot date and `https://wzbuilds.github.io/earthloom/`; browsers without Web Share copy the same payload; cancellation and failure receive accessible, non-blocking feedback. Auto-merge eligible.
-- [ ] Add a source-inspector panel connecting each visual layer to its exact metric and provider.
+- [x] Add a source-inspector panel connecting each visual layer to its exact metric and provider. Completed 2026-08-04.
+  - Acceptance: the panel names the four existing portrait layers, their exact `metrics.*` fields and current values, the drawing effect already in use, and the snapshot provider with its current `live` / `cached` / `fallback` status; external providers remain directly linked, the lunar layer is identified as a local calculation, and the native disclosure works by keyboard and on small screens. Auto-merge eligible.
 - [ ] Make unusual signal values discoverable with calm, non-alarmist annotations.
 - [ ] Add a lightweight first-visit guide that disappears after interaction and respects reduced motion.
 - [ ] Improve small-screen archive exploration without hiding dates or provenance.
