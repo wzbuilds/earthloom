@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-09",
+    "seed": 3749650539,
+    "summary": "磁暴把今天织成了明亮的极光。",
+    "status": "live",
+    "metrics": {
+      "earthquakeCount": 55,
+      "maxMagnitude": 5.6,
+      "averageDepth": 40.1,
+      "kpIndex": 6,
+      "solarWind": 383,
+      "meanTemperature": 19.3,
+      "meanWind": 11.2,
+      "moonPhase": 0.8705
+    },
+    "palette": {
+      "void": "hsl(255 38% 5%)",
+      "ink": "hsl(233 44% 9%)",
+      "aurora": "hsl(255.66666666666666 88% 65%)",
+      "tide": "hsl(299 76% 64%)",
+      "ember": "hsl(37.626666666666665 96% 66%)",
+      "mist": "hsl(29 42% 87%)"
+    }
+  },
+  {
     "date": "2026-08-08",
     "seed": 3631706173,
     "summary": "今天的地球，在低声而持续地呼吸。",
