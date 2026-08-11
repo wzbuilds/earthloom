@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-11",
+    "seed": 2211187184,
+    "summary": "深处的震动在织面上留下了宽阔回声。",
+    "status": "live",
+    "metrics": {
+      "earthquakeCount": 39,
+      "maxMagnitude": 7.4,
+      "averageDepth": 59.9,
+      "kpIndex": 2,
+      "solarWind": 344,
+      "meanTemperature": 18.2,
+      "meanWind": 10.3,
+      "moonPhase": 0.9383
+    },
+    "palette": {
+      "void": "hsl(260 38% 5%)",
+      "ink": "hsl(238 44% 9%)",
+      "aurora": "hsl(237.55555555555554 88% 65%)",
+      "tide": "hsl(304 76% 58.666666666666664%)",
+      "ember": "hsl(37.04 96% 66%)",
+      "mist": "hsl(34 42% 87%)"
+    }
+  },
+  {
     "date": "2026-08-10",
     "seed": 870684042,
     "summary": "今天的地球，在低声而持续地呼吸。",
