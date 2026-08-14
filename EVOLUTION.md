@@ -2,6 +2,13 @@
 
 This file records product evolution, not daily data generation. Each autonomous product pull request adds one concise entry with the requirement, visible outcome, and verification performed.
 
+## 2026-08-14 — Put today's signals in archive context
+
+- Requirement: a visitor can notice when a headline reading sits near the edge of Earthloom's recorded collection without seeing an alarm claim.
+- Outcome: the four signal cards now derive high and low annotations from snapshots through today, show a tied-aware rank when one qualifies, and otherwise say calmly that today's readings remain inside the collection's middle range.
+- Acceptance: annotations require at least 14 observations and the highest or lowest recorded decile; the sample count stays visible; copy explicitly limits the comparison to Earthloom's archive and does not infer danger, safety, or cause.
+- Verification: deterministic archive-position tests, server-render checks, type-check, lint, hosted build, tests, and GitHub Pages export.
+
 ## 2026-08-04 — Trace every portrait layer to its source
 
 - Requirement: a visitor can inspect which recorded values and providers produced each existing layer of today’s portrait.
