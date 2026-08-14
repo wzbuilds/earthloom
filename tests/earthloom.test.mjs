@@ -3,6 +3,7 @@ import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import { getArchiveNavigationTarget } from "../app/archive-navigation.js";
 import { toggleArchiveSelection } from "../app/archive-selection.js";
+import { deriveSignalContext } from "../app/signal-context.js";
 import { deriveSnapshotComparison, findPreviousSnapshot } from "../app/snapshot-comparison.js";
 import { deriveSoundscapePlan } from "../app/soundscape-plan.js";
 import { buildSourceInspector } from "../app/source-inspector.js";
@@ -159,6 +160,50 @@ test("explains the three strongest visual changes from adjacent snapshots", () =
   assert.equal(findPreviousSnapshot(current, [current, { ...previous, date: "2026-07-18" }, previous]), previous);
 });
 
+test("marks only archive-relative signal high and low positions", () => {
+  const archive = Array.from({ length: 19 }, (_, index) => {
+    const day = index + 1;
+    return {
+      date: `2026-01-${String(day).padStart(2, "0")}`,
+      metrics: {
+        earthquakeCount: day,
+        kpIndex: 1 + (index % 8),
+        solarWind: 300 + day,
+        meanTemperature: 18 + day * 0.2,
+      },
+    };
+  });
+  const current = {
+    date: "2026-01-20",
+    metrics: {
+      earthquakeCount: 20,
+      kpIndex: 0,
+      solarWind: 310,
+      meanTemperature: 20,
+    },
+  };
+  const context = deriveSignalContext(current, archive);
+
+  assert.equal(context.sampleCount, 20);
+  assert.deepEqual(context.annotations.earthquakeCount, {
+    position: "high",
+    label: "接近收藏高位",
+    detail: "20 天中第 1 高",
+  });
+  assert.deepEqual(context.annotations.kpIndex, {
+    position: "low",
+    label: "接近收藏低位",
+    detail: "20 天中第 1 低",
+  });
+  assert.equal(context.annotations.solarWind, undefined);
+  assert.equal(context.annotations.meanTemperature, undefined);
+  assert.match(context.summary, /2 项读数/);
+
+  const shortHistory = deriveSignalContext(current, archive.slice(0, 5));
+  assert.deepEqual(shortHistory.annotations, {});
+  assert.match(shortHistory.summary, /满 14 天后/);
+});
+
 test("connects every portrait layer to recorded metrics and providers", async () => {
   const snapshot = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
   const sources = snapshot.sources.map((source) =>
@@ -205,6 +250,8 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(html, /Earthloom/);
   assert.match(html, /地球，今天/);
   assert.match(html, /TODAY'S SIGNALS/);
+  assert.match(html, /ARCHIVE POSITION/);
+  assert.match(html, /Earthloom 收藏内的相对位置，不是危险或安全等级/);
   assert.match(html, /OPEN BY DESIGN/);
   assert.match(html, /今日读数/);
   assert.match(html, /画面结果/);

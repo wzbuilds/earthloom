@@ -6,6 +6,7 @@ import { ArchiveGallery } from "./ArchiveGallery";
 import { EarthloomExperience } from "./EarthloomExperience";
 import { EarthloomShare } from "./EarthloomShare";
 import { EarthloomSoundscape } from "./EarthloomSoundscape";
+import { deriveSignalContext } from "./signal-context";
 import { deriveSnapshotComparison, findPreviousSnapshot } from "./snapshot-comparison";
 import { buildSourceInspector } from "./source-inspector";
 import type { EarthloomSnapshot } from "./types";
@@ -14,6 +15,7 @@ const snapshot = latest as EarthloomSnapshot;
 const previousSnapshot = findPreviousSnapshot(snapshot, archive) as (typeof archive)[number] | null;
 const comparison = deriveSnapshotComparison(snapshot, previousSnapshot);
 const inspectorLayers = buildSourceInspector(snapshot);
+const signalContext = deriveSignalContext(snapshot, archive);
 
 export const metadata: Metadata = {
   title: `今日地球 · ${snapshot.date}`,
@@ -22,24 +24,28 @@ export const metadata: Metadata = {
 
 const metricCards = [
   {
+    key: "earthquakeCount",
     label: "地表回声",
     english: "EARTHQUAKES",
     value: snapshot.metrics.earthquakeCount,
     unit: "M2.5+ / 24H",
   },
   {
+    key: "kpIndex",
     label: "地磁脉搏",
     english: "PLANETARY K",
     value: snapshot.metrics.kpIndex,
     unit: "KP INDEX",
   },
   {
+    key: "solarWind",
     label: "太阳来风",
     english: "SOLAR WIND",
     value: snapshot.metrics.solarWind,
     unit: "KM/S",
   },
   {
+    key: "meanTemperature",
     label: "世界均温",
     english: "12-POINT MEAN",
     value: snapshot.metrics.meanTemperature,
@@ -174,16 +180,29 @@ export default function Home() {
         </div>
         <div className="metric-grid">
           {metricCards.map((metric) => (
-            <article className="metric-card" key={metric.english}>
+            <article
+              className={`metric-card${signalContext.annotations[metric.key] ? " has-context" : ""}`}
+              key={metric.english}
+            >
               <div className="metric-topline">
                 <span>{metric.label}</span>
                 <span>{metric.english}</span>
               </div>
               <strong>{metric.value}</strong>
               <small>{metric.unit}</small>
+              {signalContext.annotations[metric.key] ? (
+                <div className={`metric-context is-${signalContext.annotations[metric.key].position}`}>
+                  <span>{signalContext.annotations[metric.key].label}</span>
+                  <p>{signalContext.annotations[metric.key].detail}</p>
+                </div>
+              ) : null}
             </article>
           ))}
         </div>
+        <p className="signal-context-summary">
+          <span>ARCHIVE POSITION / 收藏位置</span>
+          {signalContext.summary} 这只是 Earthloom 收藏内的相对位置，不是危险或安全等级，也不推断原因。
+        </p>
         <div className="signal-footnote">
           <p>最强震级 M{snapshot.metrics.maxMagnitude} · 平均深度 {snapshot.metrics.averageDepth} km · 平均风速 {snapshot.metrics.meanWind} km/h</p>
           <p>CAPTURED {new Date(snapshot.generatedAt).toISOString().slice(11, 16)} UTC · SEED {snapshot.seed.toString(16).toUpperCase()}</p>
