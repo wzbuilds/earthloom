@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-22",
+    "seed": 3496490016,
+    "summary": "今天的地球，在低声而持续地呼吸。",
+    "status": "live",
+    "metrics": {
+      "earthquakeCount": 51,
+      "maxMagnitude": 5.7,
+      "averageDepth": 60.7,
+      "kpIndex": 2,
+      "solarWind": 502,
+      "meanTemperature": 18.5,
+      "meanWind": 10.9,
+      "moonPhase": 0.3107
+    },
+    "palette": {
+      "void": "hsl(234 38% 5%)",
+      "ink": "hsl(212 44% 9%)",
+      "aurora": "hsl(211.55555555555554 88% 65%)",
+      "tide": "hsl(278 76% 58.666666666666664%)",
+      "ember": "hsl(37.2 96% 66%)",
+      "mist": "hsl(8 42% 87%)"
+    }
+  },
+  {
     "date": "2026-08-21",
     "seed": 2898436286,
     "summary": "深处的震动在织面上留下了宽阔回声。",
