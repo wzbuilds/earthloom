@@ -2,6 +2,13 @@
 
 This file records product evolution, not daily data generation. Each autonomous product pull request adds one concise entry with the requirement, visible outcome, and verification performed.
 
+## 2026-08-28 — Give first-time visitors a quiet map
+
+- Requirement: a first-time visitor can understand where to find today’s portrait, the living archive, and the traceable generation method without being blocked by onboarding.
+- Outcome: added a non-modal three-step guide that leaves the page usable, closes when the visitor follows a guide action or skips it, and remembers completion locally when available.
+- Acceptance: the guide is keyboard- and small-screen-friendly; storage failure still closes it for the current visit; its only entrance motion is excluded when reduced motion is requested.
+- Verification: completion-policy tests, component-source checks, type-check, lint, hosted build, tests, and GitHub Pages export.
+
 ## 2026-08-14 — Put today's signals in archive context
 
 - Requirement: a visitor can notice when a headline reading sits near the edge of Earthloom's recorded collection without seeing an alarm claim.

@@ -6,6 +6,7 @@ import { ArchiveGallery } from "./ArchiveGallery";
 import { EarthloomExperience } from "./EarthloomExperience";
 import { EarthloomShare } from "./EarthloomShare";
 import { EarthloomSoundscape } from "./EarthloomSoundscape";
+import { FirstVisitGuide } from "./FirstVisitGuide";
 import { deriveSignalContext } from "./signal-context";
 import { deriveSnapshotComparison, findPreviousSnapshot } from "./snapshot-comparison";
 import { buildSourceInspector } from "./source-inspector";
@@ -115,6 +116,7 @@ function dateLabel(value: string) {
 export default function Home() {
   return (
     <main>
+      <FirstVisitGuide />
       <header className="site-header">
         <a className="wordmark" href="#today" aria-label="Earthloom 首页">
           <span className="wordmark-mark" aria-hidden="true" />
