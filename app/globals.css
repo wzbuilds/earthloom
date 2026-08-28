@@ -154,6 +154,123 @@ a:focus-visible {
   color: var(--accent);
 }
 
+.first-visit-guide {
+  position: fixed;
+  z-index: 40;
+  bottom: clamp(1rem, 3vw, 2.5rem);
+  left: clamp(1rem, 4.2vw, 4rem);
+  width: min(25rem, calc(100vw - 2rem));
+  padding: 1rem;
+  border: 1px solid rgba(116, 222, 208, 0.48);
+  background: rgba(14, 17, 28, 0.96);
+  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(18px);
+}
+
+.first-visit-guide > header,
+.first-visit-guide > footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.first-visit-guide > header p,
+.first-visit-copy > span {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.15em;
+}
+
+.first-visit-guide button {
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.first-visit-guide > header button {
+  padding: 0.35rem;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+}
+
+.first-visit-copy {
+  min-height: 9.25rem;
+  padding: 1.35rem 0 1.2rem;
+}
+
+.first-visit-copy h2 {
+  margin: 0.55rem 0 0;
+  font-family: var(--display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+}
+
+.first-visit-copy p {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+
+.first-visit-steps {
+  display: flex;
+  align-items: center;
+  gap: 0.42rem;
+}
+
+.first-visit-steps button {
+  width: 1.15rem;
+  height: 1.15rem;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.first-visit-steps button::after {
+  display: block;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin: auto;
+  border-radius: 50%;
+  background: transparent;
+  content: "";
+}
+
+.first-visit-steps button.is-current::after {
+  background: var(--accent);
+}
+
+.first-visit-guide > footer > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.5rem;
+  padding: 0 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .first-visit-guide {
+    animation: first-visit-arrive 360ms ease-out both;
+  }
+
+  @keyframes first-visit-arrive {
+    from { opacity: 0; transform: translateY(0.75rem); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
 .status-dot {
   width: 6px;
   height: 6px;
@@ -1677,6 +1794,17 @@ a:focus-visible {
 }
 
 @media (max-width: 720px) {
+  .first-visit-guide {
+    right: 0.75rem;
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+    left: 0.75rem;
+    width: auto;
+  }
+
+  .first-visit-copy {
+    min-height: 8.7rem;
+  }
+
   .site-header {
     grid-template-columns: 1fr auto;
     height: 72px;

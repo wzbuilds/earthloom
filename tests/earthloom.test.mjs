@@ -8,6 +8,12 @@ import { deriveSnapshotComparison, findPreviousSnapshot } from "../app/snapshot-
 import { deriveSoundscapePlan } from "../app/soundscape-plan.js";
 import { buildSourceInspector } from "../app/source-inspector.js";
 import {
+  FIRST_VISIT_GUIDE_KEY,
+  FIRST_VISIT_GUIDE_VALUE,
+  persistFirstVisitCompletion,
+  readFirstVisitCompletion,
+} from "../app/first-visit-guide.js";
+import {
   buildPortraitShareDetails,
   CANONICAL_SITE_URL,
   formatPortraitShareText,
@@ -120,6 +126,23 @@ test("keeps archive comparison selection bounded and reversible", () => {
     toggleArchiveSelection(["2026-07-24", "2026-07-24"], "2026-07-22"),
     ["2026-07-24", "2026-07-22"],
   );
+});
+
+test("remembers first-visit guide completion and survives unavailable storage", () => {
+  const values = new Map();
+  const storage = {
+    getItem(key) { return values.get(key) ?? null; },
+    setItem(key, value) { values.set(key, value); },
+  };
+
+  assert.equal(readFirstVisitCompletion(() => storage), false);
+  assert.equal(persistFirstVisitCompletion(() => storage), true);
+  assert.equal(values.get(FIRST_VISIT_GUIDE_KEY), FIRST_VISIT_GUIDE_VALUE);
+  assert.equal(readFirstVisitCompletion(() => storage), true);
+
+  const unavailable = () => { throw new Error("storage unavailable"); };
+  assert.equal(readFirstVisitCompletion(unavailable), false);
+  assert.equal(persistFirstVisitCompletion(unavailable), false);
 });
 
 test("explains the three strongest visual changes from adjacent snapshots", () => {
@@ -242,6 +265,7 @@ test("server-renders the finished Earthloom experience", async () => {
   const previous = findPreviousSnapshot(latest, archive);
   const experienceSource = await readFile(new URL("../app/EarthloomExperience.tsx", import.meta.url), "utf8");
   const archiveGallerySource = await readFile(new URL("../app/ArchiveGallery.tsx", import.meta.url), "utf8");
+  const firstVisitGuideSource = await readFile(new URL("../app/FirstVisitGuide.tsx", import.meta.url), "utf8");
   const soundscapeSource = await readFile(new URL("../app/EarthloomSoundscape.tsx", import.meta.url), "utf8");
   const response = await render();
   assert.equal(response.status, 200);
@@ -292,6 +316,10 @@ test("server-renders the finished Earthloom experience", async () => {
   assert.match(archiveGallerySource, /\.focus\(\)/);
   assert.match(archiveGallerySource, /aria-pressed=\{isSelected\}/);
   assert.match(archiveGallerySource, /toggleArchiveSelection/);
+  assert.match(firstVisitGuideSource, /const steps = \[/);
+  assert.match(firstVisitGuideSource, /FIRST VISIT/);
+  assert.match(firstVisitGuideSource, /aria-live="polite"/);
+  assert.match(firstVisitGuideSource, /persistFirstVisitCompletion/);
 });
 
 test("includes automation and deployment contracts", async () => {
