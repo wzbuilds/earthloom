@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-09-02",
+    "seed": 518788376,
+    "summary": "今天的地球，在低声而持续地呼吸。",
+    "status": "live",
+    "metrics": {
+      "earthquakeCount": 60,
+      "maxMagnitude": 5.6,
+      "averageDepth": 41.6,
+      "kpIndex": 2,
+      "solarWind": 384,
+      "meanTemperature": 19.1,
+      "meanWind": 9,
+      "moonPhase": 0.6832
+    },
+    "palette": {
+      "void": "hsl(230 38% 5%)",
+      "ink": "hsl(208 44% 9%)",
+      "aurora": "hsl(207.55555555555554 88% 65%)",
+      "tide": "hsl(274 76% 58.666666666666664%)",
+      "ember": "hsl(37.52 96% 66%)",
+      "mist": "hsl(4 42% 87%)"
+    }
+  },
+  {
     "date": "2026-09-01",
     "seed": 3166593325,
     "summary": "今天的地球，在低声而持续地呼吸。",
