@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-09-04",
+    "seed": 2087897889,
+    "summary": "深处的震动在织面上留下了宽阔回声。",
+    "status": "live",
+    "metrics": {
+      "earthquakeCount": 64,
+      "maxMagnitude": 6.3,
+      "averageDepth": 51.6,
+      "kpIndex": 2,
+      "solarWind": 374,
+      "meanTemperature": 19.7,
+      "meanWind": 9.3,
+      "moonPhase": 0.751
+    },
+    "palette": {
+      "void": "hsl(243 38% 5%)",
+      "ink": "hsl(221 44% 9%)",
+      "aurora": "hsl(220.55555555555554 88% 65%)",
+      "tide": "hsl(287 76% 58.666666666666664%)",
+      "ember": "hsl(37.84 96% 66%)",
+      "mist": "hsl(17 42% 87%)"
+    }
+  },
+  {
     "date": "2026-09-03",
     "seed": 2641760519,
     "summary": "深处的震动在织面上留下了宽阔回声。",
