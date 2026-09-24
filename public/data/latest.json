@@ -1,389 +1,452 @@
 {
   "schemaVersion": 1,
-  "date": "2026-09-23",
-  "generatedAt": "2026-09-23T04:35:48.981Z",
+  "date": "2026-09-24",
+  "generatedAt": "2026-09-24T04:33:50.254Z",
   "timeZone": "Asia/Shanghai",
   "status": "live",
-  "seed": 4185781526,
+  "seed": 1773117814,
   "summary": "今天的地球，在低声而持续地呼吸。",
   "metrics": {
-    "earthquakeCount": 40,
-    "maxMagnitude": 5.1,
-    "averageDepth": 67.5,
-    "kpIndex": 1,
-    "solarWind": 276,
-    "meanTemperature": 17.4,
-    "meanWind": 10,
-    "moonPhase": 0.3944
+    "earthquakeCount": 47,
+    "maxMagnitude": 5.7,
+    "averageDepth": 63.7,
+    "kpIndex": 3,
+    "solarWind": 330,
+    "meanTemperature": 18.2,
+    "meanWind": 10.8,
+    "moonPhase": 0.4282
   },
   "palette": {
-    "void": "hsl(260 38% 5%)",
-    "ink": "hsl(238 44% 9%)",
-    "aurora": "hsl(231.77777777777777 88% 65%)",
-    "tide": "hsl(304 76% 57.333333333333336%)",
-    "ember": "hsl(36.61333333333333 96% 66%)",
-    "mist": "hsl(34 42% 87%)"
+    "void": "hsl(256 38% 5%)",
+    "ink": "hsl(234 44% 9%)",
+    "aurora": "hsl(239.33333333333334 88% 65%)",
+    "tide": "hsl(300 76% 60%)",
+    "ember": "hsl(37.04 96% 66%)",
+    "mist": "hsl(30 42% 87%)"
   },
   "earthquakes": [
     {
-      "id": "us7000tj4y",
-      "latitude": 29.0367,
-      "longitude": 128.8944,
+      "id": "us6000tx3m",
+      "latitude": -14.9369,
+      "longitude": -175.1114,
       "depth": 10,
-      "magnitude": 5.1,
-      "place": "88 km NNW of Uken, Japan",
-      "time": "2026-09-22T10:46:22.312Z"
+      "magnitude": 5.7,
+      "place": "180 km NW of Hihifo, Tonga",
+      "time": "2026-09-23T14:41:02.650Z"
     },
     {
-      "id": "us7000tj3k",
-      "latitude": 23.1331,
-      "longitude": 142.4369,
+      "id": "us6000tx29",
+      "latitude": -28.7298,
+      "longitude": -67.2912,
+      "depth": 121.534,
+      "magnitude": 5.3,
+      "place": "51 km WSW of Arauco, Argentina",
+      "time": "2026-09-23T09:21:14.600Z"
+    },
+    {
+      "id": "us6000tx58",
+      "latitude": -16.3072,
+      "longitude": 178.0194,
       "depth": 10,
       "magnitude": 5,
-      "place": "Volcano Islands, Japan region",
-      "time": "2026-09-22T05:18:24.687Z"
+      "place": "140 km NNE of Ba, Fiji",
+      "time": "2026-09-23T17:46:06.489Z"
     },
     {
-      "id": "us7000tj3s",
-      "latitude": 23.003,
-      "longitude": 142.3395,
+      "id": "us6000tx38",
+      "latitude": 21.6622,
+      "longitude": 143.0239,
+      "depth": 306.016,
+      "magnitude": 5,
+      "place": "Mariana Islands region",
+      "time": "2026-09-23T13:01:51.614Z"
+    },
+    {
+      "id": "us6000tx53",
+      "latitude": -14.6397,
+      "longitude": -175.0529,
       "depth": 10,
       "magnitude": 4.9,
-      "place": "Volcano Islands, Japan region",
-      "time": "2026-09-22T06:11:10.037Z"
+      "place": "193 km SE of Mata-Utu, Wallis and Futuna",
+      "time": "2026-09-23T17:20:32.721Z"
     },
     {
-      "id": "us6000twyf",
-      "latitude": -20.9839,
-      "longitude": -175.461,
-      "depth": 121.928,
-      "magnitude": 4.8,
-      "place": "26 km NW of Houma, Tonga",
-      "time": "2026-09-22T20:11:50.722Z"
+      "id": "us6000tx23",
+      "latitude": -60.2661,
+      "longitude": -47.6004,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "Scotia Sea",
+      "time": "2026-09-23T08:41:58.018Z"
     },
     {
-      "id": "us7000tj58",
-      "latitude": 14.113,
-      "longitude": -91.1165,
-      "depth": 88.793,
+      "id": "us6000tx16",
+      "latitude": 37.2772,
+      "longitude": 71.768,
+      "depth": 141.19,
       "magnitude": 4.7,
-      "place": "7 km WNW of La Gomera, Guatemala",
-      "time": "2026-09-22T11:43:45.547Z"
+      "place": "30 km SE of Khorugh, Tajikistan",
+      "time": "2026-09-23T05:46:11.056Z"
     },
     {
-      "id": "us6000twys",
-      "latitude": 9.6886,
-      "longitude": 126.5291,
-      "depth": 10,
-      "magnitude": 4.6,
-      "place": "46 km E of Union, Philippines",
-      "time": "2026-09-22T20:34:43.296Z"
-    },
-    {
-      "id": "us7000tj5n",
-      "latitude": 50.4343,
-      "longitude": 156.4937,
-      "depth": 83.948,
-      "magnitude": 4.6,
-      "place": "37 km SE of Severo-Kuril’sk, Russia",
-      "time": "2026-09-22T13:56:15.091Z"
-    },
-    {
-      "id": "us7000tj4v",
-      "latitude": -6.3408,
-      "longitude": 128.6303,
-      "depth": 295.618,
-      "magnitude": 4.6,
-      "place": "296 km S of Ambon, Indonesia",
-      "time": "2026-09-22T10:30:19.045Z"
-    },
-    {
-      "id": "us7000tj3v",
-      "latitude": 11.0957,
-      "longitude": 124.2096,
-      "depth": 10,
-      "magnitude": 4.6,
-      "place": "19 km ENE of Nailong, Philippines",
-      "time": "2026-09-22T06:48:09.705Z"
-    },
-    {
-      "id": "us6000tx08",
-      "latitude": -8.1454,
-      "longitude": 120.808,
-      "depth": 10,
-      "magnitude": 4.5,
-      "place": "63 km NE of Ruteng, Indonesia",
-      "time": "2026-09-23T02:02:43.755Z"
-    },
-    {
-      "id": "us6000twzp",
-      "latitude": -6.9217,
-      "longitude": 105.5232,
+      "id": "us6000tx7g",
+      "latitude": -1.8133,
+      "longitude": 138.7809,
       "depth": 35,
-      "magnitude": 4.5,
-      "place": "68 km SSW of Labuan, Indonesia",
-      "time": "2026-09-22T22:27:38.897Z"
+      "magnitude": 4.6,
+      "place": "223 km WNW of Abepura, Indonesia",
+      "time": "2026-09-24T00:26:38.374Z"
     },
     {
-      "id": "us6000twwy",
-      "latitude": 41.7997,
-      "longitude": 82.3165,
-      "depth": 10,
-      "magnitude": 4.5,
-      "place": "51 km W of Kuqa, China",
-      "time": "2026-09-22T16:09:09.440Z"
+      "id": "us6000tx4w",
+      "latitude": -24.0812,
+      "longitude": -66.8891,
+      "depth": 193.188,
+      "magnitude": 4.6,
+      "place": "59 km WNW of San Antonio de los Cobres, Argentina",
+      "time": "2026-09-23T16:48:37.858Z"
     },
     {
-      "id": "us6000tx07",
-      "latitude": 46.8489,
-      "longitude": 152.9319,
-      "depth": 46.244,
-      "magnitude": 4.4,
-      "place": "Kuril Islands",
-      "time": "2026-09-23T01:44:16.540Z"
-    },
-    {
-      "id": "us6000tx02",
-      "latitude": 31.7345,
-      "longitude": 51.4298,
-      "depth": 10,
-      "magnitude": 4.4,
-      "place": "28 km SSE of Borūjen, Iran",
-      "time": "2026-09-23T00:44:13.180Z"
-    },
-    {
-      "id": "us6000twzi",
-      "latitude": 3.948,
-      "longitude": -75.7814,
-      "depth": 10,
-      "magnitude": 4.4,
-      "place": "20 km WSW of Roncesvalles, Colombia",
-      "time": "2026-09-22T22:12:26.733Z"
-    },
-    {
-      "id": "us6000twxv",
-      "latitude": -25.0118,
-      "longitude": -178.0114,
-      "depth": 427.498,
-      "magnitude": 4.4,
+      "id": "us6000tx3n",
+      "latitude": -23.9741,
+      "longitude": 179.2578,
+      "depth": 528.269,
+      "magnitude": 4.6,
       "place": "south of the Fiji Islands",
-      "time": "2026-09-22T18:48:31.934Z"
+      "time": "2026-09-23T14:45:35.743Z"
     },
     {
-      "id": "us7000tj5m",
-      "latitude": 39.9178,
-      "longitude": 143.248,
-      "depth": 38.179,
+      "id": "us6000tx31",
+      "latitude": 1.217,
+      "longitude": 126.5263,
+      "depth": 48.462,
+      "magnitude": 4.6,
+      "place": "106 km WNW of Ternate, Indonesia",
+      "time": "2026-09-23T12:23:20.274Z"
+    },
+    {
+      "id": "us6000tx8q",
+      "latitude": -8.33,
+      "longitude": 119.3665,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "31 km NNW of Komodo, Indonesia",
+      "time": "2026-09-24T03:30:26.013Z"
+    },
+    {
+      "id": "us6000tx6g",
+      "latitude": 40.5193,
+      "longitude": 141.9929,
+      "depth": 65.283,
       "magnitude": 4.4,
-      "place": "115 km ENE of Miyako, Japan",
-      "time": "2026-09-22T13:48:19.982Z"
+      "place": "41 km NNE of Kuji, Japan",
+      "time": "2026-09-23T21:35:24.732Z"
     },
     {
-      "id": "us7000tj57",
-      "latitude": 39.6629,
-      "longitude": 143.3539,
-      "depth": 25.669,
+      "id": "us6000tx2s",
+      "latitude": 13.8587,
+      "longitude": 56.8032,
+      "depth": 10,
       "magnitude": 4.4,
-      "place": "121 km E of Miyako, Japan",
-      "time": "2026-09-22T11:37:12.130Z"
+      "place": "Socotra region",
+      "time": "2026-09-23T10:33:05.103Z"
     },
     {
-      "id": "us7000tj55",
-      "latitude": 36.5213,
-      "longitude": 70.898,
-      "depth": 192.749,
+      "id": "us6000tx0s",
+      "latitude": 3.7019,
+      "longitude": -75.7375,
+      "depth": 9.967,
       "magnitude": 4.4,
-      "place": "38 km S of Jurm, Afghanistan",
-      "time": "2026-09-22T11:29:41.886Z"
+      "place": "21 km NNW of Rioblanco, Colombia",
+      "time": "2026-09-23T04:36:36.514Z"
     },
     {
-      "id": "us7000tj4r",
-      "latitude": -26.3979,
-      "longitude": -179.3736,
-      "depth": 431.374,
+      "id": "us6000tx7k",
+      "latitude": -17.2621,
+      "longitude": -176.2226,
+      "depth": 338.174,
       "magnitude": 4.3,
-      "place": "south of the Fiji Islands",
-      "time": "2026-09-22T10:00:31.232Z"
+      "place": "282 km WNW of Neiafu, Tonga",
+      "time": "2026-09-24T00:53:50.791Z"
     },
     {
-      "id": "us7000tj4l",
-      "latitude": -21.9846,
-      "longitude": -68.6595,
-      "depth": 110.957,
+      "id": "us6000tx0t",
+      "latitude": 3.8429,
+      "longitude": -75.6673,
+      "depth": 10,
       "magnitude": 4.3,
-      "place": "58 km NNE of Calama, Chile",
-      "time": "2026-09-22T09:35:10.144Z"
+      "place": "19 km SSW of Roncesvalles, Colombia",
+      "time": "2026-09-23T04:46:40.685Z"
     },
     {
-      "id": "us6000tx0f",
-      "latitude": -29.6195,
-      "longitude": -71.3758,
-      "depth": 62.41,
+      "id": "us6000tx3l",
+      "latitude": 6.4256,
+      "longitude": 125.8221,
+      "depth": 150.252,
       "magnitude": 4.2,
-      "place": "33 km NNW of La Serena, Chile",
-      "time": "2026-09-23T03:07:08.275Z"
+      "place": "21 km ENE of Lais, Philippines",
+      "time": "2026-09-23T14:19:32.302Z"
     },
     {
-      "id": "us7000tj3l",
-      "latitude": -16.8256,
-      "longitude": -177.6628,
-      "depth": 428.123,
-      "magnitude": 4,
-      "place": "282 km S of Alo, Wallis and Futuna",
-      "time": "2026-09-22T05:31:33.019Z"
+      "id": "aka2026sxksxl",
+      "latitude": 62.039,
+      "longitude": -149.756,
+      "depth": 26.8,
+      "magnitude": 3.8,
+      "place": "14 km SSE of Susitna North, Alaska",
+      "time": "2026-09-24T01:27:20.936Z"
     },
     {
-      "id": "aka2026suhjvu",
-      "latitude": 57.295,
-      "longitude": -154.827,
-      "depth": 50.9,
-      "magnitude": 3.7,
-      "place": "37 km SW of Karluk, Alaska",
-      "time": "2026-09-22T08:48:00.581Z"
+      "id": "pr2026267000",
+      "latitude": 18.0768,
+      "longitude": -68.2911,
+      "depth": 87,
+      "magnitude": 3.74,
+      "place": "47 km SE of Boca de Yuma, Dominican Republic",
+      "time": "2026-09-24T00:07:28.770Z"
     },
     {
-      "id": "us6000twyy",
-      "latitude": 54.9345,
-      "longitude": -160.0285,
-      "depth": 35,
-      "magnitude": 3.5,
-      "place": "53 km SE of Sand Point, Alaska",
-      "time": "2026-09-22T20:50:54.702Z"
+      "id": "aka2026swtbxe",
+      "latitude": 59.402,
+      "longitude": -152.503,
+      "depth": 71.8,
+      "magnitude": 3.4,
+      "place": "33 km W of Nanwalek, Alaska",
+      "time": "2026-09-23T16:38:10.842Z"
     },
     {
-      "id": "aka2026susmgb",
-      "latitude": 67.389,
-      "longitude": -157.308,
-      "depth": 5,
-      "magnitude": 3.5,
-      "place": "41 km NE of Ambler, Alaska",
-      "time": "2026-09-22T14:20:46.022Z"
+      "id": "pr71534228",
+      "latitude": 18.1023333333333,
+      "longitude": -68.0333333333333,
+      "depth": 42.45,
+      "magnitude": 3.21,
+      "place": "65 km SE of Punta Cana, Dominican Republic",
+      "time": "2026-09-23T12:37:18.460Z"
     },
     {
-      "id": "aka2026subkpx",
-      "latitude": 51.256,
-      "longitude": -178.533,
-      "depth": 0.1,
-      "magnitude": 3.5,
-      "place": "148 km WSW of Adak, Alaska",
-      "time": "2026-09-22T05:49:01.328Z"
+      "id": "aka2026swhrry",
+      "latitude": 61.899,
+      "longitude": -150.919,
+      "depth": 68.6,
+      "magnitude": 3.2,
+      "place": "27 km ESE of Skwentna, Alaska",
+      "time": "2026-09-23T10:56:20.795Z"
     },
     {
-      "id": "pr71534068",
-      "latitude": 19.5575,
-      "longitude": -65.4088333333333,
-      "depth": 12.38,
-      "magnitude": 3.34,
-      "place": "133 km NNE of Vieques, Puerto Rico",
-      "time": "2026-09-22T19:18:39.210Z"
+      "id": "aka2026swhmgk",
+      "latitude": 61.384,
+      "longitude": -150.742,
+      "depth": 60.9,
+      "magnitude": 3.2,
+      "place": "21 km SW of Susitna, Alaska",
+      "time": "2026-09-23T10:50:05.702Z"
     },
     {
-      "id": "tx2026srfrih",
-      "latitude": 31.666,
-      "longitude": -104.25,
-      "depth": 6.0999,
+      "id": "hv75042947",
+      "latitude": 19.3303333333333,
+      "longitude": -155.827666666667,
+      "depth": 7.39,
+      "magnitude": 3.18,
+      "place": "14 km SSE of Honaunau-Napoopoo, Hawaii",
+      "time": "2026-09-24T00:05:12.310Z"
+    },
+    {
+      "id": "ci41337695",
+      "latitude": 35.307,
+      "longitude": -117.804166666667,
+      "depth": 6.75,
+      "magnitude": 3.18,
+      "place": "17 km WSW of Johannesburg, CA",
+      "time": "2026-09-23T15:01:48.370Z"
+    },
+    {
+      "id": "aka2026swmvfb",
+      "latitude": 57.202,
+      "longitude": -155.508,
+      "depth": 51.3,
       "magnitude": 3.1,
-      "place": "57 km SSE of Whites City, New Mexico",
-      "time": "2026-09-22T08:04:38.331Z"
+      "place": "75 km WSW of Karluk, Alaska",
+      "time": "2026-09-23T13:30:25.056Z"
     },
     {
-      "id": "tx2026sspzfy",
-      "latitude": 32.436,
-      "longitude": -102.098,
-      "depth": 6.958,
-      "magnitude": 2.8,
-      "place": "35 km SSW of Los Ybanez, Texas",
-      "time": "2026-09-23T02:16:59.235Z"
+      "id": "us6000tx30",
+      "latitude": 56.3563,
+      "longitude": -149.1422,
+      "depth": 10,
+      "magnitude": 3.1,
+      "place": "236 km SE of Chiniak, Alaska",
+      "time": "2026-09-23T12:19:12.731Z"
     },
     {
-      "id": "us6000twx2",
-      "latitude": 31.6405,
-      "longitude": -104.4516,
-      "depth": 8.671,
-      "magnitude": 2.8,
-      "place": "59 km S of Whites City, New Mexico",
-      "time": "2026-09-22T16:50:39.491Z"
-    },
-    {
-      "id": "pr71534028",
-      "latitude": 18.5955,
-      "longitude": -66.7551666666667,
-      "depth": 16.66,
-      "magnitude": 2.76,
-      "place": "13 km NNE of Carrizales, Puerto Rico",
-      "time": "2026-09-22T07:30:17.660Z"
-    },
-    {
-      "id": "aka2026svdmzd",
-      "latitude": 55.223,
-      "longitude": -159.175,
+      "id": "aka2026sxhzwp",
+      "latitude": 62.767,
+      "longitude": -143.743,
       "depth": 5,
+      "magnitude": 3,
+      "place": "13 km ENE of Slana, Alaska",
+      "time": "2026-09-24T00:05:25.735Z"
+    },
+    {
+      "id": "tx2026ssvrgl",
+      "latitude": 32.401,
+      "longitude": -102.046,
+      "depth": 7.1533,
+      "magnitude": 3,
+      "place": "34 km WSW of Ackerly, Texas",
+      "time": "2026-09-23T05:08:42.441Z"
+    },
+    {
+      "id": "ci41337999",
+      "latitude": 35.3098333333333,
+      "longitude": -117.8055,
+      "depth": 7.23,
+      "magnitude": 2.96,
+      "place": "17 km WSW of Johannesburg, CA",
+      "time": "2026-09-23T20:44:36.440Z"
+    },
+    {
+      "id": "aka2026sxpvgj",
+      "latitude": 59.59,
+      "longitude": -138.844,
+      "depth": 0.5,
+      "magnitude": 2.9,
+      "place": "50 km E of Yakutat, Alaska",
+      "time": "2026-09-24T03:59:56.424Z"
+    },
+    {
+      "id": "aka2026swvbrg",
+      "latitude": 59.882,
+      "longitude": -152.819,
+      "depth": 101,
+      "magnitude": 2.8,
+      "place": "56 km WNW of Anchor Point, Alaska",
+      "time": "2026-09-23T17:38:48.483Z"
+    },
+    {
+      "id": "aka2026swgfml",
+      "latitude": 59.859,
+      "longitude": -152.709,
+      "depth": 93.7,
+      "magnitude": 2.8,
+      "place": "50 km W of Anchor Point, Alaska",
+      "time": "2026-09-23T10:12:16.828Z"
+    },
+    {
+      "id": "us6000tx1x",
+      "latitude": 32.2341,
+      "longitude": -104.5044,
+      "depth": 8.033,
+      "magnitude": 2.8,
+      "place": "13 km WNW of Whites City, New Mexico",
+      "time": "2026-09-23T08:32:58.574Z"
+    },
+    {
+      "id": "nn00924762",
+      "latitude": 39.6017,
+      "longitude": -119.7884,
+      "depth": 5.092,
+      "magnitude": 2.77,
+      "place": "1 km WNW of Sun Valley, Nevada",
+      "time": "2026-09-23T05:33:37.383Z"
+    },
+    {
+      "id": "aka2026swatrm",
+      "latitude": 51.237,
+      "longitude": 178.75,
+      "depth": 35.2,
       "magnitude": 2.7,
-      "place": "76 km S of Perryville, Alaska",
-      "time": "2026-09-22T19:51:17.869Z"
+      "place": "Rat Islands, Aleutian Islands, Alaska",
+      "time": "2026-09-23T07:28:44.346Z"
     },
     {
-      "id": "pr71534123",
-      "latitude": 18.7448333333333,
-      "longitude": -64.6248333333333,
-      "depth": 15.16,
+      "id": "nc75440422",
+      "latitude": 37.417667388916,
+      "longitude": -118.890167236328,
+      "depth": 2.97000002861023,
+      "magnitude": 2.69,
+      "place": "25 km SW of Toms Place, CA",
+      "time": "2026-09-23T18:28:56.100Z"
+    },
+    {
+      "id": "ci41337559",
+      "latitude": 33.574,
+      "longitude": -116.770166666667,
+      "depth": 12.56,
       "magnitude": 2.63,
-      "place": "49 km NNE of Cruz Bay, U.S. Virgin Islands",
-      "time": "2026-09-22T22:01:26.080Z"
+      "place": "9 km WNW of Anza, CA",
+      "time": "2026-09-23T10:52:08.290Z"
     },
     {
-      "id": "aka2026svhnuz",
-      "latitude": 55.496,
-      "longitude": -158.9,
-      "depth": 5,
+      "id": "ci41338223",
+      "latitude": 35.3133333333333,
+      "longitude": -117.804,
+      "depth": 6.5,
+      "magnitude": 2.61,
+      "place": "17 km WSW of Johannesburg, CA",
+      "time": "2026-09-24T03:11:42.710Z"
+    },
+    {
+      "id": "aka2026swqzfi",
+      "latitude": 63.2,
+      "longitude": -150.384,
+      "depth": 114.6,
       "magnitude": 2.6,
-      "place": "48 km SSE of Perryville, Alaska",
-      "time": "2026-09-22T21:52:18.325Z"
+      "place": "74 km WSW of Cantwell, Alaska",
+      "time": "2026-09-23T15:34:53.093Z"
     },
     {
-      "id": "nc75439987",
-      "latitude": 40.4681663513184,
-      "longitude": -124.807167053223,
-      "depth": 26.3600006103516,
+      "id": "aka2026swgkjb",
+      "latitude": 60.463,
+      "longitude": -152.265,
+      "depth": 109.1,
       "magnitude": 2.6,
-      "place": "47 km WNW of Petrolia, CA",
-      "time": "2026-09-22T15:23:58.790Z"
+      "place": "53 km W of Cohoe, Alaska",
+      "time": "2026-09-23T10:17:51.394Z"
     },
     {
-      "id": "nc75440082",
-      "latitude": 40.3553352355957,
-      "longitude": -124.752166748047,
-      "depth": 2,
-      "magnitude": 2.52,
-      "place": "40 km W of Petrolia, CA",
-      "time": "2026-09-22T19:00:08.330Z"
+      "id": "aka2026svywgt",
+      "latitude": 58.233,
+      "longitude": -151.427,
+      "depth": 15.7,
+      "magnitude": 2.6,
+      "place": "72 km ENE of Ouzinkie, Alaska",
+      "time": "2026-09-23T06:31:42.731Z"
     },
     {
-      "id": "aka2026svtpfm",
-      "latitude": 55.282,
-      "longitude": -158.713,
-      "depth": 15,
-      "magnitude": 2.5,
-      "place": "75 km SSE of Perryville, Alaska",
-      "time": "2026-09-23T03:53:40.838Z"
+      "id": "nc75440387",
+      "latitude": 36.8610000610352,
+      "longitude": -121.415000915527,
+      "depth": 6.07000017166138,
+      "magnitude": 2.58,
+      "place": "2 km NW of Hollister, CA",
+      "time": "2026-09-23T16:00:10.570Z"
     },
     {
-      "id": "tx2026srvtwi",
-      "latitude": 31.605,
-      "longitude": -103.933,
-      "depth": 7.7533,
-      "magnitude": 2.5,
-      "place": "33 km WSW of Mentone, Texas",
-      "time": "2026-09-22T16:07:21.955Z"
+      "id": "hv75042652",
+      "latitude": 19.1621666666667,
+      "longitude": -155.484833333333,
+      "depth": 10.48,
+      "magnitude": 2.57,
+      "place": "4 km S of Pāhala, Hawaii",
+      "time": "2026-09-23T13:27:40.550Z"
     },
     {
-      "id": "tx2026sraean",
-      "latitude": 36.45,
-      "longitude": -101.74,
-      "depth": 2.2217,
-      "magnitude": 2.5,
-      "place": "6 km SE of Texhoma, Texas",
-      "time": "2026-09-22T05:15:14.407Z"
+      "id": "pr71534208",
+      "latitude": 17.943,
+      "longitude": -66.9513333333333,
+      "depth": 6.99,
+      "magnitude": 2.51,
+      "place": "5 km SW of Guánica, Puerto Rico",
+      "time": "2026-09-23T06:15:36.520Z"
+    },
+    {
+      "id": "ci41337943",
+      "latitude": 35.311,
+      "longitude": -117.8015,
+      "depth": 6.47,
+      "magnitude": 2.45,
+      "place": "17 km WSW of Johannesburg, CA",
+      "time": "2026-09-23T19:59:30.120Z"
     }
   ],
   "weatherSamples": [
@@ -391,73 +454,73 @@
       "latitude": 64.15,
       "longitude": -21.94,
       "temperature": 7.6,
-      "wind": 20.5
+      "wind": 36
     },
     {
       "latitude": 35.68,
       "longitude": 139.69,
-      "temperature": 20.9,
-      "wind": 2.9
+      "temperature": 28.3,
+      "wind": 2.4
     },
     {
       "latitude": 1.35,
       "longitude": 103.82,
-      "temperature": 28.3,
-      "wind": 10.8
+      "temperature": 28.4,
+      "wind": 7.6
     },
     {
       "latitude": -33.87,
       "longitude": 151.21,
-      "temperature": 20,
-      "wind": 6.5
+      "temperature": 21.3,
+      "wind": 17.3
     },
     {
       "latitude": -1.29,
       "longitude": 36.82,
-      "temperature": 15.3,
-      "wind": 4
+      "temperature": 14.9,
+      "wind": 3.3
     },
     {
       "latitude": 51.51,
       "longitude": -0.13,
-      "temperature": 17.9,
-      "wind": 7.9
+      "temperature": 13,
+      "wind": 6.8
     },
     {
       "latitude": 40.71,
       "longitude": -74.01,
-      "temperature": 12.8,
-      "wind": 14
+      "temperature": 11.8,
+      "wind": 12.6
     },
     {
       "latitude": -23.55,
       "longitude": -46.63,
-      "temperature": 15.2,
-      "wind": 10.8
+      "temperature": 13.3,
+      "wind": 7.4
     },
     {
       "latitude": 31.23,
       "longitude": 121.47,
-      "temperature": 30.2,
-      "wind": 7.4
+      "temperature": 31.3,
+      "wind": 8.8
     },
     {
       "latitude": 19.43,
       "longitude": -99.13,
-      "temperature": 17.5,
-      "wind": 10.9
+      "temperature": 16,
+      "wind": 6.4
     },
     {
       "latitude": 37.77,
       "longitude": -122.42,
-      "temperature": 14.2,
-      "wind": 12.1
+      "temperature": 18.7,
+      "wind": 6.7
     },
     {
       "latitude": -34.6,
       "longitude": -58.38,
-      "temperature": 9.1,
-      "wind": 11.8
+      "temperature": 13.9,
+      "wind": 13.9
     }
   ],
   "sources": [
