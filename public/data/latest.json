@@ -1,418 +1,544 @@
 {
   "schemaVersion": 1,
-  "date": "2026-09-26",
-  "generatedAt": "2026-09-26T04:46:24.115Z",
+  "date": "2026-09-27",
+  "generatedAt": "2026-09-27T05:08:48.708Z",
   "timeZone": "Asia/Shanghai",
   "status": "live",
-  "seed": 3401393511,
-  "summary": "深处的震动在织面上留下了宽阔回声。",
+  "seed": 4151015275,
+  "summary": "今天的地球，在低声而持续地呼吸。",
   "metrics": {
-    "earthquakeCount": 35,
-    "maxMagnitude": 6.6,
-    "averageDepth": 44.2,
+    "earthquakeCount": 49,
+    "maxMagnitude": 5.6,
+    "averageDepth": 26.3,
     "kpIndex": 4,
-    "solarWind": 477,
-    "meanTemperature": 18.8,
-    "meanWind": 10.2,
-    "moonPhase": 0.496
+    "solarWind": 442,
+    "meanTemperature": 17.5,
+    "meanWind": 10.5,
+    "moonPhase": 0.5298
   },
   "palette": {
-    "void": "hsl(255 38% 5%)",
-    "ink": "hsl(233 44% 9%)",
-    "aurora": "hsl(244.11111111111111 88% 65%)",
-    "tide": "hsl(299 76% 61.333333333333336%)",
-    "ember": "hsl(37.36 96% 66%)",
-    "mist": "hsl(29 42% 87%)"
+    "void": "hsl(223 38% 5%)",
+    "ink": "hsl(201 44% 9%)",
+    "aurora": "hsl(212.11111111111111 88% 65%)",
+    "tide": "hsl(267 76% 61.333333333333336%)",
+    "ember": "hsl(36.66666666666667 96% 66%)",
+    "mist": "hsl(357 42% 87%)"
   },
   "earthquakes": [
     {
-      "id": "us6000txpi",
-      "latitude": -21.2982,
-      "longitude": 168.61,
+      "id": "us6000txtc",
+      "latitude": -4.6952,
+      "longitude": 152.8383,
+      "depth": 57.78,
+      "magnitude": 5.6,
+      "place": "74 km ESE of Kokopo, Papua New Guinea",
+      "time": "2026-09-26T14:08:17.704Z"
+    },
+    {
+      "id": "us6000txtz",
+      "latitude": 13.2741,
+      "longitude": 51.4282,
       "depth": 10,
-      "magnitude": 6.6,
-      "place": "80 km ENE of Tadine, New Caledonia",
-      "time": "2026-09-25T21:23:03.309Z"
-    },
-    {
-      "id": "us6000txqi",
-      "latitude": -21.3748,
-      "longitude": 168.4446,
-      "depth": 10,
-      "magnitude": 5.5,
-      "place": "61 km ENE of Tadine, New Caledonia",
-      "time": "2026-09-25T23:39:41.392Z"
-    },
-    {
-      "id": "us6000txqk",
-      "latitude": -21.2023,
-      "longitude": 168.4346,
-      "depth": 10,
-      "magnitude": 5.4,
-      "place": "69 km ENE of Tadine, New Caledonia",
-      "time": "2026-09-25T23:52:35.158Z"
-    },
-    {
-      "id": "us6000txqu",
-      "latitude": -21.2883,
-      "longitude": 168.3721,
-      "depth": 10,
-      "magnitude": 5.3,
-      "place": "58 km ENE of Tadine, New Caledonia",
-      "time": "2026-09-26T01:10:19.430Z"
-    },
-    {
-      "id": "us6000txjy",
-      "latitude": -21.8904,
-      "longitude": 174.0792,
-      "depth": 23.966,
-      "magnitude": 5.3,
-      "place": "Vanuatu region",
-      "time": "2026-09-25T11:12:15.838Z"
-    },
-    {
-      "id": "us6000txme",
-      "latitude": -33.9661,
-      "longitude": -72.1079,
-      "depth": 29.072,
       "magnitude": 5.2,
-      "place": "62 km SW of San Antonio, Chile",
-      "time": "2026-09-25T15:29:09.560Z"
+      "place": "148 km NW of Kilmia, Yemen",
+      "time": "2026-09-26T16:33:43.270Z"
     },
     {
-      "id": "us6000txq2",
-      "latitude": -21.2728,
-      "longitude": 168.5744,
+      "id": "us6000txt0",
+      "latitude": -21.2176,
+      "longitude": 168.3226,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "58 km NE of Tadine, New Caledonia",
+      "time": "2026-09-26T12:14:58.406Z"
+    },
+    {
+      "id": "us6000txw5",
+      "latitude": -21.2857,
+      "longitude": 168.7073,
       "depth": 10,
       "magnitude": 5.1,
+      "place": "90 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-27T02:22:10.562Z"
+    },
+    {
+      "id": "us6000txtn",
+      "latitude": -21.3884,
+      "longitude": 168.5751,
+      "depth": 10,
+      "magnitude": 5.1,
+      "place": "74 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-26T15:01:36.433Z"
+    },
+    {
+      "id": "us6000txrn",
+      "latitude": -21.1943,
+      "longitude": 168.4225,
+      "depth": 10,
+      "magnitude": 5.1,
+      "place": "68 km NE of Tadine, New Caledonia",
+      "time": "2026-09-26T07:08:02.558Z"
+    },
+    {
+      "id": "us6000txrf",
+      "latitude": -21.227,
+      "longitude": 168.4033,
+      "depth": 10,
+      "magnitude": 5.1,
+      "place": "64 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-26T05:50:48.716Z"
+    },
+    {
+      "id": "us6000txvu",
+      "latitude": -21.4298,
+      "longitude": 168.4566,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "61 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-27T01:18:25.822Z"
+    },
+    {
+      "id": "us6000txur",
+      "latitude": -8.1581,
+      "longitude": 120.3294,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "52 km NNW of Ruteng, Indonesia",
+      "time": "2026-09-26T19:37:01.212Z"
+    },
+    {
+      "id": "us6000txsz",
+      "latitude": -21.1281,
+      "longitude": 168.4681,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "76 km NE of Tadine, New Caledonia",
+      "time": "2026-09-26T12:14:20.648Z"
+    },
+    {
+      "id": "us6000txrs",
+      "latitude": -21.2116,
+      "longitude": 168.5478,
+      "depth": 10,
+      "magnitude": 5,
       "place": "78 km ENE of Tadine, New Caledonia",
-      "time": "2026-09-25T22:07:34.791Z"
+      "time": "2026-09-26T08:24:58.743Z"
     },
     {
-      "id": "us6000txql",
-      "latitude": 28.5792,
-      "longitude": 104.6428,
+      "id": "us6000txrq",
+      "latitude": -21.2249,
+      "longitude": 168.614,
       "depth": 10,
       "magnitude": 5,
-      "place": "15 km NNW of Xunchang, China",
-      "time": "2026-09-25T23:57:33.361Z"
+      "place": "84 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-26T07:22:12.908Z"
     },
     {
-      "id": "us6000txpf",
-      "latitude": 28.5744,
-      "longitude": 104.7032,
-      "depth": 10,
-      "magnitude": 5,
-      "place": "13 km N of Xunchang, China",
-      "time": "2026-09-25T21:01:27.262Z"
+      "id": "us6000txv7",
+      "latitude": -4.6357,
+      "longitude": 152.9096,
+      "depth": 63.571,
+      "magnitude": 4.9,
+      "place": "78 km ESE of Kokopo, Papua New Guinea",
+      "time": "2026-09-26T21:49:27.543Z"
     },
     {
-      "id": "us6000txqf",
-      "latitude": -21.1532,
-      "longitude": 168.5092,
+      "id": "us6000txse",
+      "latitude": -21.2105,
+      "longitude": 168.4957,
       "depth": 10,
       "magnitude": 4.9,
-      "place": "78 km NE of Tadine, New Caledonia",
-      "time": "2026-09-25T23:32:44.392Z"
+      "place": "73 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-26T10:21:05.896Z"
     },
     {
-      "id": "us6000txk8",
-      "latitude": -59.849,
-      "longitude": -61.371,
+      "id": "us6000txuf",
+      "latitude": -21.3627,
+      "longitude": 168.5681,
       "depth": 10,
-      "magnitude": 4.9,
-      "place": "Drake Passage",
-      "time": "2026-09-25T12:37:16.665Z"
-    },
-    {
-      "id": "us6000txnq",
-      "latitude": -8.2281,
-      "longitude": 120.4296,
-      "depth": 14.458,
       "magnitude": 4.8,
-      "place": "42 km N of Ruteng, Indonesia",
-      "time": "2026-09-25T19:39:29.552Z"
+      "place": "74 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-26T18:25:23.929Z"
     },
     {
-      "id": "us6000txkc",
-      "latitude": -6.9267,
-      "longitude": 105.3554,
+      "id": "us6000txty",
+      "latitude": -21.4649,
+      "longitude": 168.5787,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "72 km E of Tadine, New Caledonia",
+      "time": "2026-09-26T16:06:48.430Z"
+    },
+    {
+      "id": "us6000txt9",
+      "latitude": -21.0626,
+      "longitude": 168.5329,
+      "depth": 14.383,
+      "magnitude": 4.8,
+      "place": "86 km NE of Tadine, New Caledonia",
+      "time": "2026-09-26T13:48:50.275Z"
+    },
+    {
+      "id": "us6000txs3",
+      "latitude": -21.182,
+      "longitude": 168.5301,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "78 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-26T09:10:31.027Z"
+    },
+    {
+      "id": "us6000txs2",
+      "latitude": -21.0058,
+      "longitude": 168.6238,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "97 km NE of Tadine, New Caledonia",
+      "time": "2026-09-26T09:08:05.869Z"
+    },
+    {
+      "id": "us6000txuj",
+      "latitude": 28.3596,
+      "longitude": 105.0553,
       "depth": 10,
       "magnitude": 4.7,
-      "place": "80 km SW of Labuan, Indonesia",
-      "time": "2026-09-25T13:47:26.836Z"
+      "place": "5 km N of Bowangshan, China",
+      "time": "2026-09-26T18:31:42.679Z"
     },
     {
-      "id": "us6000txp8",
-      "latitude": -11.7022,
-      "longitude": 166.6797,
-      "depth": 223.583,
+      "id": "us6000txsy",
+      "latitude": -21.2646,
+      "longitude": 168.5179,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "73 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-26T12:11:01.897Z"
+    },
+    {
+      "id": "us6000txsh",
+      "latitude": 1.831,
+      "longitude": 89.4977,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "North Indian Ocean",
+      "time": "2026-09-26T10:53:15.123Z"
+    },
+    {
+      "id": "us6000txs6",
+      "latitude": -21.2366,
+      "longitude": 168.4865,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "71 km ENE of Tadine, New Caledonia",
+      "time": "2026-09-26T09:07:19.622Z"
+    },
+    {
+      "id": "us6000txrz",
+      "latitude": -21.0172,
+      "longitude": 168.6325,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "97 km NE of Tadine, New Caledonia",
+      "time": "2026-09-26T08:54:03.961Z"
+    },
+    {
+      "id": "us6000txuc",
+      "latitude": -48.5563,
+      "longitude": 31.1369,
+      "depth": 10,
       "magnitude": 4.6,
-      "place": "144 km SE of Lata, Solomon Islands",
-      "time": "2026-09-25T20:41:09.329Z"
+      "place": "south of Africa",
+      "time": "2026-09-26T17:50:20.706Z"
     },
     {
-      "id": "us6000txr0",
-      "latitude": 68.8565,
-      "longitude": -16.9554,
+      "id": "us6000txt8",
+      "latitude": -7.8646,
+      "longitude": 123.2938,
+      "depth": 235.082,
+      "magnitude": 4.6,
+      "place": "145 km NE of Maumere, Indonesia",
+      "time": "2026-09-26T13:38:15.958Z"
+    },
+    {
+      "id": "us6000txrj",
+      "latitude": 4.018,
+      "longitude": -75.8315,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "25 km W of Roncesvalles, Colombia",
+      "time": "2026-09-26T06:38:19.029Z"
+    },
+    {
+      "id": "us6000txwk",
+      "latitude": -37.1357,
+      "longitude": -75.1898,
       "depth": 10,
       "magnitude": 4.5,
-      "place": "Iceland region",
-      "time": "2026-09-26T02:52:55.988Z"
+      "place": "145 km WNW of Lebu, Chile",
+      "time": "2026-09-27T04:14:44.454Z"
     },
     {
-      "id": "us6000txpa",
-      "latitude": -24.0533,
-      "longitude": -179.9919,
-      "depth": 482.813,
-      "magnitude": 4.5,
-      "place": "south of the Fiji Islands",
-      "time": "2026-09-25T20:43:32.619Z"
-    },
-    {
-      "id": "us6000txk0",
-      "latitude": 34.8425,
-      "longitude": 77.5756,
-      "depth": 10,
-      "magnitude": 4.5,
-      "place": "72 km E of Thang, India",
-      "time": "2026-09-25T11:53:21.312Z"
-    },
-    {
-      "id": "us6000txqv",
-      "latitude": 32.7187,
-      "longitude": 130.6922,
-      "depth": 10,
+      "id": "aka2026tcqxxq",
+      "latitude": 52.244,
+      "longitude": -169.393,
+      "depth": 15.4,
       "magnitude": 4.4,
-      "place": "4 km NNE of Uto, Japan",
-      "time": "2026-09-26T01:31:19.592Z"
+      "place": "85 km SSW of Nikolski, Alaska",
+      "time": "2026-09-26T21:31:20.054Z"
     },
     {
-      "id": "us6000txiw",
-      "latitude": 37.4128,
-      "longitude": 72.1784,
-      "depth": 212.621,
-      "magnitude": 4.3,
-      "place": "52 km NNW of Khandūd, Afghanistan",
-      "time": "2026-09-25T05:35:50.000Z"
+      "id": "us6000txut",
+      "latitude": -21.352,
+      "longitude": -68.8675,
+      "depth": 118.857,
+      "magnitude": 4.4,
+      "place": "65 km WSW of Ollagüe, Chile",
+      "time": "2026-09-26T19:48:11.508Z"
     },
     {
-      "id": "us6000txjc",
-      "latitude": 37.4587,
-      "longitude": 138.7057,
-      "depth": 165.7,
-      "magnitude": 4.1,
-      "place": "8 km ENE of Kariwa, Japan",
-      "time": "2026-09-25T07:18:22.822Z"
+      "id": "us6000txu2",
+      "latitude": 51.1579,
+      "longitude": 179.7488,
+      "depth": 17.601,
+      "magnitude": 4.4,
+      "place": "263 km WSW of Adak, Alaska",
+      "time": "2026-09-26T17:02:01.063Z"
     },
     {
-      "id": "aka2026tadcql",
-      "latitude": 52.123,
-      "longitude": -170.358,
-      "depth": 23.3,
-      "magnitude": 3.8,
-      "place": "136 km SW of Nikolski, Alaska",
-      "time": "2026-09-25T12:37:32.903Z"
-    },
-    {
-      "id": "nc75442207",
-      "latitude": 39.0108337402344,
-      "longitude": -123.484169006348,
-      "depth": 4,
-      "magnitude": 3.74,
-      "place": "10 km W of Boonville, CA",
-      "time": "2026-09-26T03:42:49.570Z"
-    },
-    {
-      "id": "aka2026szoffz",
-      "latitude": 51.334,
-      "longitude": -178.24,
-      "depth": 13.6,
-      "magnitude": 3.5,
-      "place": "126 km WSW of Adak, Alaska",
-      "time": "2026-09-25T05:10:44.905Z"
-    },
-    {
-      "id": "aka2026tasxwj",
-      "latitude": 56.375,
-      "longitude": -156.314,
-      "depth": 6.3,
-      "magnitude": 3.3,
-      "place": "129 km E of Chignik, Alaska",
-      "time": "2026-09-25T20:31:53.292Z"
-    },
-    {
-      "id": "hv75043722",
-      "latitude": 19.4443333333333,
-      "longitude": -155.880333333333,
-      "depth": 7.47,
-      "magnitude": 3.22,
-      "place": "2 km SW of Honaunau-Napoopoo, Hawaii",
-      "time": "2026-09-25T17:54:48.830Z"
-    },
-    {
-      "id": "uu80157966",
-      "latitude": 41.5641666666667,
-      "longitude": -109.8855,
-      "depth": -2.54,
-      "magnitude": 3.13,
-      "place": "3 km NW of Little America, Wyoming",
-      "time": "2026-09-25T05:41:42.360Z"
-    },
-    {
-      "id": "us6000txjq",
-      "latitude": 38.1037,
-      "longitude": -0.9501,
+      "id": "us6000txwf",
+      "latitude": 31.341,
+      "longitude": 15.1559,
       "depth": 10,
-      "magnitude": 3,
-      "place": "2 km NNW of Orihuela, Spain",
-      "time": "2026-09-25T09:04:36.235Z"
+      "magnitude": 4.2,
+      "place": "114 km S of Mişrātah, Libya",
+      "time": "2026-09-27T03:27:20.796Z"
     },
     {
-      "id": "pr71534578",
-      "latitude": 18.3361666666667,
-      "longitude": -65.3771666666667,
-      "depth": 18.18,
-      "magnitude": 2.92,
-      "place": "8 km WNW of Culebra, Puerto Rico",
-      "time": "2026-09-25T05:15:03.260Z"
+      "id": "us6000txu6",
+      "latitude": 14.2226,
+      "longitude": -93.4109,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "120 km WSW of Puerto Madero, Mexico",
+      "time": "2026-09-26T17:30:17.140Z"
     },
     {
-      "id": "nc75442217",
-      "latitude": 39.013500213623,
-      "longitude": -123.483001708984,
-      "depth": 3.46000003814697,
-      "magnitude": 2.74,
-      "place": "10 km W of Boonville, CA",
-      "time": "2026-09-26T04:02:07.440Z"
+      "id": "us6000txrr",
+      "latitude": 47.3148,
+      "longitude": 11.4944,
+      "depth": 6.533,
+      "magnitude": 3.5,
+      "place": "2 km NNW of Absam, Austria",
+      "time": "2026-09-26T07:56:55.661Z"
     },
     {
-      "id": "us6000txp3",
-      "latitude": 31.8713,
-      "longitude": -93.4352,
-      "depth": 6.098,
+      "id": "aka2026tbmaoo",
+      "latitude": 53.754,
+      "longitude": -163.114,
+      "depth": 11.9,
+      "magnitude": 3.5,
+      "place": "123 km S of False Pass, Alaska",
+      "time": "2026-09-26T06:04:48.765Z"
+    },
+    {
+      "id": "pr71534743",
+      "latitude": 17.839,
+      "longitude": -65.1946666666667,
+      "depth": 11.76,
+      "magnitude": 3.21,
+      "place": "40 km SE of Esperanza, Puerto Rico",
+      "time": "2026-09-26T15:03:03.030Z"
+    },
+    {
+      "id": "hv75043917",
+      "latitude": 19.9551658630371,
+      "longitude": -155.261505126953,
+      "depth": 14.210000038147,
+      "magnitude": 3.11,
+      "place": "4 km SW of Laupāhoehoe, Hawaii",
+      "time": "2026-09-26T11:58:51.760Z"
+    },
+    {
+      "id": "aka2026tddduk",
+      "latitude": 61.297,
+      "longitude": -150.413,
+      "depth": 50.1,
+      "magnitude": 2.9,
+      "place": "24 km WSW of Point MacKenzie, Alaska",
+      "time": "2026-09-27T03:38:12.815Z"
+    },
+    {
+      "id": "hv75044032",
+      "latitude": 19.3999996185303,
+      "longitude": -155.264663696289,
+      "depth": 0.519999980926514,
+      "magnitude": 2.86,
+      "place": "5 km SW of Volcano, Hawaii",
+      "time": "2026-09-27T00:12:29.230Z"
+    },
+    {
+      "id": "tx2026szoalq",
+      "latitude": 28.848,
+      "longitude": -98.884,
+      "depth": 6.3136,
+      "magnitude": 2.8,
+      "place": "17 km W of Charlotte, Texas",
+      "time": "2026-09-26T20:49:18.574Z"
+    },
+    {
+      "id": "pr71534718",
+      "latitude": 18.5378333333333,
+      "longitude": -66.4598333333333,
+      "depth": 88.89,
+      "magnitude": 2.79,
+      "place": "8 km NNE of Tierras Nuevas Poniente, Puerto Rico",
+      "time": "2026-09-26T05:35:09.040Z"
+    },
+    {
+      "id": "aka2026tdbbzi",
+      "latitude": 69.052,
+      "longitude": -144.6,
+      "depth": 1.5,
       "magnitude": 2.7,
-      "place": "9 km NE of Pleasant Hill, Louisiana",
-      "time": "2026-09-25T20:26:11.335Z"
+      "place": "110 km NNE of Arctic Village, Alaska",
+      "time": "2026-09-27T02:35:15.964Z"
     },
     {
-      "id": "tx2026sxmsve",
-      "latitude": 31.379,
-      "longitude": -103.705,
-      "depth": 6.228,
+      "id": "tx2026sznqpd",
+      "latitude": 28.835,
+      "longitude": -98.941,
+      "depth": 6.6925,
+      "magnitude": 2.7,
+      "place": "16 km ESE of Pearsall, Texas",
+      "time": "2026-09-26T20:37:50.425Z"
+    },
+    {
+      "id": "hv75044042",
+      "latitude": 19.1806659698486,
+      "longitude": -155.498001098633,
+      "depth": 30.75,
+      "magnitude": 2.62,
+      "place": "3 km SW of Pāhala, Hawaii",
+      "time": "2026-09-27T00:34:42.910Z"
+    },
+    {
+      "id": "us6000txux",
+      "latitude": 19.3226,
+      "longitude": -155.3735,
+      "depth": 31.712,
       "magnitude": 2.6,
-      "place": "11 km NE of Toyah, Texas",
-      "time": "2026-09-25T18:01:21.042Z"
+      "place": "17 km NE of Pāhala, Hawaii",
+      "time": "2026-09-26T19:41:54.851Z"
     },
     {
-      "id": "aka2026tawqyh",
-      "latitude": 63.293,
-      "longitude": -149.334,
-      "depth": 82.8,
+      "id": "aka2026tczykx",
+      "latitude": 57.65,
+      "longitude": -155.509,
+      "depth": 86.4,
       "magnitude": 2.5,
-      "place": "22 km WSW of Cantwell, Alaska",
-      "time": "2026-09-25T22:23:50.485Z"
+      "place": "63 km W of Karluk, Alaska",
+      "time": "2026-09-27T02:01:42.224Z"
     },
     {
-      "id": "aka2026tamcpb",
-      "latitude": 57.424,
-      "longitude": -155.342,
-      "depth": 69.3,
+      "id": "us6000txsp",
+      "latitude": 31.6505,
+      "longitude": -104.4465,
+      "depth": 8.019,
       "magnitude": 2.5,
-      "place": "55 km WSW of Karluk, Alaska",
-      "time": "2026-09-25T17:07:23.666Z"
+      "place": "58 km S of Whites City, New Mexico",
+      "time": "2026-09-26T11:28:38.553Z"
     },
     {
-      "id": "pr71534643",
-      "latitude": 17.9158333333333,
-      "longitude": -66.2845,
-      "depth": 7.75,
+      "id": "aka2026tbvlmd",
+      "latitude": 62.914,
+      "longitude": -151.244,
+      "depth": 116.3,
       "magnitude": 2.5,
-      "place": "6 km SSE of Salinas, Puerto Rico",
-      "time": "2026-09-25T13:17:57.160Z"
+      "place": "52 km NNW of Petersville, Alaska",
+      "time": "2026-09-26T10:47:13.728Z"
     },
     {
-      "id": "us6000txj1",
-      "latitude": 34.7286,
-      "longitude": -103.7598,
-      "depth": 9.36,
-      "magnitude": 2.5,
-      "place": "16 km NE of House, New Mexico",
-      "time": "2026-09-25T05:57:51.890Z"
+      "id": "hv75043997",
+      "latitude": 19.2108325958252,
+      "longitude": -155.48616027832,
+      "depth": 34.5200004577637,
+      "magnitude": 2.47,
+      "place": "1 km NW of Pāhala, Hawaii",
+      "time": "2026-09-26T19:41:06.430Z"
     }
   ],
   "weatherSamples": [
     {
       "latitude": 64.15,
       "longitude": -21.94,
-      "temperature": 5.6,
-      "wind": 25.2
+      "temperature": 6.5,
+      "wind": 7.2
     },
     {
       "latitude": 35.68,
       "longitude": 139.69,
-      "temperature": 18.9,
-      "wind": 4.3
+      "temperature": 22.3,
+      "wind": 2.1
     },
     {
       "latitude": 1.35,
       "longitude": 103.82,
-      "temperature": 30.6,
-      "wind": 6.9
+      "temperature": 29.4,
+      "wind": 7.6
     },
     {
       "latitude": -33.87,
       "longitude": 151.21,
-      "temperature": 27.4,
-      "wind": 10.6
+      "temperature": 15.6,
+      "wind": 20.5
     },
     {
       "latitude": -1.29,
       "longitude": 36.82,
-      "temperature": 15.7,
-      "wind": 4.7
+      "temperature": 17,
+      "wind": 3.5
     },
     {
       "latitude": 51.51,
       "longitude": -0.13,
-      "temperature": 14.2,
-      "wind": 10.4
+      "temperature": 14.6,
+      "wind": 8.3
     },
     {
       "latitude": 40.71,
       "longitude": -74.01,
-      "temperature": 13.6,
-      "wind": 21.4
+      "temperature": 14.4,
+      "wind": 32.1
     },
     {
       "latitude": -23.55,
       "longitude": -46.63,
-      "temperature": 17.7,
-      "wind": 3.5
+      "temperature": 19.2,
+      "wind": 4.5
     },
     {
       "latitude": 31.23,
       "longitude": 121.47,
-      "temperature": 32.6,
-      "wind": 8.2
+      "temperature": 28.2,
+      "wind": 1.8
     },
     {
       "latitude": 19.43,
       "longitude": -99.13,
-      "temperature": 15.9,
-      "wind": 4.7
+      "temperature": 15.8,
+      "wind": 2.8
     },
     {
       "latitude": 37.77,
       "longitude": -122.42,
-      "temperature": 14.8,
-      "wind": 15.5
+      "temperature": 13.4,
+      "wind": 17.1
     },
     {
       "latitude": -34.6,
       "longitude": -58.38,
-      "temperature": 18.4,
-      "wind": 7.4
+      "temperature": 14.1,
+      "wind": 18.2
     }
   ],
   "sources": [
