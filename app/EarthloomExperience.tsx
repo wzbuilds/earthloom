@@ -356,7 +356,7 @@ export function EarthloomExperience({ snapshot }: Props) {
     >
       <canvas
         ref={canvasRef}
-        aria-label={`今日地球数据画像：${snapshot.metrics.earthquakeCount} 次地震、Kp ${snapshot.metrics.kpIndex}、太阳风 ${snapshot.metrics.solarWind} 公里每秒。`}
+        aria-label={`${snapshot.date} 地球数据画像：${snapshot.metrics.earthquakeCount} 次地震、Kp ${snapshot.metrics.kpIndex}、太阳风 ${snapshot.metrics.solarWind} 公里每秒。`}
         role="img"
       />
       <div className="canvas-index" aria-hidden="true">

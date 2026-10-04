@@ -3,6 +3,7 @@ import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import { getArchiveNavigationTarget } from "../app/archive-navigation.js";
 import { toggleArchiveSelection } from "../app/archive-selection.js";
+import { archiveNeighbors, portraitPath } from "../app/portrait-paths.js";
 import { deriveSignalContext } from "../app/signal-context.js";
 import { deriveSnapshotComparison, findPreviousSnapshot } from "../app/snapshot-comparison.js";
 import { deriveSoundscapePlan } from "../app/soundscape-plan.js";
@@ -20,16 +21,43 @@ import {
   performPortraitShare,
 } from "../app/share-details.js";
 
-async function render() {
+async function render(route = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
   return worker.fetch(
-    new Request("http://localhost/", { headers: { accept: "text/html" } }),
+    new Request(`http://localhost${route}`, { headers: { accept: "text/html" } }),
     { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
     { waitUntil() {}, passThroughOnException() {} },
   );
 }
+
+test("navigates recorded portraits across gaps without mutating archive order", () => {
+  const items = [{ date: "2026-10-04" }, { date: "2026-09-30" }, { date: "2026-10-02" }];
+  assert.deepEqual(archiveNeighbors(items, "2026-10-02"), { previous: "2026-09-30", next: "2026-10-04" });
+  assert.deepEqual(archiveNeighbors(items, "2026-09-30"), { previous: null, next: "2026-10-02" });
+  assert.deepEqual(archiveNeighbors(items, "2026-10-04"), { previous: "2026-10-02", next: null });
+  assert.deepEqual(archiveNeighbors(items, "missing"), { previous: null, next: null });
+  assert.equal(items[0].date, "2026-10-04");
+  assert.equal(portraitPath("2026-10-02"), "portraits/2026-10-02/");
+});
+
+test("renders a saved portrait with its own readings and handles unknown dates", async () => {
+  const archive = JSON.parse(await readFile(new URL("../data/archive-index.json", import.meta.url), "utf8"));
+  const date = archive.at(-1).date;
+  const recorded = JSON.parse(await readFile(new URL(`../data/archive/${date}.json`, import.meta.url), "utf8"));
+  const response = await render(`/portraits/${date}`);
+  assert.equal(response.status, 200);
+  const html = (await response.text()).replaceAll(/<!--.*?-->/g, "");
+  assert.match(html, new RegExp(date));
+  assert.match(html, new RegExp(`SEED ${recorded.seed}`));
+  assert.match(html, new RegExp(`data/archive/${date}\\.json`));
+  assert.match(html, /返回完整收藏/);
+  assert.match(html, /当日证据/);
+  for (const source of recorded.sources) assert.ok(html.includes(source.url.replaceAll("&", "&amp;")));
+  const missing = await render("/portraits/1900-01-01");
+  assert.equal(missing.status, 404);
+});
 
 test("ships a traceable live snapshot", async () => {
   const snapshot = JSON.parse(await readFile(new URL("../data/latest.json", import.meta.url), "utf8"));
