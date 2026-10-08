@@ -2,6 +2,13 @@
 
 This file records product evolution, not daily data generation. Each autonomous product pull request adds one concise entry with the requirement, visible outcome, and verification performed.
 
+## 2026-10-04 — Make the collection visitable
+
+- Requirement: revisit a dated Earth portrait as an artwork, with its original observations and source evidence.
+- Outcome: archive cards show signal studies using recorded earthquake coordinates and open individual portrait pages using complete saved snapshots, with chronological navigation and separate raw-data access; artwork descriptions include the recorded date.
+- Acceptance: export every recorded date, preserve original seed and providers, navigate across missing dates without inventing records, and keep mobile and keyboard access.
+- Verification: type-check, lint, application build, 14 tests, and Pages export passed; 60 dated pages generated. Desktop and 390px browser checks confirmed canvas rendering, navigation, and no mobile overflow. Guard requires review because 11 files exceed its 10-file limit. Delivered for review, not deployed.
+
 ## 2026-08-28 — Give first-time visitors a quiet map
 
 - Requirement: a first-time visitor can understand where to find today’s portrait, the living archive, and the traceable generation method without being blocked by onboarding.

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
+import { loadPortrait } from "./load-portrait";
 import archive from "@/data/archive-index.json";
 import latest from "@/data/latest.json";
 import { ArchiveGallery } from "./ArchiveGallery";
+import { ArchivePreview } from "./ArchivePreview";
 import { EarthloomExperience } from "./EarthloomExperience";
 import { EarthloomShare } from "./EarthloomShare";
 import { EarthloomSoundscape } from "./EarthloomSoundscape";
@@ -113,7 +115,8 @@ function dateLabel(value: string) {
   }).format(new Date(`${value}T12:00:00+08:00`));
 }
 
-export default function Home() {
+export default async function Home() {
+  const previews = Object.fromEntries(await Promise.all(archive.map(async (item) => [item.date, <ArchivePreview key={item.date} snapshot={await loadPortrait(item.date)} />])));
   return (
     <main>
       <FirstVisitGuide />
@@ -251,7 +254,7 @@ export default function Home() {
           <p className="archive-description">每张作品都保存生成参数与原始快照。相同数据、相同日期，永远得到同一幅纹理。</p>
           <p className="archive-keyboard-help" id="archive-keyboard-help">键盘：Tab 进入画廊，方向键逐日浏览，Home / End 跳到首尾。</p>
         </div>
-        <ArchiveGallery items={archive} />
+        <ArchiveGallery items={archive} previews={previews} />
       </section>
 
       <section className="method-section" id="method" aria-labelledby="method-title">

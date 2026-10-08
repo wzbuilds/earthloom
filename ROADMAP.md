@@ -12,6 +12,9 @@ Earthloom should feel alive in three ways:
 
 ## Now — suitable for autonomous iteration
 
+- [x] Turn the archive into a collection of visitable, dated portraits. Implemented 2026-10-04; review required before release.
+  - Acceptance: every archived date opens a statically exported artwork page rendered from its full saved snapshot; previous/next navigation follows recorded dates, including gaps; date, recorded provider statuses and raw snapshot remain visible; unknown dates do not resolve; mobile and keyboard visitors can use all navigation. This is the first delivery toward the user-requested product maturation.
+
 - [x] Make the hero unmistakably planetary and explain today’s live input → drawing rule → visible mark. Completed 2026-07-16.
 - [x] Let visitors opt into an original soundscape deterministically composed from today’s traceable signals. Completed 2026-07-17.
 - [x] Add a compact “why today looks different” explanation derived only from the current and previous snapshots. Completed 2026-07-22.

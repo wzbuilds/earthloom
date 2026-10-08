@@ -1,10 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { CSSProperties, KeyboardEvent } from "react";
+import type { CSSProperties, KeyboardEvent, ReactNode } from "react";
 import { getArchiveNavigationTarget } from "./archive-navigation";
 import { toggleArchiveSelection } from "./archive-selection";
 import { deriveSnapshotComparison } from "./snapshot-comparison";
+import { portraitPath } from "./portrait-paths";
 
 type ArchiveItem = {
   date: string;
@@ -27,6 +28,7 @@ type ArchiveItem = {
 
 type ArchiveGalleryProps = {
   items: ArchiveItem[];
+  previews: Record<string, ReactNode>;
 };
 
 type ArchiveComparison = {
@@ -40,7 +42,7 @@ type ArchiveComparison = {
   }>;
 };
 
-export function ArchiveGallery({ items }: ArchiveGalleryProps) {
+export function ArchiveGallery({ items, previews }: ArchiveGalleryProps) {
   const [selectedDates, setSelectedDates] = useState<string[]>([]);
   const selectedItems = useMemo(
     () => selectedDates
@@ -139,15 +141,13 @@ export function ArchiveGallery({ items }: ArchiveGalleryProps) {
             >
               <a
                 aria-keyshortcuts="ArrowLeft ArrowRight ArrowUp ArrowDown Home End"
-                aria-label={`打开 ${item.date} 的原始快照`}
+                aria-label={`观看 ${item.date} 的地球作品`}
                 className="archive-card-link"
                 data-archive-card
-                href={`data/archive/${item.date}.json`}
+                href={portraitPath(item.date)}
               >
                 <div className="archive-art" aria-hidden="true">
-                  <span className="archive-orbit orbit-one" />
-                  <span className="archive-orbit orbit-two" />
-                  <span className="archive-moon" />
+                  {previews[item.date]}
                 </div>
                 <div className="archive-meta">
                   <span>NO. {String(items.length - index).padStart(3, "0")}</span>
@@ -155,6 +155,7 @@ export function ArchiveGallery({ items }: ArchiveGalleryProps) {
                   <small>M{item.metrics.maxMagnitude} · KP {item.metrics.kpIndex}</small>
                 </div>
               </a>
+              <a className="archive-raw-link" href={`data/archive/${item.date}.json`} aria-label={`打开 ${item.date} 的原始快照`}>原始快照 ↗</a>
               <button
                 aria-label={`${isSelected ? "移出" : "加入"}比较：${item.date}`}
                 aria-pressed={isSelected}
