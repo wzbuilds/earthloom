@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-11T05:34:28.457Z",
+  "timeZone": "Asia/Shanghai",
+  "status": "live",
+  "seed": 4257667761,
+  "summary": "磁暴把今天织成了明亮的极光。",
+  "metrics": {
+    "earthquakeCount": 46,
+    "maxMagnitude": 5.3,
+    "averageDepth": 69.4,
+    "kpIndex": 6,
+    "solarWind": 630,
+    "meanTemperature": 17.2,
+    "meanWind": 9.2,
+    "moonPhase": 0.0039
+  },
+  "palette": {
+    "void": "hsl(261 38% 5%)",
+    "ink": "hsl(239 44% 9%)",
+    "aurora": "hsl(261.6666666666667 88% 65%)",
+    "tide": "hsl(305 76% 64%)",
+    "ember": "hsl(36.50666666666667 96% 66%)",
+    "mist": "hsl(35 42% 87%)"
+  },
+  "earthquakes": [
+    {
+      "id": "us6000u1gs",
+      "latitude": -37.1165,
+      "longitude": -95.2667,
+      "depth": 10,
+      "magnitude": 5.3,
+      "place": "southeast of Easter Island",
+      "time": "2026-10-10T21:34:02.337Z"
+    },
+    {
+      "id": "us6000u1i6",
+      "latitude": -8.6161,
+      "longitude": 106.526,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "180 km S of Pelabuhanratu, Indonesia",
+      "time": "2026-10-11T03:30:17.430Z"
+    },
+    {
+      "id": "us6000u1hw",
+      "latitude": 7.5139,
+      "longitude": -80.4283,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "3 km NW of Flores, Panama",
+      "time": "2026-10-11T01:50:52.299Z"
+    },
+    {
+      "id": "us6000u1gm",
+      "latitude": -31.2348,
+      "longitude": -178.9752,
+      "depth": 117.707,
+      "magnitude": 4.9,
+      "place": "Kermadec Islands region",
+      "time": "2026-10-10T20:35:48.751Z"
+    },
+    {
+      "id": "us6000u1d7",
+      "latitude": 7.2997,
+      "longitude": -79.9687,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "26 km SSE of Pedasí, Panama",
+      "time": "2026-10-10T06:30:03.521Z"
+    },
+    {
+      "id": "us6000u1d2",
+      "latitude": 7.3663,
+      "longitude": -80.3171,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "10 km SSW of Cañas, Panama",
+      "time": "2026-10-10T06:18:55.288Z"
+    },
+    {
+      "id": "us6000u1fj",
+      "latitude": 7.6231,
+      "longitude": -81.0112,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "11 km SSW of Tebario, Panama",
+      "time": "2026-10-10T15:58:19.800Z"
+    },
+    {
+      "id": "us6000u1ex",
+      "latitude": 7.5187,
+      "longitude": -80.5165,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "12 km NE of La Tronosa, Panama",
+      "time": "2026-10-10T13:46:56.921Z"
+    },
+    {
+      "id": "us6000u1e5",
+      "latitude": 7.7463,
+      "longitude": -81.3092,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "4 km NE of Río Grande, Panama",
+      "time": "2026-10-10T10:35:11.922Z"
+    },
+    {
+      "id": "us6000u1fk",
+      "latitude": 7.4596,
+      "longitude": -80.4282,
+      "depth": 13.518,
+      "magnitude": 4.7,
+      "place": "2 km WNW of El Cacao, Panama",
+      "time": "2026-10-10T16:05:42.775Z"
+    },
+    {
+      "id": "us6000u1d5",
+      "latitude": 7.2969,
+      "longitude": -79.9827,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "26 km S of Pedasí, Panama",
+      "time": "2026-10-10T06:27:09.602Z"
+    },
+    {
+      "id": "us6000u1i0",
+      "latitude": 5.4706,
+      "longitude": 126.6164,
+      "depth": 121.25,
+      "magnitude": 4.6,
+      "place": "109 km SSE of Pondaguitan, Philippines",
+      "time": "2026-10-11T02:35:35.917Z"
+    },
+    {
+      "id": "us6000u1hj",
+      "latitude": 7.8093,
+      "longitude": -81.472,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "18 km WNW of Río Grande, Panama",
+      "time": "2026-10-11T00:06:09.289Z"
+    },
+    {
+      "id": "us6000u1fa",
+      "latitude": -3.7668,
+      "longitude": 151.9827,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "51 km NNW of Rabaul, Papua New Guinea",
+      "time": "2026-10-10T15:10:20.183Z"
+    },
+    {
+      "id": "us6000u1ew",
+      "latitude": -22.071,
+      "longitude": -179.5886,
+      "depth": 587.386,
+      "magnitude": 4.6,
+      "place": "south of the Fiji Islands",
+      "time": "2026-10-10T13:40:44.101Z"
+    },
+    {
+      "id": "us6000u1ej",
+      "latitude": -19.9451,
+      "longitude": -177.5258,
+      "depth": 560.2,
+      "magnitude": 4.6,
+      "place": "268 km WNW of Houma, Tonga",
+      "time": "2026-10-10T12:21:02.813Z"
+    },
+    {
+      "id": "us6000u1dy",
+      "latitude": -2.8851,
+      "longitude": 141.496,
+      "depth": 30.387,
+      "magnitude": 4.6,
+      "place": "31 km SE of Vanimo, Papua New Guinea",
+      "time": "2026-10-10T09:42:58.899Z"
+    },
+    {
+      "id": "us6000u1dc",
+      "latitude": 7.6182,
+      "longitude": -80.5348,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "6 km SSE of Llano de Piedra, Panama",
+      "time": "2026-10-10T07:13:30.583Z"
+    },
+    {
+      "id": "us6000u1gu",
+      "latitude": -5.403,
+      "longitude": 102.5418,
+      "depth": 29.581,
+      "magnitude": 4.5,
+      "place": "171 km SSW of Pagar Alam, Indonesia",
+      "time": "2026-10-10T21:38:09.130Z"
+    },
+    {
+      "id": "us6000u1f6",
+      "latitude": 7.8256,
+      "longitude": -81.3036,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "5 km WNW of Guarumal, Panama",
+      "time": "2026-10-10T14:59:23.684Z"
+    },
+    {
+      "id": "us6000u1f3",
+      "latitude": 7.5178,
+      "longitude": -80.6744,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "10 km NNW of El Cortezo, Panama",
+      "time": "2026-10-10T14:51:45.562Z"
+    },
+    {
+      "id": "us6000u1ev",
+      "latitude": 7.5481,
+      "longitude": -80.166,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "4 km NW of Los Asientos, Panama",
+      "time": "2026-10-10T13:22:13.684Z"
+    },
+    {
+      "id": "us6000u1dm",
+      "latitude": -15.397,
+      "longitude": -173.7816,
+      "depth": 79.424,
+      "magnitude": 4.5,
+      "place": "61 km N of Hihifo, Tonga",
+      "time": "2026-10-10T08:38:50.674Z"
+    },
+    {
+      "id": "us6000u1db",
+      "latitude": 7.4558,
+      "longitude": -79.9613,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "10 km SE of Pedasí, Panama",
+      "time": "2026-10-10T06:47:49.431Z"
+    },
+    {
+      "id": "us6000u1d1",
+      "latitude": 7.3167,
+      "longitude": -79.9478,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "25 km SSE of Pedasí, Panama",
+      "time": "2026-10-10T06:16:32.545Z"
+    },
+    {
+      "id": "us6000u1cx",
+      "latitude": 5.267,
+      "longitude": -75.6127,
+      "depth": 115.143,
+      "magnitude": 4.5,
+      "place": "6 km WSW of Filadelfia, Colombia",
+      "time": "2026-10-10T05:45:59.396Z"
+    },
+    {
+      "id": "us6000u1i9",
+      "latitude": 7.6705,
+      "longitude": -80.6908,
+      "depth": 10,
+      "magnitude": 4.4,
+      "place": "3 km NW of Pitaloza Arriba, Panama",
+      "time": "2026-10-11T03:18:14.689Z"
+    },
+    {
+      "id": "us6000u1f1",
+      "latitude": 30.8049,
+      "longitude": 78.5848,
+      "depth": 22.021,
+      "magnitude": 4.4,
+      "place": "15 km ENE of Uttarkāshi, India",
+      "time": "2026-10-10T14:37:31.499Z"
+    },
+    {
+      "id": "us6000u1fz",
+      "latitude": -32.0052,
+      "longitude": -179.2669,
+      "depth": 94.179,
+      "magnitude": 4.4,
+      "place": "south of the Kermadec Islands",
+      "time": "2026-10-10T14:18:46.730Z"
+    },
+    {
+      "id": "us6000u1e1",
+      "latitude": -6.3313,
+      "longitude": 149.2865,
+      "depth": 56.818,
+      "magnitude": 4.4,
+      "place": "32 km WSW of Kandrian, Papua New Guinea",
+      "time": "2026-10-10T10:11:18.751Z"
+    },
+    {
+      "id": "us6000u1df",
+      "latitude": 7.6534,
+      "longitude": -80.5839,
+      "depth": 10,
+      "magnitude": 4.4,
+      "place": "2 km WSW of Llano de Piedra, Panama",
+      "time": "2026-10-10T07:24:35.015Z"
+    },
+    {
+      "id": "us6000u1em",
+      "latitude": 7.689,
+      "longitude": -80.9902,
+      "depth": 10,
+      "magnitude": 4.3,
+      "place": "3 km SSW of Tebario, Panama",
+      "time": "2026-10-10T12:34:08.871Z"
+    },
+    {
+      "id": "us6000u1ed",
+      "latitude": -8.757,
+      "longitude": 110.7179,
+      "depth": 68.816,
+      "magnitude": 4.3,
+      "place": "88 km S of Wonosari, Indonesia",
+      "time": "2026-10-10T11:53:19.266Z"
+    },
+    {
+      "id": "us6000u1cz",
+      "latitude": 7.7715,
+      "longitude": -80.9764,
+      "depth": 10,
+      "magnitude": 4.3,
+      "place": "5 km N of Tebario, Panama",
+      "time": "2026-10-10T06:04:20.546Z"
+    },
+    {
+      "id": "us6000u1h4",
+      "latitude": 35.4717,
+      "longitude": 26.5886,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "31 km WNW of Fry, Greece",
+      "time": "2026-10-10T22:33:28.087Z"
+    },
+    {
+      "id": "us6000u1es",
+      "latitude": 50.3761,
+      "longitude": -176.3385,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "167 km S of Adak, Alaska",
+      "time": "2026-10-10T12:30:41.055Z"
+    },
+    {
+      "id": "us6000u1dx",
+      "latitude": 7.3754,
+      "longitude": -80.0853,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "16 km SSE of Los Asientos, Panama",
+      "time": "2026-10-10T09:48:18.975Z"
+    },
+    {
+      "id": "us6000u1dh",
+      "latitude": 17.8191,
+      "longitude": -92.7794,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "4 km W of Aquiles Serdán 1ra. Sección, Mexico",
+      "time": "2026-10-10T07:47:00.391Z"
+    },
+    {
+      "id": "us6000u1h9",
+      "latitude": 36.7357,
+      "longitude": 71.1253,
+      "depth": 203.491,
+      "magnitude": 4.1,
+      "place": "29 km ESE of Jurm, Afghanistan",
+      "time": "2026-10-10T23:11:02.714Z"
+    },
+    {
+      "id": "us6000u1dw",
+      "latitude": -25.778,
+      "longitude": 179.3372,
+      "depth": 512.539,
+      "magnitude": 4.1,
+      "place": "south of the Fiji Islands",
+      "time": "2026-10-10T09:34:35.086Z"
+    },
+    {
+      "id": "pr71536388",
+      "latitude": 18.7586666666667,
+      "longitude": -68.1685,
+      "depth": 83.51,
+      "magnitude": 3.35,
+      "place": "31 km NE of Punta Cana, Dominican Republic",
+      "time": "2026-10-10T16:32:28.780Z"
+    },
+    {
+      "id": "aka2026ucrphh",
+      "latitude": 62.871,
+      "longitude": -151.02,
+      "depth": 113.1,
+      "magnitude": 3.1,
+      "place": "43 km NNW of Petersville, Alaska",
+      "time": "2026-10-10T23:42:03.290Z"
+    },
+    {
+      "id": "pr71536358",
+      "latitude": 18.9628333333333,
+      "longitude": -67.4446666666667,
+      "depth": 18.79,
+      "magnitude": 3.04,
+      "place": "63 km NW of San Antonio, Puerto Rico",
+      "time": "2026-10-10T08:52:23.140Z"
+    },
+    {
+      "id": "aka2026ucjpkf",
+      "latitude": 55.464,
+      "longitude": -158.388,
+      "depth": 19.6,
+      "magnitude": 3,
+      "place": "68 km SE of Perryville, Alaska",
+      "time": "2026-10-10T19:42:21.444Z"
+    },
+    {
+      "id": "ci41346143",
+      "latitude": 33.6373333333333,
+      "longitude": -117.018333333333,
+      "depth": 13.98,
+      "magnitude": 2.5,
+      "place": "10 km SE of Winchester, CA",
+      "time": "2026-10-10T16:59:07.790Z"
+    },
+    {
+      "id": "aka2026ubitvo",
+      "latitude": 54.382,
+      "longitude": -163.884,
+      "depth": 78.9,
+      "magnitude": 2.5,
+      "place": "60 km SSW of False Pass, Alaska",
+      "time": "2026-10-10T06:17:48.108Z"
+    }
+  ],
+  "weatherSamples": [
+    {
+      "latitude": 64.15,
+      "longitude": -21.94,
+      "temperature": 4.8,
+      "wind": 23.4
+    },
+    {
+      "latitude": 35.68,
+      "longitude": 139.69,
+      "temperature": 26,
+      "wind": 4.8
+    },
+    {
+      "latitude": 1.35,
+      "longitude": 103.82,
+      "temperature": 28.8,
+      "wind": 8.4
+    },
+    {
+      "latitude": -33.87,
+      "longitude": 151.21,
+      "temperature": 22.8,
+      "wind": 12.6
+    },
+    {
+      "latitude": -1.29,
+      "longitude": 36.82,
+      "temperature": 18.3,
+      "wind": 9.5
+    },
+    {
+      "latitude": 51.51,
+      "longitude": -0.13,
+      "temperature": 10.1,
+      "wind": 9
+    },
+    {
+      "latitude": 40.71,
+      "longitude": -74.01,
+      "temperature": 12.9,
+      "wind": 6.4
+    },
+    {
+      "latitude": -23.55,
+      "longitude": -46.63,
+      "temperature": 19.5,
+      "wind": 4.4
+    },
+    {
+      "latitude": 31.23,
+      "longitude": 121.47,
+      "temperature": 25.7,
+      "wind": 10.1
+    },
+    {
+      "latitude": 19.43,
+      "longitude": -99.13,
+      "temperature": 14.7,
+      "wind": 0.7
+    },
+    {
+      "latitude": 37.77,
+      "longitude": -122.42,
+      "temperature": 12.3,
+      "wind": 12.1
+    },
+    {
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "temperature": 10.6,
+      "wind": 8.5
+    }
+  ],
+  "sources": [
+    {
+      "label": "USGS Earthquake Hazards Program",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "status": "live"
+    },
+    {
+      "label": "NOAA Space Weather Prediction Center",
+      "url": "https://services.swpc.noaa.gov/",
+      "status": "live"
+    },
+    {
+      "label": "Open-Meteo",
+      "url": "https://open-meteo.com/",
+      "status": "live"
+    }
+  ]
+}
