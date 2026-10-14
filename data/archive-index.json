@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-10-14",
+    "seed": 814886516,
+    "summary": "深处的震动在织面上留下了宽阔回声。",
+    "status": "live",
+    "metrics": {
+      "earthquakeCount": 42,
+      "maxMagnitude": 6.8,
+      "averageDepth": 34.3,
+      "kpIndex": 3,
+      "solarWind": 598,
+      "meanTemperature": 17.2,
+      "meanWind": 11.1,
+      "moonPhase": 0.1055
+    },
+    "palette": {
+      "void": "hsl(260 38% 5%)",
+      "ink": "hsl(238 44% 9%)",
+      "aurora": "hsl(243.33333333333334 88% 65%)",
+      "tide": "hsl(304 76% 60%)",
+      "ember": "hsl(36.50666666666667 96% 66%)",
+      "mist": "hsl(34 42% 87%)"
+    }
+  },
+  {
     "date": "2026-10-13",
     "seed": 2160674337,
     "summary": "深处的震动在织面上留下了宽阔回声。",
@@ -1413,30 +1437,6 @@
       "tide": "hsl(270 76% 58.666666666666664%)",
       "ember": "hsl(37.946666666666665 96% 66%)",
       "mist": "hsl(0 42% 87%)"
-    }
-  },
-  {
-    "date": "2026-08-14",
-    "seed": 2798894612,
-    "summary": "新月留下一块安静的暗面。",
-    "status": "live",
-    "metrics": {
-      "earthquakeCount": 38,
-      "maxMagnitude": 5.6,
-      "averageDepth": 56.4,
-      "kpIndex": 3,
-      "solarWind": 363,
-      "meanTemperature": 20,
-      "meanWind": 9.5,
-      "moonPhase": 0.0398
-    },
-    "palette": {
-      "void": "hsl(260 38% 5%)",
-      "ink": "hsl(238 44% 9%)",
-      "aurora": "hsl(243.33333333333334 88% 65%)",
-      "tide": "hsl(304 76% 60%)",
-      "ember": "hsl(38 96% 66%)",
-      "mist": "hsl(34 42% 87%)"
     }
   }
 ]
