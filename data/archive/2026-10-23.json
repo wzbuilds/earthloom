@@ -1,0 +1,552 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23T04:33:50.387Z",
+  "timeZone": "Asia/Shanghai",
+  "status": "live",
+  "seed": 543857765,
+  "summary": "深处的震动在织面上留下了宽阔回声。",
+  "metrics": {
+    "earthquakeCount": 48,
+    "maxMagnitude": 7,
+    "averageDepth": 44.7,
+    "kpIndex": 4,
+    "solarWind": 429,
+    "meanTemperature": 17,
+    "meanWind": 11.7,
+    "moonPhase": 0.4103
+  },
+  "palette": {
+    "void": "hsl(239 38% 5%)",
+    "ink": "hsl(217 44% 9%)",
+    "aurora": "hsl(228.11111111111111 88% 65%)",
+    "tide": "hsl(283 76% 61.333333333333336%)",
+    "ember": "hsl(36.4 96% 66%)",
+    "mist": "hsl(13 42% 87%)"
+  },
+  "earthquakes": [
+    {
+      "id": "us6000u43g",
+      "latitude": 32.3805,
+      "longitude": 93.7797,
+      "depth": 18,
+      "magnitude": 7,
+      "place": "191 km ENE of Nagqu, China",
+      "time": "2026-10-22T14:33:40.353Z"
+    },
+    {
+      "id": "us6000u44n",
+      "latitude": 32.4401,
+      "longitude": 93.8669,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "201 km ENE of Nagqu, China",
+      "time": "2026-10-22T15:12:04.462Z"
+    },
+    {
+      "id": "us6000u473",
+      "latitude": -5.728,
+      "longitude": 152.2646,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "153 km S of Kokopo, Papua New Guinea",
+      "time": "2026-10-22T20:05:04.207Z"
+    },
+    {
+      "id": "us6000u45j",
+      "latitude": 32.3707,
+      "longitude": 93.9886,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "207 km ENE of Nagqu, China",
+      "time": "2026-10-22T18:06:44.294Z"
+    },
+    {
+      "id": "us6000u46r",
+      "latitude": -15.1269,
+      "longitude": -173.3304,
+      "depth": 23.411,
+      "magnitude": 4.9,
+      "place": "104 km NNE of Hihifo, Tonga",
+      "time": "2026-10-22T19:06:56.074Z"
+    },
+    {
+      "id": "us6000u451",
+      "latitude": 32.4918,
+      "longitude": 93.9447,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "210 km ENE of Nagqu, China",
+      "time": "2026-10-22T16:21:33.822Z"
+    },
+    {
+      "id": "us6000u44w",
+      "latitude": 33.7966,
+      "longitude": 86.2316,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "western Xizang",
+      "time": "2026-10-22T15:45:37.094Z"
+    },
+    {
+      "id": "us6000u432",
+      "latitude": -13.9085,
+      "longitude": 165.6239,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "200 km NW of Port-Olry, Vanuatu",
+      "time": "2026-10-22T12:22:57.822Z"
+    },
+    {
+      "id": "us6000u42q",
+      "latitude": -2.8037,
+      "longitude": 102.1272,
+      "depth": 135.261,
+      "magnitude": 4.9,
+      "place": "85 km NNW of Curup, Indonesia",
+      "time": "2026-10-22T10:57:52.259Z"
+    },
+    {
+      "id": "us6000u47l",
+      "latitude": 48.3802,
+      "longitude": 154.9209,
+      "depth": 50.389,
+      "magnitude": 4.8,
+      "place": "269 km SSW of Severo-Kuril’sk, Russia",
+      "time": "2026-10-22T21:09:59.090Z"
+    },
+    {
+      "id": "us6000u45f",
+      "latitude": 44.035,
+      "longitude": 147.0825,
+      "depth": 76.309,
+      "magnitude": 4.8,
+      "place": "39 km NE of Shikotan, Russia",
+      "time": "2026-10-22T17:21:26.780Z"
+    },
+    {
+      "id": "us6000u459",
+      "latitude": -22.564,
+      "longitude": -175.4438,
+      "depth": 35,
+      "magnitude": 4.8,
+      "place": "144 km SSW of ‘Ohonua, Tonga",
+      "time": "2026-10-22T16:51:21.365Z"
+    },
+    {
+      "id": "us6000u41y",
+      "latitude": -62.4088,
+      "longitude": 163.5214,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "Balleny Islands region",
+      "time": "2026-10-22T07:49:29.455Z"
+    },
+    {
+      "id": "us6000u417",
+      "latitude": -5.1295,
+      "longitude": 152.2467,
+      "depth": 57.317,
+      "magnitude": 4.8,
+      "place": "86 km S of Kokopo, Papua New Guinea",
+      "time": "2026-10-22T05:23:59.562Z"
+    },
+    {
+      "id": "us6000u411",
+      "latitude": 56.9659,
+      "longitude": -34.0939,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "Reykjanes Ridge",
+      "time": "2026-10-22T04:44:17.421Z"
+    },
+    {
+      "id": "us6000u45a",
+      "latitude": 32.3207,
+      "longitude": 93.8055,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "190 km ENE of Nagqu, China",
+      "time": "2026-10-22T16:57:53.999Z"
+    },
+    {
+      "id": "us6000u44u",
+      "latitude": 40.1472,
+      "longitude": 77.3556,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "139 km ENE of Kashgar, China",
+      "time": "2026-10-22T15:27:48.445Z"
+    },
+    {
+      "id": "us6000u47n",
+      "latitude": -21.6653,
+      "longitude": -68.3401,
+      "depth": 141.88,
+      "magnitude": 4.6,
+      "place": "49 km S of Ollagüe, Chile",
+      "time": "2026-10-22T21:37:56.543Z"
+    },
+    {
+      "id": "us6000u455",
+      "latitude": 32.4691,
+      "longitude": 93.7403,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "193 km NE of Nagqu, China",
+      "time": "2026-10-22T16:45:00.942Z"
+    },
+    {
+      "id": "us6000u42e",
+      "latitude": 36.677,
+      "longitude": 71.3996,
+      "depth": 174.513,
+      "magnitude": 4.6,
+      "place": "11 km W of Ashkāsham, Afghanistan",
+      "time": "2026-10-22T10:07:41.749Z"
+    },
+    {
+      "id": "us6000u41z",
+      "latitude": 13.8474,
+      "longitude": 145.2184,
+      "depth": 99.23,
+      "magnitude": 4.6,
+      "place": "49 km NE of Yigo Village, Guam",
+      "time": "2026-10-22T08:06:35.200Z"
+    },
+    {
+      "id": "us6000u49c",
+      "latitude": -21.3469,
+      "longitude": -66.5795,
+      "depth": 235.829,
+      "magnitude": 4.5,
+      "place": "58 km SW of Atocha, Bolivia",
+      "time": "2026-10-23T02:45:41.183Z"
+    },
+    {
+      "id": "us6000u49a",
+      "latitude": 27.9986,
+      "longitude": 100.6189,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "18 km NNW of Yongning, China",
+      "time": "2026-10-23T02:17:01.507Z"
+    },
+    {
+      "id": "us6000u48i",
+      "latitude": -24.286,
+      "longitude": -67.3224,
+      "depth": 185.541,
+      "magnitude": 4.5,
+      "place": "102 km W of San Antonio de los Cobres, Argentina",
+      "time": "2026-10-23T00:09:35.519Z"
+    },
+    {
+      "id": "us6000u458",
+      "latitude": 32.4493,
+      "longitude": 93.8798,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "203 km ENE of Nagqu, China",
+      "time": "2026-10-22T16:50:16.850Z"
+    },
+    {
+      "id": "us6000u423",
+      "latitude": 53.7958,
+      "longitude": 160.2671,
+      "depth": 61.06,
+      "magnitude": 4.5,
+      "place": "136 km NE of Petropavlovsk-Kamchatsky, Russia",
+      "time": "2026-10-22T08:34:18.537Z"
+    },
+    {
+      "id": "us6000u48r",
+      "latitude": 32.6078,
+      "longitude": 93.7355,
+      "depth": 10,
+      "magnitude": 4.4,
+      "place": "202 km NE of Nagqu, China",
+      "time": "2026-10-23T00:24:17.688Z"
+    },
+    {
+      "id": "us6000u48b",
+      "latitude": 28.5388,
+      "longitude": 64.8162,
+      "depth": 81.725,
+      "magnitude": 4.4,
+      "place": "55 km SE of Dalbandin, Pakistan",
+      "time": "2026-10-22T23:26:49.728Z"
+    },
+    {
+      "id": "us6000u44z",
+      "latitude": 32.5222,
+      "longitude": 94.0289,
+      "depth": 10,
+      "magnitude": 4.3,
+      "place": "219 km ENE of Nagqu, China",
+      "time": "2026-10-22T15:57:55.210Z"
+    },
+    {
+      "id": "us6000u49h",
+      "latitude": 32.3149,
+      "longitude": 93.7481,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "184 km ENE of Nagqu, China",
+      "time": "2026-10-23T02:53:40.661Z"
+    },
+    {
+      "id": "us6000u457",
+      "latitude": 65.0219,
+      "longitude": -134.2798,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "269 km ENE of Dawson City, Canada",
+      "time": "2026-10-22T16:51:24.606Z"
+    },
+    {
+      "id": "us6000u41s",
+      "latitude": 14.9718,
+      "longitude": -91.2421,
+      "depth": 176.976,
+      "magnitude": 4.2,
+      "place": "3 km WNW of Patzité, Guatemala",
+      "time": "2026-10-22T07:28:10.068Z"
+    },
+    {
+      "id": "us6000u48s",
+      "latitude": 32.4132,
+      "longitude": 93.9573,
+      "depth": 10,
+      "magnitude": 4.1,
+      "place": "207 km ENE of Nagqu, China",
+      "time": "2026-10-23T00:35:11.461Z"
+    },
+    {
+      "id": "us6000u491",
+      "latitude": 7.5941,
+      "longitude": -80.3524,
+      "depth": 10,
+      "magnitude": 4,
+      "place": "2 km S of Valle Rico, Panama",
+      "time": "2026-10-23T01:19:47.892Z"
+    },
+    {
+      "id": "us6000u47r",
+      "latitude": 53.3354,
+      "longitude": -163.5539,
+      "depth": 10,
+      "magnitude": 4,
+      "place": "169 km S of False Pass, Alaska",
+      "time": "2026-10-22T21:42:21.148Z"
+    },
+    {
+      "id": "us6000u45y",
+      "latitude": 53.3232,
+      "longitude": -161.3613,
+      "depth": 10,
+      "magnitude": 3.9,
+      "place": "203 km SSE of King Cove, Alaska",
+      "time": "2026-10-22T18:36:32.291Z"
+    },
+    {
+      "id": "pr71537448",
+      "latitude": 19.1706666666667,
+      "longitude": -64.1056666666667,
+      "depth": 33.81,
+      "magnitude": 3.4,
+      "place": "117 km NE of Cruz Bay, U.S. Virgin Islands",
+      "time": "2026-10-22T09:04:38.330Z"
+    },
+    {
+      "id": "uu80161371",
+      "latitude": 41.563,
+      "longitude": -109.884333333333,
+      "depth": -2.25,
+      "magnitude": 3.25,
+      "place": "3 km NW of Little America, Wyoming",
+      "time": "2026-10-22T09:44:42.240Z"
+    },
+    {
+      "id": "pr71537488",
+      "latitude": 18.9505,
+      "longitude": -67.785,
+      "depth": 32.5,
+      "magnitude": 3.23,
+      "place": "77 km ENE of Punta Cana, Dominican Republic",
+      "time": "2026-10-23T00:13:35.620Z"
+    },
+    {
+      "id": "us6000u49f",
+      "latitude": 55.0132,
+      "longitude": -160.9015,
+      "depth": 26.865,
+      "magnitude": 3.2,
+      "place": "44 km SW of Sand Point, Alaska",
+      "time": "2026-10-23T02:49:47.870Z"
+    },
+    {
+      "id": "nc75453601",
+      "latitude": 36.6563339233398,
+      "longitude": -121.301498413086,
+      "depth": 5.57000017166138,
+      "magnitude": 3.03,
+      "place": "15 km S of Tres Pinos, CA",
+      "time": "2026-10-22T21:58:44.270Z"
+    },
+    {
+      "id": "uw714124012",
+      "latitude": 45.8861666666667,
+      "longitude": -122.856833333333,
+      "depth": 24.01,
+      "magnitude": 3.02,
+      "place": "3 km W of Columbia City, Oregon",
+      "time": "2026-10-22T14:25:19.300Z"
+    },
+    {
+      "id": "aka2026uxvwcs",
+      "latitude": 64.208,
+      "longitude": -151.216,
+      "depth": 12.9,
+      "magnitude": 2.9,
+      "place": "64 km ENE of Lake Minchumina, Alaska",
+      "time": "2026-10-22T10:42:23.569Z"
+    },
+    {
+      "id": "aka2026uxolir",
+      "latitude": 62.237,
+      "longitude": -148.817,
+      "depth": 16.8,
+      "magnitude": 2.9,
+      "place": "51 km N of Sutton-Alpine, Alaska",
+      "time": "2026-10-22T07:00:06.106Z"
+    },
+    {
+      "id": "hv75062386",
+      "latitude": 19.4226666666667,
+      "longitude": -155.608833333333,
+      "depth": -1.41,
+      "magnitude": 2.7,
+      "place": "27 km E of Honaunau-Napoopoo, Hawaii",
+      "time": "2026-10-22T19:32:16.210Z"
+    },
+    {
+      "id": "aka2026uxjtil",
+      "latitude": 59.955,
+      "longitude": -152.052,
+      "depth": 88.1,
+      "magnitude": 2.7,
+      "place": "17 km W of Happy Valley, Alaska",
+      "time": "2026-10-22T04:39:19.529Z"
+    },
+    {
+      "id": "aka2026uyfanq",
+      "latitude": 58.648,
+      "longitude": -155.169,
+      "depth": 136.4,
+      "magnitude": 2.6,
+      "place": "86 km SSE of Igiugig, Alaska",
+      "time": "2026-10-22T15:19:57.039Z"
+    },
+    {
+      "id": "us6000u41a",
+      "latitude": 32.7634,
+      "longitude": -103.4739,
+      "depth": 9.709,
+      "magnitude": 2.5,
+      "place": "23 km SSW of Lovington, New Mexico",
+      "time": "2026-10-22T05:48:51.917Z"
+    }
+  ],
+  "weatherSamples": [
+    {
+      "latitude": 64.15,
+      "longitude": -21.94,
+      "temperature": 2.2,
+      "wind": 14.8
+    },
+    {
+      "latitude": 35.68,
+      "longitude": 139.69,
+      "temperature": 18.8,
+      "wind": 2.9
+    },
+    {
+      "latitude": 1.35,
+      "longitude": 103.82,
+      "temperature": 33.7,
+      "wind": 6
+    },
+    {
+      "latitude": -33.87,
+      "longitude": 151.21,
+      "temperature": 21.6,
+      "wind": 24.6
+    },
+    {
+      "latitude": -1.29,
+      "longitude": 36.82,
+      "temperature": 19.4,
+      "wind": 8.4
+    },
+    {
+      "latitude": 51.51,
+      "longitude": -0.13,
+      "temperature": 12.4,
+      "wind": 10.1
+    },
+    {
+      "latitude": 40.71,
+      "longitude": -74.01,
+      "temperature": 12,
+      "wind": 13
+    },
+    {
+      "latitude": -23.55,
+      "longitude": -46.63,
+      "temperature": 17.1,
+      "wind": 8.9
+    },
+    {
+      "latitude": 31.23,
+      "longitude": 121.47,
+      "temperature": 21.7,
+      "wind": 15.7
+    },
+    {
+      "latitude": 19.43,
+      "longitude": -99.13,
+      "temperature": 13.8,
+      "wind": 12.7
+    },
+    {
+      "latitude": 37.77,
+      "longitude": -122.42,
+      "temperature": 14,
+      "wind": 14
+    },
+    {
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "temperature": 16.7,
+      "wind": 9
+    }
+  ],
+  "sources": [
+    {
+      "label": "USGS Earthquake Hazards Program",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "status": "live"
+    },
+    {
+      "label": "NOAA Space Weather Prediction Center",
+      "url": "https://services.swpc.noaa.gov/",
+      "status": "live"
+    },
+    {
+      "label": "Open-Meteo",
+      "url": "https://open-meteo.com/",
+      "status": "live"
+    }
+  ]
+}
