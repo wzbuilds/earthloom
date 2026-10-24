@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1060" height="440" viewBox="0 0 1060 440" role="img" aria-labelledby="title desc">
-  <title id="title">Earthloom — 2026-10-23</title>
-  <desc id="desc">深处的震动在织面上留下了宽阔回声。 Earthquakes 48, Kp 4, solar wind 429 km/s.</desc>
+  <title id="title">Earthloom — 2026-10-24</title>
+  <desc id="desc">深处的震动在织面上留下了宽阔回声。 Earthquakes 41, Kp 2, solar wind 406 km/s.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(239 38% 5%)"/><stop offset="0.52" stop-color="hsl(217 44% 9%)"/><stop offset="1" stop-color="#11101b"/></linearGradient>
-    <linearGradient id="thread"><stop stop-color="hsl(228.11111111111111 88% 65%)"/><stop offset="0.5" stop-color="hsl(283 76% 61.333333333333336%)"/><stop offset="1" stop-color="hsl(36.4 96% 66%)"/></linearGradient>
-    <radialGradient id="halo"><stop stop-color="hsl(228.11111111111111 88% 65%)" stop-opacity=".32"/><stop offset="1" stop-color="hsl(228.11111111111111 88% 65%)" stop-opacity="0"/></radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(253 38% 5%)"/><stop offset="0.52" stop-color="hsl(231 44% 9%)"/><stop offset="1" stop-color="#11101b"/></linearGradient>
+    <linearGradient id="thread"><stop stop-color="hsl(230.55555555555554 88% 65%)"/><stop offset="0.5" stop-color="hsl(297 76% 58.666666666666664%)"/><stop offset="1" stop-color="hsl(35.6 96% 66%)"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="hsl(230.55555555555554 88% 65%)" stop-opacity=".32"/><stop offset="1" stop-color="hsl(230.55555555555554 88% 65%)" stop-opacity="0"/></radialGradient>
     <filter id="soft"><feGaussianBlur stdDeviation="24"/></filter>
   </defs>
   <rect width="1060" height="440" rx="30" fill="url(#bg)"/>
   <circle cx="820" cy="190" r="170" fill="url(#halo)" filter="url(#soft)"/>
-  <path d="M48 188 C250 149, 380 227, 530 188 S810 149, 1012 192" fill="none" stroke="url(#thread)" stroke-width="1.8" opacity="0.18"/>
-  <path d="M48 214 C250 186, 380 242, 530 214 S810 186, 1012 218" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.22499999999999998"/>
-  <path d="M48 240 C250 217, 380 263, 530 240 S810 217, 1012 244" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.27"/>
-  <path d="M48 266 C250 246, 380 286, 530 266 S810 246, 1012 270" fill="none" stroke="url(#thread)" stroke-width="1.8" opacity="0.315"/>
-  <path d="M48 292 C250 256, 380 328, 530 292 S810 256, 1012 296" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.36"/>
-  <path d="M48 318 C250 291, 380 345, 530 318 S810 291, 1012 322" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.40499999999999997"/>
-  <path d="M48 344 C250 305, 380 383, 530 344 S810 305, 1012 348" fill="none" stroke="url(#thread)" stroke-width="1.8" opacity="0.45"/>
-  <path d="M48 370 C250 342, 380 398, 530 370 S810 342, 1012 374" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.495"/>
-  <circle cx="775.9" cy="241.5" r="11.5" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.28"/>
-  <circle cx="776.1" cy="241.4" r="9" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.31"/>
-  <circle cx="929.3" cy="292.7" r="8.8" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.33"/>
-  <circle cx="776.5" cy="241.5" r="8.8" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.36"/>
-  <circle cx="75.5" cy="305.3" r="8.6" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.38"/>
-  <circle cx="776.3" cy="241.3" r="8.6" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.41"/>
-  <circle cx="756.1" cy="239.6" r="8.6" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.43"/>
-  <circle cx="964.3" cy="303.7" r="8.6" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.46"/>
-  <circle cx="797.8" cy="288.8" r="8.6" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.48"/>
-  <circle cx="936.2" cy="220" r="8.5" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.51"/>
-  <circle cx="915.7" cy="225.8" r="8.5" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.53"/>
-  <circle cx="69.9" cy="315.3" r="8.5" fill="none" stroke="hsl(36.4 96% 66%)" stroke-opacity="0.56"/>
-  <text x="48" y="62" fill="hsl(13 42% 87%)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="4">EARTHLOOM / DAILY PORTRAIT</text>
-  <text x="48" y="116" fill="#fff" font-family="ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="620">2026-10-23</text>
-  <text x="48" y="392" fill="hsl(13 42% 87%)" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15">深处的震动在织面上留下了宽阔回声。</text>
-  <text x="1012" y="62" text-anchor="end" fill="hsl(228.11111111111111 88% 65%)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">LIVE DATA · 206A9C65</text>
-  <g fill="hsl(13 42% 87%)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">
-    <text x="620" y="392">QUAKES 48</text><text x="744" y="392">KP 4</text><text x="824" y="392">WIND 429 KM/S</text>
+  <path d="M48 188 C250 187, 380 189, 530 188 S810 187, 1012 192" fill="none" stroke="url(#thread)" stroke-width="1.8" opacity="0.18"/>
+  <path d="M48 214 C250 205, 380 223, 530 214 S810 205, 1012 218" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.22499999999999998"/>
+  <path d="M48 240 C250 227, 380 253, 530 240 S810 227, 1012 244" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.27"/>
+  <path d="M48 266 C250 268, 380 264, 530 266 S810 268, 1012 270" fill="none" stroke="url(#thread)" stroke-width="1.8" opacity="0.315"/>
+  <path d="M48 292 C250 301, 380 283, 530 292 S810 301, 1012 296" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.36"/>
+  <path d="M48 318 C250 314, 380 322, 530 318 S810 314, 1012 322" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.40499999999999997"/>
+  <path d="M48 344 C250 333, 380 355, 530 344 S810 333, 1012 348" fill="none" stroke="url(#thread)" stroke-width="1.8" opacity="0.45"/>
+  <path d="M48 370 C250 373, 380 367, 530 370 S810 373, 1012 374" fill="none" stroke="url(#thread)" stroke-width="0.8" opacity="0.495"/>
+  <circle cx="964.1" cy="303.9" r="11.3" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.28"/>
+  <circle cx="964.9" cy="303.9" r="10.5" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.31"/>
+  <circle cx="964.1" cy="303.7" r="9.7" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.33"/>
+  <circle cx="567.1" cy="232.9" r="9.7" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.36"/>
+  <circle cx="964.3" cy="303.7" r="9" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.38"/>
+  <circle cx="567.5" cy="232.9" r="9" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.41"/>
+  <circle cx="964.8" cy="304" r="8.9" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.43"/>
+  <circle cx="964.3" cy="303.7" r="8.9" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.46"/>
+  <circle cx="903.9" cy="230.7" r="8.9" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.48"/>
+  <circle cx="964.3" cy="304" r="8.6" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.51"/>
+  <circle cx="776.2" cy="241.3" r="8.6" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.53"/>
+  <circle cx="971.2" cy="305.7" r="8.6" fill="none" stroke="hsl(35.6 96% 66%)" stroke-opacity="0.56"/>
+  <text x="48" y="62" fill="hsl(27 42% 87%)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="4">EARTHLOOM / DAILY PORTRAIT</text>
+  <text x="48" y="116" fill="#fff" font-family="ui-sans-serif, system-ui, sans-serif" font-size="34" font-weight="620">2026-10-24</text>
+  <text x="48" y="392" fill="hsl(27 42% 87%)" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15">深处的震动在织面上留下了宽阔回声。</text>
+  <text x="1012" y="62" text-anchor="end" fill="hsl(230.55555555555554 88% 65%)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">LIVE DATA · DA8D27D7</text>
+  <g fill="hsl(27 42% 87%)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">
+    <text x="620" y="392">QUAKES 41</text><text x="744" y="392">KP 2</text><text x="824" y="392">WIND 406 KM/S</text>
   </g>
   <rect x="1" y="1" width="1058" height="438" rx="29" fill="none" stroke="#fff" stroke-opacity=".11"/>
 </svg>
