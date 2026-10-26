@@ -1,679 +1,508 @@
 {
   "schemaVersion": 1,
-  "date": "2026-10-25",
-  "generatedAt": "2026-10-25T04:27:53.486Z",
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26T04:31:07.399Z",
   "timeZone": "Asia/Shanghai",
   "status": "live",
-  "seed": 1750673199,
-  "summary": "深处的震动在织面上留下了宽阔回声。",
+  "seed": 507268335,
+  "summary": "今天的地球，在低声而持续地呼吸。",
   "metrics": {
-    "earthquakeCount": 64,
-    "maxMagnitude": 6.5,
-    "averageDepth": 55.7,
+    "earthquakeCount": 45,
+    "maxMagnitude": 5.9,
+    "averageDepth": 73,
     "kpIndex": 1,
-    "solarWind": 344,
-    "meanTemperature": 17.4,
-    "meanWind": 14.6,
-    "moonPhase": 0.478
+    "solarWind": 330,
+    "meanTemperature": 15.1,
+    "meanWind": 7.5,
+    "moonPhase": 0.5119
   },
   "palette": {
-    "void": "hsl(231 38% 5%)",
-    "ink": "hsl(209 44% 9%)",
-    "aurora": "hsl(202.77777777777777 88% 65%)",
-    "tide": "hsl(275 76% 57.333333333333336%)",
-    "ember": "hsl(36.61333333333333 96% 66%)",
-    "mist": "hsl(5 42% 87%)"
+    "void": "hsl(243 38% 5%)",
+    "ink": "hsl(221 44% 9%)",
+    "aurora": "hsl(214.77777777777777 88% 65%)",
+    "tide": "hsl(287 76% 57.333333333333336%)",
+    "ember": "hsl(35.38666666666667 96% 66%)",
+    "mist": "hsl(17 42% 87%)"
   },
   "earthquakes": [
     {
-      "id": "us6000u4r9",
-      "latitude": 27.7953,
-      "longitude": 139.6184,
-      "depth": 492.376,
-      "magnitude": 6.5,
-      "place": "Bonin Islands, Japan region",
-      "time": "2026-10-25T02:09:23.818Z"
-    },
-    {
-      "id": "us6000u4rf",
-      "latitude": -15.0125,
-      "longitude": 167.2692,
-      "depth": 136.298,
-      "magnitude": 6.2,
-      "place": "21 km E of Port-Olry, Vanuatu",
-      "time": "2026-10-25T02:24:02.714Z"
-    },
-    {
-      "id": "us6000u4lm",
-      "latitude": -13.9418,
-      "longitude": 165.6471,
-      "depth": 10,
+      "id": "us6000u4ty",
+      "latitude": 32.4625,
+      "longitude": 94.0534,
+      "depth": 7,
       "magnitude": 5.9,
-      "place": "196 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T08:56:28.815Z"
+      "place": "218 km ENE of Nagqu, China",
+      "time": "2026-10-25T11:25:57.101Z"
     },
     {
-      "id": "us6000u4mn",
-      "latitude": -54.0304,
-      "longitude": 7.0149,
-      "depth": 12.486,
-      "magnitude": 5.8,
-      "place": "Bouvet Island region",
-      "time": "2026-10-24T15:24:19.882Z"
+      "id": "us6000u4tq",
+      "latitude": -4.3644,
+      "longitude": 143.0843,
+      "depth": 72.349,
+      "magnitude": 5.4,
+      "place": "33 km ESE of Ambunti, Papua New Guinea",
+      "time": "2026-10-25T10:30:27.588Z"
     },
     {
-      "id": "us6000u4k6",
-      "latitude": -14.0833,
-      "longitude": 165.6982,
+      "id": "us6000u4tc",
+      "latitude": -13.8848,
+      "longitude": 165.5769,
       "depth": 10,
-      "magnitude": 5.8,
-      "place": "182 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T05:23:40.747Z"
+      "magnitude": 5.4,
+      "place": "205 km NW of Port-Olry, Vanuatu",
+      "time": "2026-10-25T08:41:00.034Z"
     },
     {
-      "id": "us6000u4kq",
-      "latitude": -14.5918,
-      "longitude": 167.3063,
-      "depth": 194.632,
-      "magnitude": 5.5,
-      "place": "55 km NNE of Port-Olry, Vanuatu",
-      "time": "2026-10-24T06:43:09.602Z"
-    },
-    {
-      "id": "us6000u4qq",
-      "latitude": 31.8226,
-      "longitude": 131.873,
-      "depth": 10,
+      "id": "us6000u4we",
+      "latitude": 27.8572,
+      "longitude": 139.6916,
+      "depth": 485.13,
       "magnitude": 5.3,
-      "place": "44 km ESE of Miyazaki, Japan",
-      "time": "2026-10-24T23:59:36.599Z"
+      "place": "Bonin Islands, Japan region",
+      "time": "2026-10-25T22:14:16.010Z"
     },
     {
-      "id": "us6000u4pa",
-      "latitude": 52.1565,
-      "longitude": 159.1963,
-      "depth": 70.184,
-      "magnitude": 5.3,
-      "place": "101 km SSE of Vilyuchinsk, Russia",
-      "time": "2026-10-24T20:35:04.576Z"
-    },
-    {
-      "id": "us6000u4lg",
-      "latitude": 32.5629,
-      "longitude": 94.048,
-      "depth": 10,
-      "magnitude": 5.3,
-      "place": "223 km ENE of Nagqu, China",
-      "time": "2026-10-24T08:39:53.139Z"
-    },
-    {
-      "id": "us6000u4kj",
-      "latitude": -14.1278,
-      "longitude": 165.7535,
-      "depth": 10,
-      "magnitude": 5.3,
-      "place": "174 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T06:04:16.367Z"
-    },
-    {
-      "id": "us6000u4s5",
-      "latitude": -6.1737,
-      "longitude": 147.1659,
-      "depth": 80.779,
+      "id": "us6000u4va",
+      "latitude": 36.274,
+      "longitude": 71.1025,
+      "depth": 110.025,
       "magnitude": 5.2,
-      "place": "63 km NNE of Lae, Papua New Guinea",
-      "time": "2026-10-25T03:29:10.551Z"
+      "place": "59 km SW of Ashkāsham, Afghanistan",
+      "time": "2026-10-25T17:44:23.735Z"
     },
     {
-      "id": "us6000u4r7",
-      "latitude": -14.4542,
-      "longitude": 165.7028,
+      "id": "us6000u4tx",
+      "latitude": 32.3695,
+      "longitude": 93.8872,
       "depth": 10,
       "magnitude": 5.1,
-      "place": "161 km WNW of Port-Olry, Vanuatu",
-      "time": "2026-10-25T02:06:10.299Z"
+      "place": "199 km ENE of Nagqu, China",
+      "time": "2026-10-25T11:24:14.089Z"
     },
     {
-      "id": "us6000u4r3",
-      "latitude": -14.3846,
-      "longitude": 165.6863,
-      "depth": 10,
-      "magnitude": 5.1,
-      "place": "166 km WNW of Port-Olry, Vanuatu",
-      "time": "2026-10-25T01:46:23.382Z"
-    },
-    {
-      "id": "us6000u4lc",
-      "latitude": -13.7972,
-      "longitude": 165.6088,
-      "depth": 10,
-      "magnitude": 5.1,
-      "place": "209 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T08:28:02.029Z"
-    },
-    {
-      "id": "us6000u4l9",
-      "latitude": -13.833,
-      "longitude": 165.4664,
-      "depth": 10,
-      "magnitude": 5.1,
-      "place": "218 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T08:22:46.296Z"
-    },
-    {
-      "id": "us6000u4k1",
-      "latitude": -13.8521,
-      "longitude": 165.4673,
-      "depth": 10,
-      "magnitude": 5.1,
-      "place": "217 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T04:49:21.707Z"
-    },
-    {
-      "id": "us6000u4qp",
-      "latitude": -13.9002,
-      "longitude": 165.7311,
-      "depth": 10,
-      "magnitude": 5,
-      "place": "192 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T23:44:57.729Z"
-    },
-    {
-      "id": "us6000u4q8",
-      "latitude": -13.8678,
-      "longitude": 165.534,
-      "depth": 10,
-      "magnitude": 5,
-      "place": "210 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T22:47:08.577Z"
-    },
-    {
-      "id": "us6000u4nv",
-      "latitude": -13.975,
-      "longitude": 165.6556,
-      "depth": 10,
-      "magnitude": 5,
-      "place": "193 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T19:07:15.895Z"
-    },
-    {
-      "id": "us6000u4lp",
-      "latitude": -14.1064,
-      "longitude": 165.2758,
-      "depth": 10,
-      "magnitude": 5,
-      "place": "219 km WNW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T09:07:00.782Z"
-    },
-    {
-      "id": "us6000u4ku",
-      "latitude": -13.8777,
-      "longitude": 165.4237,
-      "depth": 10,
-      "magnitude": 5,
-      "place": "219 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T06:52:04.142Z"
-    },
-    {
-      "id": "us6000u4k2",
-      "latitude": -14.165,
-      "longitude": 165.8739,
-      "depth": 10,
-      "magnitude": 5,
-      "place": "161 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T04:44:45.324Z"
-    },
-    {
-      "id": "us6000u4pw",
-      "latitude": -0.3574,
-      "longitude": 132.2541,
+      "id": "us6000u4xa",
+      "latitude": -13.8803,
+      "longitude": 165.5831,
       "depth": 10,
       "magnitude": 4.9,
-      "place": "53 km NNW of Fef, Indonesia",
-      "time": "2026-10-24T21:41:51.565Z"
+      "place": "205 km NW of Port-Olry, Vanuatu",
+      "time": "2026-10-26T01:22:20.998Z"
     },
     {
-      "id": "us6000u4ny",
-      "latitude": -20.025,
-      "longitude": 168.7941,
-      "depth": 22.398,
-      "magnitude": 4.9,
-      "place": "73 km SW of Isangel, Vanuatu",
-      "time": "2026-10-24T19:18:20.515Z"
-    },
-    {
-      "id": "us6000u4mm",
-      "latitude": -13.8535,
-      "longitude": 165.4608,
+      "id": "us6000u4sm",
+      "latitude": 37.6512,
+      "longitude": 21.0112,
       "depth": 10,
       "magnitude": 4.9,
-      "place": "217 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T15:19:25.185Z"
+      "place": "17 km SE of Ambelókipoi, Greece",
+      "time": "2026-10-25T05:15:44.196Z"
     },
     {
-      "id": "us6000u4m6",
-      "latitude": 13.3207,
-      "longitude": 51.5108,
-      "depth": 10,
-      "magnitude": 4.9,
-      "place": "148 km NNW of Kilmia, Yemen",
-      "time": "2026-10-24T11:20:27.157Z"
+      "id": "us6000u4xp",
+      "latitude": -10.0437,
+      "longitude": 123.2505,
+      "depth": 35,
+      "magnitude": 4.8,
+      "place": "41 km WNW of Kupang, Indonesia",
+      "time": "2026-10-26T03:59:22.208Z"
     },
     {
-      "id": "us6000u4m5",
-      "latitude": -13.8212,
-      "longitude": 165.7345,
-      "depth": 10,
-      "magnitude": 4.9,
-      "place": "196 km W of Sola, Vanuatu",
-      "time": "2026-10-24T11:14:00.121Z"
-    },
-    {
-      "id": "us6000u4lr",
-      "latitude": -14.1348,
-      "longitude": 165.8048,
-      "depth": 10,
-      "magnitude": 4.9,
-      "place": "169 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T09:38:49.138Z"
-    },
-    {
-      "id": "us6000u4lb",
-      "latitude": 43.3139,
-      "longitude": 82.1076,
-      "depth": 10,
-      "magnitude": 4.9,
-      "place": "41 km SSE of Kax, China",
-      "time": "2026-10-24T08:29:20.689Z"
-    },
-    {
-      "id": "us6000u4rr",
-      "latitude": 27.6872,
-      "longitude": 139.7389,
-      "depth": 498.883,
+      "id": "us6000u4wi",
+      "latitude": 27.8494,
+      "longitude": 139.7272,
+      "depth": 482.177,
       "magnitude": 4.8,
       "place": "Bonin Islands, Japan region",
-      "time": "2026-10-25T02:36:32.787Z"
+      "time": "2026-10-25T22:16:27.821Z"
     },
     {
-      "id": "us6000u4qm",
-      "latitude": -13.8892,
-      "longitude": 165.6036,
+      "id": "us6000u4vy",
+      "latitude": -14.2065,
+      "longitude": 165.7734,
       "depth": 10,
       "magnitude": 4.8,
-      "place": "203 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T23:39:07.167Z"
+      "place": "167 km WNW of Port-Olry, Vanuatu",
+      "time": "2026-10-25T20:30:42.515Z"
     },
     {
-      "id": "us6000u4n8",
-      "latitude": -14.2056,
-      "longitude": 165.9365,
-      "depth": 10,
-      "magnitude": 4.8,
-      "place": "153 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T16:54:15.523Z"
-    },
-    {
-      "id": "us6000u4ml",
-      "latitude": -13.8267,
-      "longitude": 165.5148,
-      "depth": 10,
-      "magnitude": 4.8,
-      "place": "215 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T15:07:40.810Z"
-    },
-    {
-      "id": "us6000u4mi",
-      "latitude": -13.7777,
-      "longitude": 165.5398,
-      "depth": 10,
-      "magnitude": 4.8,
-      "place": "216 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T13:53:00.775Z"
-    },
-    {
-      "id": "us6000u4k5",
-      "latitude": -14.0054,
-      "longitude": 165.3365,
-      "depth": 10,
-      "magnitude": 4.8,
-      "place": "219 km WNW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T05:10:34.753Z"
-    },
-    {
-      "id": "us6000u4my",
-      "latitude": -13.9412,
-      "longitude": 165.1696,
+      "id": "us6000u4wc",
+      "latitude": 32.23,
+      "longitude": 93.6303,
       "depth": 10,
       "magnitude": 4.7,
-      "place": "238 km WNW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T15:45:47.533Z"
+      "place": "170 km ENE of Nagqu, China",
+      "time": "2026-10-25T22:01:35.793Z"
     },
     {
-      "id": "us6000u4m9",
-      "latitude": 19.805,
-      "longitude": 122.0872,
-      "depth": 10,
+      "id": "us6000u4v1",
+      "latitude": -16.0993,
+      "longitude": -73.4741,
+      "depth": 62.095,
       "magnitude": 4.7,
-      "place": "72 km S of Basco, Philippines",
-      "time": "2026-10-24T11:48:08.678Z"
+      "place": "19 km NE of Atico, Peru",
+      "time": "2026-10-25T17:11:49.932Z"
     },
     {
-      "id": "us6000u4ll",
-      "latitude": -13.9869,
-      "longitude": 165.7108,
-      "depth": 10,
-      "magnitude": 4.7,
-      "place": "187 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T08:45:55.500Z"
-    },
-    {
-      "id": "us6000u4l8",
-      "latitude": -13.805,
-      "longitude": 165.4469,
-      "depth": 10,
-      "magnitude": 4.7,
-      "place": "222 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T08:20:01.035Z"
-    },
-    {
-      "id": "us6000u4kw",
-      "latitude": -13.8532,
-      "longitude": 165.7268,
-      "depth": 10,
-      "magnitude": 4.7,
-      "place": "195 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T06:58:03.586Z"
-    },
-    {
-      "id": "us6000u4mg",
-      "latitude": 32.5629,
-      "longitude": 93.694,
-      "depth": 10,
+      "id": "us6000u4vb",
+      "latitude": 52.1923,
+      "longitude": -178.8056,
+      "depth": 152.896,
       "magnitude": 4.6,
-      "place": "195 km NE of Nagqu, China",
-      "time": "2026-10-24T13:26:34.296Z"
+      "place": "153 km WNW of Adak, Alaska",
+      "time": "2026-10-25T17:49:58.419Z"
     },
     {
-      "id": "us6000u4kt",
-      "latitude": -13.8228,
-      "longitude": 165.6213,
-      "depth": 10,
+      "id": "us6000u4tf",
+      "latitude": 22.5515,
+      "longitude": 142.9691,
+      "depth": 133.076,
       "magnitude": 4.6,
-      "place": "206 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T06:20:56.869Z"
+      "place": "Volcano Islands, Japan region",
+      "time": "2026-10-25T09:11:17.412Z"
     },
     {
-      "id": "us6000u4ld",
-      "latitude": 53.5186,
-      "longitude": -165.0962,
-      "depth": 35,
+      "id": "us6000u4t8",
+      "latitude": 53.4937,
+      "longitude": -165.1559,
+      "depth": 35.068,
+      "magnitude": 4.6,
+      "place": "82 km SSE of Akutan, Alaska",
+      "time": "2026-10-25T07:44:32.506Z"
+    },
+    {
+      "id": "us6000u4t4",
+      "latitude": -16.0676,
+      "longitude": -74.747,
+      "depth": 26.454,
+      "magnitude": 4.6,
+      "place": "50 km SW of Atiquipa, Peru",
+      "time": "2026-10-25T07:11:49.640Z"
+    },
+    {
+      "id": "us6000u4sv",
+      "latitude": 37.849,
+      "longitude": 141.8415,
+      "depth": 52.782,
       "magnitude": 4.5,
-      "place": "81 km SSE of Akutan, Alaska",
-      "time": "2026-10-24T08:33:48.499Z"
+      "place": "74 km SSE of Onagawa Chō, Japan",
+      "time": "2026-10-25T06:04:22.644Z"
     },
     {
-      "id": "us6000u4kh",
-      "latitude": -14.051,
-      "longitude": 165.8047,
-      "depth": 10,
-      "magnitude": 4.5,
-      "place": "175 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T05:37:46.052Z"
-    },
-    {
-      "id": "us6000u4ke",
-      "latitude": -13.9786,
-      "longitude": 165.7483,
-      "depth": 10,
-      "magnitude": 4.5,
-      "place": "184 km NW of Port-Olry, Vanuatu",
-      "time": "2026-10-24T05:35:54.921Z"
-    },
-    {
-      "id": "us6000u4lz",
-      "latitude": 22.9496,
-      "longitude": 94.4639,
-      "depth": 103.324,
+      "id": "us6000u4vp",
+      "latitude": -6.172,
+      "longitude": 130.3943,
+      "depth": 127.02,
       "magnitude": 4.4,
-      "place": "76 km S of Mawlaik, Burma (Myanmar)",
-      "time": "2026-10-24T10:16:23.478Z"
+      "place": "267 km WSW of Tual, Indonesia",
+      "time": "2026-10-25T19:26:12.258Z"
     },
     {
-      "id": "us6000u4kz",
-      "latitude": 14.1588,
-      "longitude": -92.7995,
-      "depth": 35,
+      "id": "us6000u4tn",
+      "latitude": -8.0144,
+      "longitude": 118.4115,
+      "depth": 233.036,
       "magnitude": 4.4,
-      "place": "74 km SSW of Puerto Madero, Mexico",
-      "time": "2026-10-24T07:31:24.597Z"
+      "place": "58 km N of Dompu, Indonesia",
+      "time": "2026-10-25T10:19:02.328Z"
     },
     {
-      "id": "us6000u4p1",
-      "latitude": 28.7603,
-      "longitude": 88.3994,
-      "depth": 10,
+      "id": "us6000u4wt",
+      "latitude": -7.2149,
+      "longitude": 124.338,
+      "depth": 568.75,
       "magnitude": 4.3,
-      "place": "71 km SW of Rikaze, China",
-      "time": "2026-10-24T19:34:13.223Z"
+      "place": "181 km NNW of Maubara, Timor Leste",
+      "time": "2026-10-25T23:32:08.371Z"
     },
     {
-      "id": "us6000u4ru",
-      "latitude": 27.8771,
-      "longitude": 139.7294,
-      "depth": 499.81,
+      "id": "us6000u4t9",
+      "latitude": 53.4908,
+      "longitude": -165.1943,
+      "depth": 34.696,
+      "magnitude": 4.3,
+      "place": "81 km SSE of Akutan, Alaska",
+      "time": "2026-10-25T07:45:47.895Z"
+    },
+    {
+      "id": "us6000u4xv",
+      "latitude": 40.5558,
+      "longitude": 141.9305,
+      "depth": 59.573,
       "magnitude": 4.2,
-      "place": "Bonin Islands, Japan region",
-      "time": "2026-10-25T02:47:49.856Z"
+      "place": "37 km E of Hachinohe, Japan",
+      "time": "2026-10-26T04:12:25.224Z"
     },
     {
-      "id": "us6000u4na",
-      "latitude": -21.3025,
-      "longitude": -68.9699,
-      "depth": 123.988,
+      "id": "us6000u4x2",
+      "latitude": -33.0605,
+      "longitude": -72.1743,
+      "depth": 19.048,
       "magnitude": 4.2,
-      "place": "74 km W of Ollagüe, Chile",
-      "time": "2026-10-24T17:14:30.377Z"
+      "place": "50 km W of Valparaíso, Chile",
+      "time": "2026-10-26T00:55:57.006Z"
     },
     {
-      "id": "us6000u4m7",
-      "latitude": -1.6316,
-      "longitude": -77.7768,
-      "depth": 181.216,
-      "magnitude": 4.2,
-      "place": "22 km ENE of Palora, Ecuador",
-      "time": "2026-10-24T11:30:45.048Z"
-    },
-    {
-      "id": "us6000u4pq",
-      "latitude": -4.0944,
-      "longitude": -80.3538,
-      "depth": 67.723,
-      "magnitude": 4.1,
-      "place": "37 km ESE of Cañaveral, Peru",
-      "time": "2026-10-24T20:57:03.106Z"
-    },
-    {
-      "id": "us6000u4q4",
-      "latitude": 41.8923,
-      "longitude": -126.8682,
+      "id": "us6000u4u9",
+      "latitude": 26.6022,
+      "longitude": -108.3744,
       "depth": 10,
-      "magnitude": 3.9,
-      "place": "209 km WSW of Pistol River, Oregon",
-      "time": "2026-10-24T22:26:04.077Z"
+      "magnitude": 4,
+      "place": "7 km NNW of Agua Caliente Grande (De Gastélum), Mexico",
+      "time": "2026-10-25T13:22:33.573Z"
     },
     {
-      "id": "aka2026vclrmb",
-      "latitude": 62.944,
-      "longitude": -149.243,
-      "depth": 76.4,
-      "magnitude": 3.3,
-      "place": "52 km SSW of Cantwell, Alaska",
-      "time": "2026-10-24T22:35:24.563Z"
+      "id": "pr71537633",
+      "latitude": 18.1245,
+      "longitude": -63.9966666666667,
+      "depth": 12.83,
+      "magnitude": 3.37,
+      "place": "85 km ENE of Christiansted, U.S. Virgin Islands",
+      "time": "2026-10-25T10:55:36.700Z"
     },
     {
-      "id": "pr71537553",
-      "latitude": 18.0613333333333,
-      "longitude": -65.2341666666667,
-      "depth": 152.34,
-      "magnitude": 3.3,
-      "place": "24 km ESE of Isabel Segunda, Puerto Rico",
-      "time": "2026-10-24T06:49:32.460Z"
+      "id": "pr71537603",
+      "latitude": 18.8968333333333,
+      "longitude": -65.1376666666667,
+      "depth": 28.81,
+      "magnitude": 3.37,
+      "place": "65 km NNW of Charlotte Amalie, U.S. Virgin Islands",
+      "time": "2026-10-25T04:51:33.930Z"
     },
     {
-      "id": "aka2026vbelld",
-      "latitude": 69.069,
-      "longitude": -144.851,
-      "depth": 10.4,
-      "magnitude": 3.3,
-      "place": "108 km NNE of Arctic Village, Alaska",
-      "time": "2026-10-24T05:58:56.682Z"
+      "id": "pr71537658",
+      "latitude": 18.849,
+      "longitude": -64.4231666666667,
+      "depth": 8.26,
+      "magnitude": 3.25,
+      "place": "69 km NE of Cruz Bay, U.S. Virgin Islands",
+      "time": "2026-10-25T21:17:39.120Z"
     },
     {
-      "id": "pr71537563",
-      "latitude": 18.9063333333333,
-      "longitude": -67.4233333333333,
-      "depth": 36.55,
+      "id": "pr71537598",
+      "latitude": 18.8851666666667,
+      "longitude": -65.1888333333333,
+      "depth": 33.84,
+      "magnitude": 3.22,
+      "place": "65 km N of Culebra, Puerto Rico",
+      "time": "2026-10-25T04:41:05.910Z"
+    },
+    {
+      "id": "pr71537588",
+      "latitude": 18.8453333333333,
+      "longitude": -65.0905,
+      "depth": 51.73,
       "magnitude": 3.21,
-      "place": "57 km NW of San Antonio, Puerto Rico",
-      "time": "2026-10-24T21:07:15.080Z"
+      "place": "58 km NNW of Charlotte Amalie, U.S. Virgin Islands",
+      "time": "2026-10-25T04:35:25.760Z"
     },
     {
-      "id": "nc75454181",
-      "latitude": 37.446834564209,
-      "longitude": -118.832664489746,
-      "depth": 2.29999995231628,
-      "magnitude": 2.89,
-      "place": "19 km SW of Toms Place, CA",
-      "time": "2026-10-24T10:54:51.710Z"
+      "id": "pr71537623",
+      "latitude": 18.9616666666667,
+      "longitude": -65.1056666666667,
+      "depth": 43.57,
+      "magnitude": 3.13,
+      "place": "71 km NNW of Charlotte Amalie, U.S. Virgin Islands",
+      "time": "2026-10-25T05:11:14.080Z"
     },
     {
-      "id": "us6000u4ng",
-      "latitude": 41.8193,
-      "longitude": -126.6544,
+      "id": "pr71537653",
+      "latitude": 18.1705,
+      "longitude": -64.4578333333333,
+      "depth": 120.96,
+      "magnitude": 3.06,
+      "place": "39 km ESE of Cruz Bay, U.S. Virgin Islands",
+      "time": "2026-10-25T16:10:40.700Z"
+    },
+    {
+      "id": "pr71537678",
+      "latitude": 19.0686666666667,
+      "longitude": -66.0791666666667,
+      "depth": 30.78,
+      "magnitude": 2.99,
+      "place": "66 km N of San Juan, Puerto Rico",
+      "time": "2026-10-26T03:41:46.590Z"
+    },
+    {
+      "id": "us6000u4tp",
+      "latitude": 56.5819,
+      "longitude": -140.4499,
       "depth": 10,
+      "magnitude": 2.9,
+      "place": "297 km WSW of Pelican, Alaska",
+      "time": "2026-10-25T10:32:49.494Z"
+    },
+    {
+      "id": "aka2026vdjcdz",
+      "latitude": 55.85,
+      "longitude": -152.151,
+      "depth": 0,
+      "magnitude": 2.9,
+      "place": "166 km SSE of Old Harbor, Alaska",
+      "time": "2026-10-25T10:17:02.089Z"
+    },
+    {
+      "id": "aka2026vdeazf",
+      "latitude": 60.482,
+      "longitude": -151.915,
+      "depth": 80.5,
+      "magnitude": 2.9,
+      "place": "35 km WNW of Kalifornsky, Alaska",
+      "time": "2026-10-25T07:46:12.035Z"
+    },
+    {
+      "id": "pr71537613",
+      "latitude": 19.0013333333333,
+      "longitude": -65.1258333333333,
+      "depth": 25.82,
+      "magnitude": 2.81,
+      "place": "75 km NNW of Charlotte Amalie, U.S. Virgin Islands",
+      "time": "2026-10-25T04:58:11.740Z"
+    },
+    {
+      "id": "us6000u4vz",
+      "latitude": 39.8786,
+      "longitude": -107.8326,
+      "depth": 8.093,
       "magnitude": 2.8,
-      "place": "193 km WSW of Pistol River, Oregon",
-      "time": "2026-10-24T17:49:46.312Z"
+      "place": "18 km SSE of Meeker, Colorado",
+      "time": "2026-10-25T20:35:54.777Z"
     },
     {
-      "id": "aka2026vbcpgv",
-      "latitude": 63.207,
-      "longitude": -150.508,
-      "depth": 123.1,
+      "id": "us6000u4tr",
+      "latitude": 19.4761,
+      "longitude": -155.5883,
+      "depth": 34.544,
       "magnitude": 2.8,
-      "place": "71 km ESE of Denali National Park, Alaska",
-      "time": "2026-10-24T05:03:22.377Z"
+      "place": "29 km E of Honaunau-Napoopoo, Hawaii",
+      "time": "2026-10-25T10:34:57.654Z"
     },
     {
-      "id": "ci41352007",
-      "latitude": 35.7885,
-      "longitude": -116.564,
-      "depth": 0.89,
+      "id": "tx2026vasgst",
+      "latitude": 29.447,
+      "longitude": -97.026,
+      "depth": 2.6605,
       "magnitude": 2.7,
-      "place": "31 km WSW of Tecopa, CA",
-      "time": "2026-10-25T01:35:08.090Z"
+      "place": "8 km W of Hallettsville, Texas",
+      "time": "2026-10-25T19:54:29.501Z"
     },
     {
-      "id": "aka2026vbyigb",
-      "latitude": 69.02,
-      "longitude": -144.492,
-      "depth": 1.7,
+      "id": "us6000u4uj",
+      "latitude": 59.0757,
+      "longitude": -138.9347,
+      "depth": 10,
       "magnitude": 2.7,
-      "place": "108 km NNE of Arctic Village, Alaska",
-      "time": "2026-10-24T15:54:24.778Z"
+      "place": "69 km SE of Yakutat, Alaska",
+      "time": "2026-10-25T14:31:41.374Z"
     },
     {
-      "id": "aka2026vbekhk",
-      "latitude": 52.171,
-      "longitude": -174.106,
-      "depth": 215.4,
-      "magnitude": 2.7,
-      "place": "7 km ESE of Atka, Alaska",
-      "time": "2026-10-24T05:57:30.805Z"
+      "id": "uw714127632",
+      "latitude": 48.311,
+      "longitude": -120.6805,
+      "depth": 2.87,
+      "magnitude": 2.55,
+      "place": "41 km WSW of Winthrop, Washington",
+      "time": "2026-10-25T14:15:20.440Z"
     },
     {
-      "id": "uu80161711",
-      "latitude": 38.525,
-      "longitude": -112.9215,
-      "depth": -0.13,
-      "magnitude": 2.67,
-      "place": "16 km NNE of Milford, Utah",
-      "time": "2026-10-24T17:59:01.470Z"
+      "id": "us6000u4tj",
+      "latitude": 44.8682,
+      "longitude": -108.7794,
+      "depth": 11.619,
+      "magnitude": 2.5,
+      "place": "12 km N of Powell, Wyoming",
+      "time": "2026-10-25T09:38:10.644Z"
+    },
+    {
+      "id": "aka2026vdcuns",
+      "latitude": 63.363,
+      "longitude": -145.098,
+      "depth": 0.2,
+      "magnitude": 2.5,
+      "place": "38 km SSW of Dry Creek, Alaska",
+      "time": "2026-10-25T07:08:44.041Z"
+    },
+    {
+      "id": "uu80161791",
+      "latitude": 38.5151666666667,
+      "longitude": -112.905666666667,
+      "depth": 3.18,
+      "magnitude": 2.46,
+      "place": "16 km NE of Milford, Utah",
+      "time": "2026-10-25T14:05:31.760Z"
     }
   ],
   "weatherSamples": [
     {
       "latitude": 64.15,
       "longitude": -21.94,
-      "temperature": 3.4,
-      "wind": 23.4
+      "temperature": 3.3,
+      "wind": 3.6
     },
     {
       "latitude": 35.68,
       "longitude": 139.69,
-      "temperature": 25.7,
-      "wind": 11.4
+      "temperature": 18,
+      "wind": 5.8
     },
     {
       "latitude": 1.35,
       "longitude": 103.82,
-      "temperature": 30.8,
-      "wind": 7.5
+      "temperature": 27.8,
+      "wind": 1.7
     },
     {
       "latitude": -33.87,
       "longitude": 151.21,
-      "temperature": 28,
-      "wind": 19.3
+      "temperature": 19.2,
+      "wind": 15.6
     },
     {
       "latitude": -1.29,
       "longitude": 36.82,
       "temperature": 18,
-      "wind": 7.9
+      "wind": 0.6
     },
     {
       "latitude": 51.51,
       "longitude": -0.13,
-      "temperature": 10.7,
-      "wind": 23
+      "temperature": 9.4,
+      "wind": 8.6
     },
     {
       "latitude": 40.71,
       "longitude": -74.01,
-      "temperature": 7.8,
-      "wind": 9.4
+      "temperature": 8,
+      "wind": 5.2
     },
     {
       "latitude": -23.55,
       "longitude": -46.63,
-      "temperature": 20,
-      "wind": 16.9
+      "temperature": 16.2,
+      "wind": 7.5
     },
     {
       "latitude": 31.23,
       "longitude": 121.47,
-      "temperature": 23.1,
-      "wind": 21.2
+      "temperature": 22.3,
+      "wind": 11.7
     },
     {
       "latitude": 19.43,
       "longitude": -99.13,
-      "temperature": 14.6,
-      "wind": 11.8
+      "temperature": 14.5,
+      "wind": 8.2
     },
     {
       "latitude": 37.77,
       "longitude": -122.42,
-      "temperature": 14.9,
-      "wind": 10.2
+      "temperature": 14.3,
+      "wind": 14.8
     },
     {
       "latitude": -34.6,
       "longitude": -58.38,
-      "temperature": 12.3,
-      "wind": 13.4
+      "temperature": 10,
+      "wind": 7.1
     }
   ],
   "sources": [
