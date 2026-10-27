@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27T04:49:40.246Z",
+  "timeZone": "Asia/Shanghai",
+  "status": "live",
+  "seed": 434358437,
+  "summary": "今天的地球，在低声而持续地呼吸。",
+  "metrics": {
+    "earthquakeCount": 32,
+    "maxMagnitude": 5.5,
+    "averageDepth": 79.5,
+    "kpIndex": 2,
+    "solarWind": 376,
+    "meanTemperature": 16.8,
+    "meanWind": 12.1,
+    "moonPhase": 0.5457
+  },
+  "palette": {
+    "void": "hsl(245 38% 5%)",
+    "ink": "hsl(223 44% 9%)",
+    "aurora": "hsl(222.55555555555554 88% 65%)",
+    "tide": "hsl(289 76% 58.666666666666664%)",
+    "ember": "hsl(36.29333333333334 96% 66%)",
+    "mist": "hsl(19 42% 87%)"
+  },
+  "earthquakes": [
+    {
+      "id": "us6000u4yr",
+      "latitude": -18.283,
+      "longitude": -178.0109,
+      "depth": 641.812,
+      "magnitude": 5.5,
+      "place": "283 km E of Levuka, Fiji",
+      "time": "2026-10-26T10:13:01.234Z"
+    },
+    {
+      "id": "us6000u4zb",
+      "latitude": -13.8613,
+      "longitude": 165.6029,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "205 km NW of Port-Olry, Vanuatu",
+      "time": "2026-10-26T12:13:30.652Z"
+    },
+    {
+      "id": "us6000u4z6",
+      "latitude": -13.9396,
+      "longitude": 165.3858,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "218 km NW of Port-Olry, Vanuatu",
+      "time": "2026-10-26T11:17:55.055Z"
+    },
+    {
+      "id": "us6000u4y1",
+      "latitude": -8.443,
+      "longitude": 121.5729,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "45 km NNW of Ende, Indonesia",
+      "time": "2026-10-26T04:53:40.479Z"
+    },
+    {
+      "id": "us7000tte4",
+      "latitude": -10.6683,
+      "longitude": 161.3189,
+      "depth": 35,
+      "magnitude": 4.9,
+      "place": "69 km WSW of Kirakira, Solomon Islands",
+      "time": "2026-10-27T02:02:55.847Z"
+    },
+    {
+      "id": "us7000ttbh",
+      "latitude": -20.3438,
+      "longitude": -68.6903,
+      "depth": 119.519,
+      "magnitude": 4.9,
+      "place": "100 km E of La Tirana, Chile",
+      "time": "2026-10-26T19:36:16.160Z"
+    },
+    {
+      "id": "us7000ttdt",
+      "latitude": 37.3869,
+      "longitude": 141.625,
+      "depth": 48.93,
+      "magnitude": 4.8,
+      "place": "54 km E of Tomioka, Japan",
+      "time": "2026-10-27T00:25:08.167Z"
+    },
+    {
+      "id": "us6000u4z3",
+      "latitude": -59.8141,
+      "longitude": -27.7087,
+      "depth": 173.493,
+      "magnitude": 4.8,
+      "place": "South Sandwich Islands region",
+      "time": "2026-10-26T11:01:55.933Z"
+    },
+    {
+      "id": "us6000u4y2",
+      "latitude": -14.0694,
+      "longitude": 165.6991,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "182 km NW of Port-Olry, Vanuatu",
+      "time": "2026-10-26T04:53:35.102Z"
+    },
+    {
+      "id": "us7000ttci",
+      "latitude": -36.4594,
+      "longitude": 138.5321,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "98 km S of Encounter Bay, Australia",
+      "time": "2026-10-26T21:18:11.526Z"
+    },
+    {
+      "id": "us7000tte0",
+      "latitude": 33.2845,
+      "longitude": 140.7128,
+      "depth": 66.715,
+      "magnitude": 4.6,
+      "place": "203 km SSE of Tateyama, Japan",
+      "time": "2026-10-27T01:17:53.898Z"
+    },
+    {
+      "id": "us7000ttc8",
+      "latitude": -32.2811,
+      "longitude": -71.3014,
+      "depth": 47.738,
+      "magnitude": 4.6,
+      "place": "20 km NNW of La Ligua, Chile",
+      "time": "2026-10-26T20:52:11.505Z"
+    },
+    {
+      "id": "us7000ttby",
+      "latitude": -14.2093,
+      "longitude": 165.9223,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "154 km NW of Port-Olry, Vanuatu",
+      "time": "2026-10-26T15:08:25.118Z"
+    },
+    {
+      "id": "us6000u4z7",
+      "latitude": 53.5071,
+      "longitude": -165.1239,
+      "depth": 35,
+      "magnitude": 4.6,
+      "place": "81 km SSE of Akutan, Alaska",
+      "time": "2026-10-26T11:38:06.778Z"
+    },
+    {
+      "id": "us7000ttd3",
+      "latitude": 2.5777,
+      "longitude": 127.7372,
+      "depth": 88.651,
+      "magnitude": 4.5,
+      "place": "98 km NNW of Tobelo, Indonesia",
+      "time": "2026-10-26T22:52:22.912Z"
+    },
+    {
+      "id": "us7000ttd1",
+      "latitude": -12.4277,
+      "longitude": 46.0831,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "96 km ENE of Pamandzi, Mayotte",
+      "time": "2026-10-26T22:33:48.538Z"
+    },
+    {
+      "id": "us7000ttc6",
+      "latitude": 5.6361,
+      "longitude": 126.5418,
+      "depth": 75.119,
+      "magnitude": 4.5,
+      "place": "89 km SSE of Pondaguitan, Philippines",
+      "time": "2026-10-26T20:41:25.106Z"
+    },
+    {
+      "id": "us7000ttb5",
+      "latitude": 38.6442,
+      "longitude": 71.0764,
+      "depth": 47.345,
+      "magnitude": 4.5,
+      "place": "74 km SE of Rasht, Tajikistan",
+      "time": "2026-10-26T18:07:04.209Z"
+    },
+    {
+      "id": "us6000u4yj",
+      "latitude": 44.7225,
+      "longitude": 147.9339,
+      "depth": 139.439,
+      "magnitude": 4.5,
+      "place": "56 km S of Kuril’sk, Russia",
+      "time": "2026-10-26T08:10:33.644Z"
+    },
+    {
+      "id": "us6000u4yi",
+      "latitude": 40.2886,
+      "longitude": 77.9297,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "107 km WNW of Tumxuk, China",
+      "time": "2026-10-26T07:48:16.240Z"
+    },
+    {
+      "id": "us6000u4zm",
+      "latitude": 35.0335,
+      "longitude": 25.9536,
+      "depth": 10,
+      "magnitude": 4.4,
+      "place": "18 km E of Kentrí, Greece",
+      "time": "2026-10-26T13:20:02.823Z"
+    },
+    {
+      "id": "us6000u4yw",
+      "latitude": -18.3187,
+      "longitude": -177.9801,
+      "depth": 636.621,
+      "magnitude": 4.3,
+      "place": "287 km E of Levuka, Fiji",
+      "time": "2026-10-26T10:30:22.297Z"
+    },
+    {
+      "id": "us6000u4y8",
+      "latitude": 25.8377,
+      "longitude": 67.9886,
+      "depth": 10,
+      "magnitude": 4.3,
+      "place": "26 km SSW of Sann, Pakistan",
+      "time": "2026-10-26T05:45:31.202Z"
+    },
+    {
+      "id": "us7000tteg",
+      "latitude": -2.7707,
+      "longitude": -78.8864,
+      "depth": 75.447,
+      "magnitude": 4.1,
+      "place": "5 km SW of Azogues, Ecuador",
+      "time": "2026-10-27T03:55:23.686Z"
+    },
+    {
+      "id": "pr71537718",
+      "latitude": 18.2008333333333,
+      "longitude": -67.5985,
+      "depth": 134.47,
+      "magnitude": 3.31,
+      "place": "39 km WSW of Stella, Puerto Rico",
+      "time": "2026-10-27T01:56:46.130Z"
+    },
+    {
+      "id": "us7000ttbv",
+      "latitude": 56.0636,
+      "longitude": -148.8246,
+      "depth": 10,
+      "magnitude": 3.3,
+      "place": "272 km SE of Chiniak, Alaska",
+      "time": "2026-10-26T20:10:52.377Z"
+    },
+    {
+      "id": "pr71537723",
+      "latitude": 18.8711666666667,
+      "longitude": -65.7981666666667,
+      "depth": 36.24,
+      "magnitude": 3.04,
+      "place": "49 km N of Suárez, Puerto Rico",
+      "time": "2026-10-27T03:16:33.040Z"
+    },
+    {
+      "id": "us7000ttc5",
+      "latitude": 28.9437,
+      "longitude": -103.7821,
+      "depth": 8.211,
+      "magnitude": 3,
+      "place": "44 km SSW of Terlingua, Texas",
+      "time": "2026-10-26T20:47:33.837Z"
+    },
+    {
+      "id": "aka2026vfmqfn",
+      "latitude": 61.636,
+      "longitude": -141.316,
+      "depth": 5,
+      "magnitude": 2.8,
+      "place": "88 km ENE of McCarthy, Alaska",
+      "time": "2026-10-26T14:02:54.892Z"
+    },
+    {
+      "id": "tx2026vcnlki",
+      "latitude": 32.073,
+      "longitude": -103.72,
+      "depth": 7.9327,
+      "magnitude": 2.6,
+      "place": "37 km ESE of Malaga, New Mexico",
+      "time": "2026-10-26T19:38:04.946Z"
+    },
+    {
+      "id": "tx2026vbupcx",
+      "latitude": 31.652,
+      "longitude": -104.396,
+      "depth": 6.4587,
+      "magnitude": 2.6,
+      "place": "58 km S of Whites City, New Mexico",
+      "time": "2026-10-26T10:09:03.981Z"
+    },
+    {
+      "id": "nc75455061",
+      "latitude": 36.8626670837402,
+      "longitude": -121.605003356934,
+      "depth": 4.82999992370605,
+      "magnitude": 2.5,
+      "place": "4 km SE of Aromas, CA",
+      "time": "2026-10-26T13:10:33.190Z"
+    }
+  ],
+  "weatherSamples": [
+    {
+      "latitude": 64.15,
+      "longitude": -21.94,
+      "temperature": 4.6,
+      "wind": 18.4
+    },
+    {
+      "latitude": 35.68,
+      "longitude": 139.69,
+      "temperature": 20.7,
+      "wind": 2.4
+    },
+    {
+      "latitude": 1.35,
+      "longitude": 103.82,
+      "temperature": 32.4,
+      "wind": 7.4
+    },
+    {
+      "latitude": -33.87,
+      "longitude": 151.21,
+      "temperature": 19.5,
+      "wind": 15.3
+    },
+    {
+      "latitude": -1.29,
+      "longitude": 36.82,
+      "temperature": 18,
+      "wind": 6.7
+    },
+    {
+      "latitude": 51.51,
+      "longitude": -0.13,
+      "temperature": 16.9,
+      "wind": 27
+    },
+    {
+      "latitude": 40.71,
+      "longitude": -74.01,
+      "temperature": 14.6,
+      "wind": 9.7
+    },
+    {
+      "latitude": -23.55,
+      "longitude": -46.63,
+      "temperature": 13,
+      "wind": 8.7
+    },
+    {
+      "latitude": 31.23,
+      "longitude": 121.47,
+      "temperature": 20,
+      "wind": 16.6
+    },
+    {
+      "latitude": 19.43,
+      "longitude": -99.13,
+      "temperature": 15.3,
+      "wind": 7.7
+    },
+    {
+      "latitude": 37.77,
+      "longitude": -122.42,
+      "temperature": 13.6,
+      "wind": 16.9
+    },
+    {
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "temperature": 13.5,
+      "wind": 7.8
+    }
+  ],
+  "sources": [
+    {
+      "label": "USGS Earthquake Hazards Program",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "status": "live"
+    },
+    {
+      "label": "NOAA Space Weather Prediction Center",
+      "url": "https://services.swpc.noaa.gov/",
+      "status": "live"
+    },
+    {
+      "label": "Open-Meteo",
+      "url": "https://open-meteo.com/",
+      "status": "live"
+    }
+  ]
+}
