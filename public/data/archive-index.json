@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-10-29",
+    "seed": 3554953494,
+    "summary": "今天的地球，在低声而持续地呼吸。",
+    "status": "live",
+    "metrics": {
+      "earthquakeCount": 44,
+      "maxMagnitude": 5.8,
+      "averageDepth": 40.6,
+      "kpIndex": 3,
+      "solarWind": 371,
+      "meanTemperature": 16.5,
+      "meanWind": 9.1,
+      "moonPhase": 0.6134
+    },
+    "palette": {
+      "void": "hsl(258 38% 5%)",
+      "ink": "hsl(236 44% 9%)",
+      "aurora": "hsl(241.33333333333334 88% 65%)",
+      "tide": "hsl(302 76% 60%)",
+      "ember": "hsl(36.13333333333333 96% 66%)",
+      "mist": "hsl(32 42% 87%)"
+    }
+  },
+  {
     "date": "2026-10-28",
     "seed": 4012185328,
     "summary": "深处的震动在织面上留下了宽阔回声。",
@@ -1412,30 +1436,6 @@
       "aurora": "hsl(237.11111111111111 88% 65%)",
       "tide": "hsl(292 76% 61.333333333333336%)",
       "ember": "hsl(37.36 96% 66%)",
-      "mist": "hsl(22 42% 87%)"
-    }
-  },
-  {
-    "date": "2026-08-29",
-    "seed": 1161938342,
-    "summary": "今天的地球，在低声而持续地呼吸。",
-    "status": "live",
-    "metrics": {
-      "earthquakeCount": 57,
-      "maxMagnitude": 5.1,
-      "averageDepth": 55,
-      "kpIndex": 4,
-      "solarWind": 380,
-      "meanTemperature": 18.9,
-      "meanWind": 10,
-      "moonPhase": 0.5478
-    },
-    "palette": {
-      "void": "hsl(248 38% 5%)",
-      "ink": "hsl(226 44% 9%)",
-      "aurora": "hsl(237.11111111111111 88% 65%)",
-      "tide": "hsl(292 76% 61.333333333333336%)",
-      "ember": "hsl(37.41333333333333 96% 66%)",
       "mist": "hsl(22 42% 87%)"
     }
   }
