@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-05",
+  "generatedAt": "2026-11-05T06:27:19.859Z",
+  "timeZone": "Asia/Shanghai",
+  "status": "live",
+  "seed": 2449944385,
+  "summary": "今天的地球，在低声而持续地呼吸。",
+  "metrics": {
+    "earthquakeCount": 31,
+    "maxMagnitude": 5,
+    "averageDepth": 61,
+    "kpIndex": 2,
+    "solarWind": 372,
+    "meanTemperature": 17.1,
+    "meanWind": 10.7,
+    "moonPhase": 0.8505
+  },
+  "palette": {
+    "void": "hsl(229 38% 5%)",
+    "ink": "hsl(207 44% 9%)",
+    "aurora": "hsl(206.55555555555554 88% 65%)",
+    "tide": "hsl(273 76% 58.666666666666664%)",
+    "ember": "hsl(36.45333333333333 96% 66%)",
+    "mist": "hsl(3 42% 87%)"
+  },
+  "earthquakes": [
+    {
+      "id": "us7000tvwj",
+      "latitude": 4.3895,
+      "longitude": 127.0325,
+      "depth": 49.074,
+      "magnitude": 5,
+      "place": "207 km ESE of Sarangani, Philippines",
+      "time": "2026-11-04T07:40:12.288Z"
+    },
+    {
+      "id": "nc75462637",
+      "latitude": 40.4253349304199,
+      "longitude": -125.627166748047,
+      "depth": 2.14000010490417,
+      "magnitude": 4.96,
+      "place": "114 km W of Petrolia, CA",
+      "time": "2026-11-05T04:56:01.430Z"
+    },
+    {
+      "id": "us7000tw43",
+      "latitude": -25.2286,
+      "longitude": 179.8797,
+      "depth": 502.294,
+      "magnitude": 4.6,
+      "place": "south of the Fiji Islands",
+      "time": "2026-11-04T21:24:24.646Z"
+    },
+    {
+      "id": "us7000tw3k",
+      "latitude": 12.6311,
+      "longitude": -87.1544,
+      "depth": 159.022,
+      "magnitude": 4.5,
+      "place": "2 km W of Chinandega, Nicaragua",
+      "time": "2026-11-04T19:55:26.313Z"
+    },
+    {
+      "id": "us7000tvxj",
+      "latitude": -5.4706,
+      "longitude": 152.0301,
+      "depth": 10,
+      "magnitude": 4.3,
+      "place": "127 km SSW of Kokopo, Papua New Guinea",
+      "time": "2026-11-04T12:14:45.921Z"
+    },
+    {
+      "id": "pr2026308001",
+      "latitude": 19.4396,
+      "longitude": -68.1008,
+      "depth": 11,
+      "magnitude": 4.21,
+      "place": "100 km NNE of Punta Cana, Dominican Republic",
+      "time": "2026-11-04T16:59:23.360Z"
+    },
+    {
+      "id": "aka2026vwnmje",
+      "latitude": 51.596,
+      "longitude": -176.679,
+      "depth": 70.2,
+      "magnitude": 4.2,
+      "place": "31 km S of Adak, Alaska",
+      "time": "2026-11-04T19:22:21.461Z"
+    },
+    {
+      "id": "us7000tw2x",
+      "latitude": 36.446,
+      "longitude": 70.7177,
+      "depth": 199.264,
+      "magnitude": 4.2,
+      "place": "47 km SSW of Jurm, Afghanistan",
+      "time": "2026-11-04T18:54:49.398Z"
+    },
+    {
+      "id": "aka2026vvzmnn",
+      "latitude": 52.208,
+      "longitude": -168.733,
+      "depth": 12.6,
+      "magnitude": 4.2,
+      "place": "81 km S of Nikolski, Alaska",
+      "time": "2026-11-04T12:22:50.918Z"
+    },
+    {
+      "id": "us7000tw53",
+      "latitude": 32.5065,
+      "longitude": 94.1224,
+      "depth": 10,
+      "magnitude": 4.1,
+      "place": "226 km ENE of Nagqu, China",
+      "time": "2026-11-05T00:49:15.589Z"
+    },
+    {
+      "id": "us7000tw4z",
+      "latitude": 38.0156,
+      "longitude": 30.0682,
+      "depth": 10,
+      "magnitude": 4.1,
+      "place": "10 km WSW of Dinar, Turkey",
+      "time": "2026-11-05T00:23:17.796Z"
+    },
+    {
+      "id": "pr2026308002",
+      "latitude": 19.4948,
+      "longitude": -68.0753,
+      "depth": 10,
+      "magnitude": 3.49,
+      "place": "106 km NNE of Punta Cana, Dominican Republic",
+      "time": "2026-11-04T17:09:51.240Z"
+    },
+    {
+      "id": "pr71538513",
+      "latitude": 19.4543333333333,
+      "longitude": -66.9053333333333,
+      "depth": 26.44,
+      "magnitude": 3.23,
+      "place": "106 km N of Isabela, Puerto Rico",
+      "time": "2026-11-04T23:55:50.740Z"
+    },
+    {
+      "id": "aka2026vvrwqb",
+      "latitude": 63.496,
+      "longitude": -147.461,
+      "depth": 5,
+      "magnitude": 3.2,
+      "place": "75 km E of Cantwell, Alaska",
+      "time": "2026-11-04T08:34:33.730Z"
+    },
+    {
+      "id": "hv75068576",
+      "latitude": 19.3953333333333,
+      "longitude": -155.621333333333,
+      "depth": -2.1,
+      "magnitude": 3.12,
+      "place": "26 km NW of Pāhala, Hawaii",
+      "time": "2026-11-04T21:59:55.690Z"
+    },
+    {
+      "id": "ci41358343",
+      "latitude": 35.958,
+      "longitude": -117.3925,
+      "depth": 2.64,
+      "magnitude": 3.12,
+      "place": "21 km N of Searles Valley, CA",
+      "time": "2026-11-04T18:59:30.920Z"
+    },
+    {
+      "id": "aka2026vxflhk",
+      "latitude": 60.303,
+      "longitude": -150.78,
+      "depth": 64.5,
+      "magnitude": 3.1,
+      "place": "22 km S of Funny River, Alaska",
+      "time": "2026-11-05T04:20:56.986Z"
+    },
+    {
+      "id": "aka2026vvoqoh",
+      "latitude": 59.89,
+      "longitude": -153.144,
+      "depth": 131.9,
+      "magnitude": 3,
+      "place": "55 km ENE of Pedro Bay, Alaska",
+      "time": "2026-11-04T06:57:35.378Z"
+    },
+    {
+      "id": "aka2026vvzdxb",
+      "latitude": 61.047,
+      "longitude": -151.217,
+      "depth": 75.8,
+      "magnitude": 2.8,
+      "place": "4 km WSW of Tyonek, Alaska",
+      "time": "2026-11-04T12:12:50.864Z"
+    },
+    {
+      "id": "aka2026vwruvq",
+      "latitude": 60.116,
+      "longitude": -153.379,
+      "depth": 154.7,
+      "magnitude": 2.7,
+      "place": "52 km E of Port Alsworth, Alaska",
+      "time": "2026-11-04T21:32:02.343Z"
+    },
+    {
+      "id": "aka2026vwogbw",
+      "latitude": 60.362,
+      "longitude": -152.465,
+      "depth": 100.9,
+      "magnitude": 2.7,
+      "place": "56 km NW of Ninilchik, Alaska",
+      "time": "2026-11-04T19:45:09.512Z"
+    },
+    {
+      "id": "ci41358359",
+      "latitude": 35.9566666666667,
+      "longitude": -117.3935,
+      "depth": 2.49,
+      "magnitude": 2.69,
+      "place": "21 km N of Searles Valley, CA",
+      "time": "2026-11-04T19:15:13.940Z"
+    },
+    {
+      "id": "aka2026vwoaud",
+      "latitude": 60.068,
+      "longitude": -147.74,
+      "depth": 29.4,
+      "magnitude": 2.6,
+      "place": "15 km E of Chenega, Alaska",
+      "time": "2026-11-04T19:39:02.999Z"
+    },
+    {
+      "id": "uu80162776",
+      "latitude": 38.5195,
+      "longitude": -112.919666666667,
+      "depth": 3.82,
+      "magnitude": 2.53,
+      "place": "15 km NNE of Milford, Utah",
+      "time": "2026-11-04T11:53:35.500Z"
+    },
+    {
+      "id": "aka2026vxeeuz",
+      "latitude": 60.295,
+      "longitude": -150.831,
+      "depth": 63.9,
+      "magnitude": 2.5,
+      "place": "23 km S of Funny River, Alaska",
+      "time": "2026-11-05T03:43:29.333Z"
+    },
+    {
+      "id": "aka2026vwyznm",
+      "latitude": 60.171,
+      "longitude": -152.545,
+      "depth": 105.5,
+      "magnitude": 2.5,
+      "place": "50 km WNW of Ninilchik, Alaska",
+      "time": "2026-11-05T01:07:21.383Z"
+    },
+    {
+      "id": "aka2026vwonln",
+      "latitude": 56.625,
+      "longitude": -154.798,
+      "depth": 1.3,
+      "magnitude": 2.5,
+      "place": "52 km SW of Akhiok, Alaska",
+      "time": "2026-11-04T19:53:34.570Z"
+    },
+    {
+      "id": "aka2026vwjrrv",
+      "latitude": 63.368,
+      "longitude": -151.802,
+      "depth": 1,
+      "magnitude": 2.5,
+      "place": "19 km SSW of Denali National Park, Alaska",
+      "time": "2026-11-04T17:28:36.393Z"
+    },
+    {
+      "id": "aka2026vwesvb",
+      "latitude": 58.862,
+      "longitude": -153.022,
+      "depth": 68.7,
+      "magnitude": 2.5,
+      "place": "83 km SW of Nanwalek, Alaska",
+      "time": "2026-11-04T14:59:59.236Z"
+    },
+    {
+      "id": "aka2026vvxgii",
+      "latitude": 57.027,
+      "longitude": -156.155,
+      "depth": 3.3,
+      "magnitude": 2.5,
+      "place": "92 km SE of Ugashik, Alaska",
+      "time": "2026-11-04T11:15:40.351Z"
+    },
+    {
+      "id": "tx2026vsikdc",
+      "latitude": 31.88,
+      "longitude": -101.738,
+      "depth": 7.1045,
+      "magnitude": 2.5,
+      "place": "24 km W of Garden City, Texas",
+      "time": "2026-11-04T10:17:33.908Z"
+    }
+  ],
+  "weatherSamples": [
+    {
+      "latitude": 64.15,
+      "longitude": -21.94,
+      "temperature": 9.5,
+      "wind": 29.5
+    },
+    {
+      "latitude": 35.68,
+      "longitude": 139.69,
+      "temperature": 15.6,
+      "wind": 4.1
+    },
+    {
+      "latitude": 1.35,
+      "longitude": 103.82,
+      "temperature": 25.8,
+      "wind": 5.3
+    },
+    {
+      "latitude": -33.87,
+      "longitude": 151.21,
+      "temperature": 18.7,
+      "wind": 11.6
+    },
+    {
+      "latitude": -1.29,
+      "longitude": 36.82,
+      "temperature": 20.7,
+      "wind": 9.5
+    },
+    {
+      "latitude": 51.51,
+      "longitude": -0.13,
+      "temperature": 9.4,
+      "wind": 11.5
+    },
+    {
+      "latitude": 40.71,
+      "longitude": -74.01,
+      "temperature": 17.1,
+      "wind": 14.3
+    },
+    {
+      "latitude": -23.55,
+      "longitude": -46.63,
+      "temperature": 24,
+      "wind": 11
+    },
+    {
+      "latitude": 31.23,
+      "longitude": 121.47,
+      "temperature": 19.4,
+      "wind": 12.7
+    },
+    {
+      "latitude": 19.43,
+      "longitude": -99.13,
+      "temperature": 16.3,
+      "wind": 1.8
+    },
+    {
+      "latitude": 37.77,
+      "longitude": -122.42,
+      "temperature": 13.5,
+      "wind": 7.9
+    },
+    {
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "temperature": 14.6,
+      "wind": 8.8
+    }
+  ],
+  "sources": [
+    {
+      "label": "USGS Earthquake Hazards Program",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "status": "live"
+    },
+    {
+      "label": "NOAA Space Weather Prediction Center",
+      "url": "https://services.swpc.noaa.gov/",
+      "status": "live"
+    },
+    {
+      "label": "Open-Meteo",
+      "url": "https://open-meteo.com/",
+      "status": "live"
+    }
+  ]
+}
