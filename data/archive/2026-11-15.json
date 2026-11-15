@@ -1,0 +1,561 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-15",
+  "generatedAt": "2026-11-15T06:11:05.547Z",
+  "timeZone": "Asia/Shanghai",
+  "status": "live",
+  "seed": 3684137643,
+  "summary": "今天的地球，在低声而持续地呼吸。",
+  "metrics": {
+    "earthquakeCount": 49,
+    "maxMagnitude": 5.5,
+    "averageDepth": 64.1,
+    "kpIndex": 2,
+    "solarWind": 382,
+    "meanTemperature": 13.7,
+    "meanWind": 8.9,
+    "moonPhase": 0.1891
+  },
+  "palette": {
+    "void": "hsl(261 38% 5%)",
+    "ink": "hsl(239 44% 9%)",
+    "aurora": "hsl(238.55555555555554 88% 65%)",
+    "tide": "hsl(305 76% 58.666666666666664%)",
+    "ember": "hsl(34.64 96% 66%)",
+    "mist": "hsl(35 42% 87%)"
+  },
+  "earthquakes": [
+    {
+      "id": "us7000tyca",
+      "latitude": -19.5554,
+      "longitude": -177.8215,
+      "depth": 469.881,
+      "magnitude": 5.5,
+      "place": "Fiji region",
+      "time": "2026-11-15T05:15:02.697Z"
+    },
+    {
+      "id": "us7000ty84",
+      "latitude": 30.122,
+      "longitude": -42.6346,
+      "depth": 10,
+      "magnitude": 5.5,
+      "place": "northern Mid-Atlantic Ridge",
+      "time": "2026-11-14T09:26:13.073Z"
+    },
+    {
+      "id": "us7000ty7d",
+      "latitude": 9.7032,
+      "longitude": 147.3631,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "State of Yap, Federated States of Micronesia",
+      "time": "2026-11-14T06:52:26.706Z"
+    },
+    {
+      "id": "us7000ty9l",
+      "latitude": 8.3996,
+      "longitude": 126.2112,
+      "depth": 154.123,
+      "magnitude": 4.9,
+      "place": "7 km SE of Tagbina, Philippines",
+      "time": "2026-11-14T16:04:22.205Z"
+    },
+    {
+      "id": "us7000ty90",
+      "latitude": -33.0019,
+      "longitude": -178.3404,
+      "depth": 12.019,
+      "magnitude": 4.9,
+      "place": "south of the Kermadec Islands",
+      "time": "2026-11-14T13:17:20.799Z"
+    },
+    {
+      "id": "us7000tybx",
+      "latitude": -31.3221,
+      "longitude": -68.6822,
+      "depth": 108.94,
+      "magnitude": 4.8,
+      "place": "19 km NW of Albardón, Argentina",
+      "time": "2026-11-15T03:59:59.682Z"
+    },
+    {
+      "id": "us7000ty7b",
+      "latitude": -36.4613,
+      "longitude": -97.9575,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "West Chile Rise",
+      "time": "2026-11-14T06:33:19.009Z"
+    },
+    {
+      "id": "us7000tyay",
+      "latitude": 3.7323,
+      "longitude": -99.113,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "east central Pacific Ocean",
+      "time": "2026-11-14T22:23:46.411Z"
+    },
+    {
+      "id": "us7000ty9z",
+      "latitude": -22.2364,
+      "longitude": -63.653,
+      "depth": 506.268,
+      "magnitude": 4.7,
+      "place": "24 km S of Yacuiba, Bolivia",
+      "time": "2026-11-14T18:04:01.078Z"
+    },
+    {
+      "id": "us7000ty9v",
+      "latitude": 5.5982,
+      "longitude": 126.6097,
+      "depth": 65.399,
+      "magnitude": 4.6,
+      "place": "96 km SSE of Pondaguitan, Philippines",
+      "time": "2026-11-14T16:56:39.533Z"
+    },
+    {
+      "id": "us7000ty9n",
+      "latitude": -24.049,
+      "longitude": -66.9029,
+      "depth": 197.571,
+      "magnitude": 4.6,
+      "place": "62 km WNW of San Antonio de los Cobres, Argentina",
+      "time": "2026-11-14T16:36:19.635Z"
+    },
+    {
+      "id": "us7000ty7h",
+      "latitude": -15.0887,
+      "longitude": -173.446,
+      "depth": 10,
+      "magnitude": 4.6,
+      "place": "102 km NNE of Hihifo, Tonga",
+      "time": "2026-11-14T07:02:22.573Z"
+    },
+    {
+      "id": "us7000tyan",
+      "latitude": -8.3823,
+      "longitude": 120.443,
+      "depth": 10,
+      "magnitude": 4.5,
+      "place": "25 km N of Ruteng, Indonesia",
+      "time": "2026-11-14T21:24:20.159Z"
+    },
+    {
+      "id": "us7000ty8u",
+      "latitude": 52.3603,
+      "longitude": 160.2984,
+      "depth": 17.439,
+      "magnitude": 4.5,
+      "place": "137 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "time": "2026-11-14T12:28:00.653Z"
+    },
+    {
+      "id": "us7000tyc0",
+      "latitude": -23.446,
+      "longitude": -67.0737,
+      "depth": 254.527,
+      "magnitude": 4.4,
+      "place": "115 km NW of San Antonio de los Cobres, Argentina",
+      "time": "2026-11-15T04:23:47.869Z"
+    },
+    {
+      "id": "us7000tyc3",
+      "latitude": -23.5305,
+      "longitude": -67.904,
+      "depth": 151.745,
+      "magnitude": 4.3,
+      "place": "75 km SSE of San Pedro de Atacama, Chile",
+      "time": "2026-11-15T04:38:28.360Z"
+    },
+    {
+      "id": "aka2026wppbfb",
+      "latitude": 50.912,
+      "longitude": 179.464,
+      "depth": 0,
+      "magnitude": 4.3,
+      "place": "291 km WSW of Adak, Alaska",
+      "time": "2026-11-15T03:02:44.124Z"
+    },
+    {
+      "id": "us7000tybq",
+      "latitude": 8.6125,
+      "longitude": -83.0217,
+      "depth": 9.561,
+      "magnitude": 4.3,
+      "place": "8 km WSW of Corredor, Costa Rica",
+      "time": "2026-11-15T03:01:42.502Z"
+    },
+    {
+      "id": "us7000tybj",
+      "latitude": -44.3607,
+      "longitude": -80.0144,
+      "depth": 10,
+      "magnitude": 4.3,
+      "place": "Off the coast of Aisen, Chile",
+      "time": "2026-11-15T02:17:21.755Z"
+    },
+    {
+      "id": "us7000ty9x",
+      "latitude": -40.0345,
+      "longitude": 176.3623,
+      "depth": 27.863,
+      "magnitude": 4.3,
+      "place": "29 km NE of Dannevirke, New Zealand",
+      "time": "2026-11-14T17:51:29.113Z"
+    },
+    {
+      "id": "us7000ty7m",
+      "latitude": 30.0796,
+      "longitude": 136.9461,
+      "depth": 506.899,
+      "magnitude": 4.1,
+      "place": "southeast of Shikoku, Japan",
+      "time": "2026-11-14T07:24:59.364Z"
+    },
+    {
+      "id": "aka2026wptmlc",
+      "latitude": 60.073,
+      "longitude": -147.799,
+      "depth": 14.4,
+      "magnitude": 3.9,
+      "place": "11 km E of Chenega, Alaska",
+      "time": "2026-11-15T05:15:40.008Z"
+    },
+    {
+      "id": "aka2026wonuxw",
+      "latitude": 52.041,
+      "longitude": -169.239,
+      "depth": 10,
+      "magnitude": 3.9,
+      "place": "103 km SSW of Nikolski, Alaska",
+      "time": "2026-11-14T13:25:58.258Z"
+    },
+    {
+      "id": "pr2026318000",
+      "latitude": 19.5083,
+      "longitude": -67.2648,
+      "depth": 28,
+      "magnitude": 3.55,
+      "place": "113 km N of San Antonio, Puerto Rico",
+      "time": "2026-11-14T07:39:11.520Z"
+    },
+    {
+      "id": "aka2026wpeyzd",
+      "latitude": 60.009,
+      "longitude": -147.394,
+      "depth": 2,
+      "magnitude": 3.5,
+      "place": "35 km E of Chenega, Alaska",
+      "time": "2026-11-14T22:00:18.823Z"
+    },
+    {
+      "id": "ok2026wjiy",
+      "latitude": 35.61016667,
+      "longitude": -98.047,
+      "depth": 6.77,
+      "magnitude": 3.44,
+      "place": "6 km E of Calumet, Oklahoma",
+      "time": "2026-11-15T04:32:14.160Z"
+    },
+    {
+      "id": "uu80164656",
+      "latitude": 41.1915,
+      "longitude": -111.660166666667,
+      "depth": 5.43,
+      "magnitude": 3.42,
+      "place": "11 km SE of Huntsville, Utah",
+      "time": "2026-11-15T01:40:03.330Z"
+    },
+    {
+      "id": "uw714139181",
+      "latitude": 48.4878333333333,
+      "longitude": -119.918166666667,
+      "depth": 8.91,
+      "magnitude": 3.42,
+      "place": "14 km WSW of Conconully, Washington",
+      "time": "2026-11-14T08:30:07.400Z"
+    },
+    {
+      "id": "us7000tyb5",
+      "latitude": 42.0686,
+      "longitude": -125.6473,
+      "depth": 10,
+      "magnitude": 3.4,
+      "place": "106 km WSW of Pistol River, Oregon",
+      "time": "2026-11-14T23:22:03.473Z"
+    },
+    {
+      "id": "ci41361935",
+      "latitude": 32.81217,
+      "longitude": -115.46616,
+      "depth": 16.18,
+      "magnitude": 3.26,
+      "place": "8 km W of Holtville, CA",
+      "time": "2026-11-14T11:12:55.140Z"
+    },
+    {
+      "id": "tx2026wlxsjc",
+      "latitude": 32.009,
+      "longitude": -103.797,
+      "depth": 7.1509,
+      "magnitude": 3.2,
+      "place": "35 km SE of Malaga, New Mexico",
+      "time": "2026-11-15T02:24:39.785Z"
+    },
+    {
+      "id": "aka2026wnzisb",
+      "latitude": 55.316,
+      "longitude": -153.335,
+      "depth": 130.8,
+      "magnitude": 3.2,
+      "place": "188 km SSE of Akhiok, Alaska",
+      "time": "2026-11-14T06:11:38.842Z"
+    },
+    {
+      "id": "ci41362071",
+      "latitude": 32.82367,
+      "longitude": -115.46516,
+      "depth": 11.65,
+      "magnitude": 3.19,
+      "place": "8 km W of Holtville, CA",
+      "time": "2026-11-14T15:33:34.210Z"
+    },
+    {
+      "id": "pr71539283",
+      "latitude": 19.156,
+      "longitude": -67.8105,
+      "depth": 3.37,
+      "magnitude": 3.09,
+      "place": "89 km NE of Punta Cana, Dominican Republic",
+      "time": "2026-11-15T01:26:29.010Z"
+    },
+    {
+      "id": "ci41361927",
+      "latitude": 32.815,
+      "longitude": -115.4635,
+      "depth": 11.63,
+      "magnitude": 3.09,
+      "place": "8 km W of Holtville, CA",
+      "time": "2026-11-14T11:09:27.970Z"
+    },
+    {
+      "id": "ci41361919",
+      "latitude": 32.81283,
+      "longitude": -115.45883,
+      "depth": 14.14,
+      "magnitude": 3.01,
+      "place": "7 km W of Holtville, CA",
+      "time": "2026-11-14T11:05:21.660Z"
+    },
+    {
+      "id": "ci41361951",
+      "latitude": 32.80067,
+      "longitude": -115.451,
+      "depth": 10.97,
+      "magnitude": 3,
+      "place": "7 km W of Holtville, CA",
+      "time": "2026-11-14T11:13:58.480Z"
+    },
+    {
+      "id": "nn00926979",
+      "latitude": 41.5538,
+      "longitude": -119.3295,
+      "depth": 0.0008,
+      "magnitude": 2.93,
+      "place": "70 km E of Cedarville, California",
+      "time": "2026-11-14T19:51:04.046Z"
+    },
+    {
+      "id": "pr71539273",
+      "latitude": 18.6018333333333,
+      "longitude": -66.934,
+      "depth": 19.63,
+      "magnitude": 2.87,
+      "place": "14 km N of Quebradillas, Puerto Rico",
+      "time": "2026-11-14T20:40:25.910Z"
+    },
+    {
+      "id": "aka2026woawtk",
+      "latitude": 63.334,
+      "longitude": -151.738,
+      "depth": 17.8,
+      "magnitude": 2.8,
+      "place": "23 km S of Denali National Park, Alaska",
+      "time": "2026-11-14T06:58:06.235Z"
+    },
+    {
+      "id": "ci41362079",
+      "latitude": 32.82033,
+      "longitude": -115.46517,
+      "depth": 11.85,
+      "magnitude": 2.73,
+      "place": "8 km W of Holtville, CA",
+      "time": "2026-11-14T15:34:45.400Z"
+    },
+    {
+      "id": "pr71539253",
+      "latitude": 18.7483333333333,
+      "longitude": -66.7786666666667,
+      "depth": 50.05,
+      "magnitude": 2.73,
+      "place": "29 km N of Hatillo, Puerto Rico",
+      "time": "2026-11-14T09:08:16.380Z"
+    },
+    {
+      "id": "aka2026wobqvm",
+      "latitude": 59.852,
+      "longitude": -148.534,
+      "depth": 14.4,
+      "magnitude": 2.7,
+      "place": "37 km SW of Chenega, Alaska",
+      "time": "2026-11-14T07:21:19.785Z"
+    },
+    {
+      "id": "us7000ty7j",
+      "latitude": 60.49,
+      "longitude": -139.8841,
+      "depth": 10,
+      "magnitude": 2.7,
+      "place": "105 km N of Yakutat, Alaska",
+      "time": "2026-11-14T07:19:06.094Z"
+    },
+    {
+      "id": "hv75070327",
+      "latitude": 18.9871673583984,
+      "longitude": -155.385330200195,
+      "depth": 29.3999996185303,
+      "magnitude": 2.66,
+      "place": "22 km ESE of Naalehu, Hawaii",
+      "time": "2026-11-14T12:08:46.140Z"
+    },
+    {
+      "id": "ci41361959",
+      "latitude": 32.8195,
+      "longitude": -115.46333,
+      "depth": 7,
+      "magnitude": 2.66,
+      "place": "8 km W of Holtville, CA",
+      "time": "2026-11-14T11:14:17.440Z"
+    },
+    {
+      "id": "ci41361943",
+      "latitude": 32.816,
+      "longitude": -115.46383,
+      "depth": 10.28,
+      "magnitude": 2.65,
+      "place": "8 km W of Holtville, CA",
+      "time": "2026-11-14T11:13:35.960Z"
+    },
+    {
+      "id": "pr71539258",
+      "latitude": 17.9923333333333,
+      "longitude": -67.3768333333333,
+      "depth": 11.32,
+      "magnitude": 2.54,
+      "place": "20 km W of Pole Ojea, Puerto Rico",
+      "time": "2026-11-14T16:15:08.450Z"
+    },
+    {
+      "id": "aka2026wputwc",
+      "latitude": 63.045,
+      "longitude": -150.941,
+      "depth": 114.9,
+      "magnitude": 2.5,
+      "place": "61 km N of Petersville, Alaska",
+      "time": "2026-11-15T05:54:13.361Z"
+    }
+  ],
+  "weatherSamples": [
+    {
+      "latitude": 64.15,
+      "longitude": -21.94,
+      "temperature": -4.3,
+      "wind": 12.2
+    },
+    {
+      "latitude": 35.68,
+      "longitude": 139.69,
+      "temperature": 11.2,
+      "wind": 3.5
+    },
+    {
+      "latitude": 1.35,
+      "longitude": 103.82,
+      "temperature": 27.2,
+      "wind": 10.5
+    },
+    {
+      "latitude": -33.87,
+      "longitude": 151.21,
+      "temperature": 20,
+      "wind": 18.8
+    },
+    {
+      "latitude": -1.29,
+      "longitude": 36.82,
+      "temperature": 20.3,
+      "wind": 11.9
+    },
+    {
+      "latitude": 51.51,
+      "longitude": -0.13,
+      "temperature": 4.2,
+      "wind": 5
+    },
+    {
+      "latitude": 40.71,
+      "longitude": -74.01,
+      "temperature": 3.6,
+      "wind": 13.1
+    },
+    {
+      "latitude": -23.55,
+      "longitude": -46.63,
+      "temperature": 17.6,
+      "wind": 4
+    },
+    {
+      "latitude": 31.23,
+      "longitude": 121.47,
+      "temperature": 18.8,
+      "wind": 9.3
+    },
+    {
+      "latitude": 19.43,
+      "longitude": -99.13,
+      "temperature": 13.2,
+      "wind": 3.2
+    },
+    {
+      "latitude": 37.77,
+      "longitude": -122.42,
+      "temperature": 12.4,
+      "wind": 8.5
+    },
+    {
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "temperature": 19.9,
+      "wind": 6.8
+    }
+  ],
+  "sources": [
+    {
+      "label": "USGS Earthquake Hazards Program",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "status": "live"
+    },
+    {
+      "label": "NOAA Space Weather Prediction Center",
+      "url": "https://services.swpc.noaa.gov/",
+      "status": "live"
+    },
+    {
+      "label": "Open-Meteo",
+      "url": "https://open-meteo.com/",
+      "status": "live"
+    }
+  ]
+}
