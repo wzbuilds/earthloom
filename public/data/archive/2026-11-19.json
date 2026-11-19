@@ -1,0 +1,435 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19T07:10:00.031Z",
+  "timeZone": "Asia/Shanghai",
+  "status": "live",
+  "seed": 366380940,
+  "summary": "深处的震动在织面上留下了宽阔回声。",
+  "metrics": {
+    "earthquakeCount": 35,
+    "maxMagnitude": 6.1,
+    "averageDepth": 18.6,
+    "kpIndex": 5,
+    "solarWind": 443,
+    "meanTemperature": 14.4,
+    "meanWind": 8.7,
+    "moonPhase": 0.3246
+  },
+  "palette": {
+    "void": "hsl(252 38% 5%)",
+    "ink": "hsl(230 44% 9%)",
+    "aurora": "hsl(246.88888888888889 88% 65%)",
+    "tide": "hsl(296 76% 62.666666666666664%)",
+    "ember": "hsl(35.013333333333335 96% 66%)",
+    "mist": "hsl(26 42% 87%)"
+  },
+  "earthquakes": [
+    {
+      "id": "us7000tz37",
+      "latitude": -57.7514,
+      "longitude": -146.746,
+      "depth": 10,
+      "magnitude": 6.1,
+      "place": "Pacific-Antarctic Ridge",
+      "time": "2026-11-18T19:14:23.713Z"
+    },
+    {
+      "id": "us7000tz1n",
+      "latitude": 32.2779,
+      "longitude": 130.4609,
+      "depth": 10,
+      "magnitude": 5.3,
+      "place": "4 km NNW of Tsunagi, Japan",
+      "time": "2026-11-18T17:22:23.454Z"
+    },
+    {
+      "id": "us7000tz1a",
+      "latitude": 12.0918,
+      "longitude": 143.9927,
+      "depth": 10,
+      "magnitude": 5.3,
+      "place": "149 km SSW of Merizo Village, Guam",
+      "time": "2026-11-18T16:06:51.220Z"
+    },
+    {
+      "id": "us6000ubxb",
+      "latitude": 0.5027,
+      "longitude": 96.6318,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "130 km W of Teluk Dalam, Indonesia",
+      "time": "2026-11-19T01:34:48.394Z"
+    },
+    {
+      "id": "us6000ubw3",
+      "latitude": 51.3379,
+      "longitude": 172.8596,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "169 km S of Attu Station, Alaska",
+      "time": "2026-11-18T21:28:47.088Z"
+    },
+    {
+      "id": "us7000tyyw",
+      "latitude": 38.7192,
+      "longitude": 137.8725,
+      "depth": 10,
+      "magnitude": 5.2,
+      "place": "86 km NW of Ryōtsu-minato, Japan",
+      "time": "2026-11-18T09:37:00.617Z"
+    },
+    {
+      "id": "us7000tz2w",
+      "latitude": -5.4599,
+      "longitude": 35.1065,
+      "depth": 10,
+      "magnitude": 5,
+      "place": "46 km NNE of Kilimatinde, Tanzania",
+      "time": "2026-11-18T18:08:00.785Z"
+    },
+    {
+      "id": "us6000ubxg",
+      "latitude": -5.5431,
+      "longitude": 35.0812,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "36 km NNE of Kilimatinde, Tanzania",
+      "time": "2026-11-19T02:11:23.115Z"
+    },
+    {
+      "id": "us7000tyza",
+      "latitude": -39.6909,
+      "longitude": -91.5033,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "West Chile Rise",
+      "time": "2026-11-18T11:10:57.037Z"
+    },
+    {
+      "id": "us6000uby4",
+      "latitude": -2.4019,
+      "longitude": -79.8204,
+      "depth": 69.493,
+      "magnitude": 4.8,
+      "place": "23 km SSE of Guayaquil, Ecuador",
+      "time": "2026-11-19T05:49:26.623Z"
+    },
+    {
+      "id": "us6000ubxa",
+      "latitude": -5.5109,
+      "longitude": 35.0903,
+      "depth": 10,
+      "magnitude": 4.8,
+      "place": "40 km NNE of Kilimatinde, Tanzania",
+      "time": "2026-11-19T01:29:33.145Z"
+    },
+    {
+      "id": "us6000ubwa",
+      "latitude": 15.9616,
+      "longitude": -95.4267,
+      "depth": 35,
+      "magnitude": 4.8,
+      "place": "11 km SSW of Santa Gertrudis Miramar, Mexico",
+      "time": "2026-11-18T22:06:52.958Z"
+    },
+    {
+      "id": "us6000ubvu",
+      "latitude": -2.9421,
+      "longitude": 146.4693,
+      "depth": 16.856,
+      "magnitude": 4.7,
+      "place": "134 km SW of Lorengau, Papua New Guinea",
+      "time": "2026-11-18T20:38:39.129Z"
+    },
+    {
+      "id": "us7000tz33",
+      "latitude": -21.411,
+      "longitude": -68.368,
+      "depth": 133.871,
+      "magnitude": 4.5,
+      "place": "23 km SSW of Ollagüe, Chile",
+      "time": "2026-11-18T18:46:53.317Z"
+    },
+    {
+      "id": "us6000ubvt",
+      "latitude": 9.8835,
+      "longitude": 123.257,
+      "depth": 10,
+      "magnitude": 4.4,
+      "place": "12 km SSE of Jimalalud, Philippines",
+      "time": "2026-11-18T20:30:54.635Z"
+    },
+    {
+      "id": "us7000tz32",
+      "latitude": -5.4691,
+      "longitude": 35.1024,
+      "depth": 10,
+      "magnitude": 4.3,
+      "place": "45 km NNE of Kilimatinde, Tanzania",
+      "time": "2026-11-18T18:07:31.393Z"
+    },
+    {
+      "id": "us7000tz1c",
+      "latitude": 43.7963,
+      "longitude": -128.0431,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "off the coast of Oregon",
+      "time": "2026-11-18T16:24:27.988Z"
+    },
+    {
+      "id": "aka2026wvvyxt",
+      "latitude": 51.171,
+      "longitude": -178.254,
+      "depth": 21.4,
+      "magnitude": 4,
+      "place": "136 km SW of Adak, Alaska",
+      "time": "2026-11-18T12:27:55.408Z"
+    },
+    {
+      "id": "aka2026wxgryr",
+      "latitude": 56.914,
+      "longitude": -157.214,
+      "depth": 0,
+      "magnitude": 3.7,
+      "place": "67 km S of Ugashik, Alaska",
+      "time": "2026-11-19T06:49:24.699Z"
+    },
+    {
+      "id": "ci41363599",
+      "latitude": 36.13383,
+      "longitude": -118.43867,
+      "depth": 1.96,
+      "magnitude": 3.44,
+      "place": "42 km N of Kernville, CA",
+      "time": "2026-11-19T06:40:11.180Z"
+    },
+    {
+      "id": "ci41363495",
+      "latitude": 33.30133,
+      "longitude": -116.19133,
+      "depth": 11.79,
+      "magnitude": 3.36,
+      "place": "18 km ENE of Borrego Springs, CA",
+      "time": "2026-11-18T23:39:21.280Z"
+    },
+    {
+      "id": "ci41363287",
+      "latitude": 32.38867,
+      "longitude": -119.212,
+      "depth": 5.76,
+      "magnitude": 3.3,
+      "place": "91 km SW of San Clemente Is. (NW tip), CA",
+      "time": "2026-11-18T13:58:45.390Z"
+    },
+    {
+      "id": "aka2026wvwonz",
+      "latitude": 62.016,
+      "longitude": -151.397,
+      "depth": 77.8,
+      "magnitude": 3.3,
+      "place": "2 km N of Skwentna, Alaska",
+      "time": "2026-11-18T12:46:07.933Z"
+    },
+    {
+      "id": "aka2026wxbuhs",
+      "latitude": 59.122,
+      "longitude": -151.806,
+      "depth": 50.3,
+      "magnitude": 3,
+      "place": "25 km S of Port Graham, Alaska",
+      "time": "2026-11-19T04:22:10.307Z"
+    },
+    {
+      "id": "nc75467972",
+      "latitude": 40.2734985351562,
+      "longitude": -124.864166259766,
+      "depth": 5.01999998092651,
+      "magnitude": 2.93,
+      "place": "49 km W of Petrolia, CA",
+      "time": "2026-11-18T13:05:18.670Z"
+    },
+    {
+      "id": "nn00927112",
+      "latitude": 38.1669,
+      "longitude": -117.8467,
+      "depth": 7.1777,
+      "magnitude": 2.85,
+      "place": "33 km SE of Mina, Nevada",
+      "time": "2026-11-18T13:56:49.271Z"
+    },
+    {
+      "id": "ci41363583",
+      "latitude": 32.16817,
+      "longitude": -116.93483,
+      "depth": 11.9,
+      "magnitude": 2.81,
+      "place": "6 km SSW of Primo Tapia, B.C., MX",
+      "time": "2026-11-19T06:02:46.960Z"
+    },
+    {
+      "id": "us7000tz1f",
+      "latitude": 47.2371,
+      "longitude": -113.5736,
+      "depth": 10,
+      "magnitude": 2.7,
+      "place": "9 km NW of Seeley Lake, Montana",
+      "time": "2026-11-18T16:33:27.127Z"
+    },
+    {
+      "id": "aka2026wvtfya",
+      "latitude": 56.272,
+      "longitude": -157.184,
+      "depth": 27,
+      "magnitude": 2.7,
+      "place": "75 km E of Chignik, Alaska",
+      "time": "2026-11-18T11:05:58.129Z"
+    },
+    {
+      "id": "aka2026wvqdhv",
+      "latitude": 60.248,
+      "longitude": -153.194,
+      "depth": 0,
+      "magnitude": 2.7,
+      "place": "62 km E of Port Alsworth, Alaska",
+      "time": "2026-11-18T09:33:04.130Z"
+    },
+    {
+      "id": "aka2026wvpcvd",
+      "latitude": 63.26,
+      "longitude": -153.348,
+      "depth": 5,
+      "magnitude": 2.6,
+      "place": "58 km ENE of Nikolai, Alaska",
+      "time": "2026-11-18T09:02:30.907Z"
+    },
+    {
+      "id": "pr71539518",
+      "latitude": 17.9095,
+      "longitude": -65.2498333333333,
+      "depth": 20.49,
+      "magnitude": 2.55,
+      "place": "31 km SE of Esperanza, Puerto Rico",
+      "time": "2026-11-18T23:44:31.790Z"
+    },
+    {
+      "id": "nc75468022",
+      "latitude": 40.5398330688477,
+      "longitude": -120.668663024902,
+      "depth": 4.09000015258789,
+      "magnitude": 2.55,
+      "place": "14 km N of Susanville, CA",
+      "time": "2026-11-18T18:49:26.640Z"
+    },
+    {
+      "id": "aka2026wxhghi",
+      "latitude": 56.889,
+      "longitude": -157.209,
+      "depth": 5,
+      "magnitude": 2.5,
+      "place": "70 km S of Ugashik, Alaska",
+      "time": "2026-11-19T07:05:59.188Z"
+    },
+    {
+      "id": "uw714140301",
+      "latitude": 45.0855,
+      "longitude": -125.062666666667,
+      "depth": -0.21,
+      "magnitude": 2.5,
+      "place": "83 km W of Lincoln City, Oregon",
+      "time": "2026-11-18T16:25:02.070Z"
+    }
+  ],
+  "weatherSamples": [
+    {
+      "latitude": 64.15,
+      "longitude": -21.94,
+      "temperature": -1.6,
+      "wind": 6.8
+    },
+    {
+      "latitude": 35.68,
+      "longitude": 139.69,
+      "temperature": 15.5,
+      "wind": 10.8
+    },
+    {
+      "latitude": 1.35,
+      "longitude": 103.82,
+      "temperature": 28.3,
+      "wind": 8
+    },
+    {
+      "latitude": -33.87,
+      "longitude": 151.21,
+      "temperature": 22.8,
+      "wind": 21.9
+    },
+    {
+      "latitude": -1.29,
+      "longitude": 36.82,
+      "temperature": 21.1,
+      "wind": 8.7
+    },
+    {
+      "latitude": 51.51,
+      "longitude": -0.13,
+      "temperature": 7.3,
+      "wind": 5.8
+    },
+    {
+      "latitude": 40.71,
+      "longitude": -74.01,
+      "temperature": 6.2,
+      "wind": 7.4
+    },
+    {
+      "latitude": -23.55,
+      "longitude": -46.63,
+      "temperature": 20.3,
+      "wind": 1.2
+    },
+    {
+      "latitude": 31.23,
+      "longitude": 121.47,
+      "temperature": 11.3,
+      "wind": 10.8
+    },
+    {
+      "latitude": 19.43,
+      "longitude": -99.13,
+      "temperature": 13.3,
+      "wind": 7
+    },
+    {
+      "latitude": 37.77,
+      "longitude": -122.42,
+      "temperature": 10.7,
+      "wind": 6.1
+    },
+    {
+      "latitude": -34.6,
+      "longitude": -58.38,
+      "temperature": 17.4,
+      "wind": 9.4
+    }
+  ],
+  "sources": [
+    {
+      "label": "USGS Earthquake Hazards Program",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "status": "live"
+    },
+    {
+      "label": "NOAA Space Weather Prediction Center",
+      "url": "https://services.swpc.noaa.gov/",
+      "status": "live"
+    },
+    {
+      "label": "Open-Meteo",
+      "url": "https://open-meteo.com/",
+      "status": "live"
+    }
+  ]
+}
