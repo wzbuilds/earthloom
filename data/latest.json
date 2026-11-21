@@ -1,353 +1,542 @@
 {
   "schemaVersion": 1,
-  "date": "2026-11-20",
-  "generatedAt": "2026-11-20T06:59:17.494Z",
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T06:55:15.621Z",
   "timeZone": "Asia/Shanghai",
   "status": "partial",
-  "seed": 3112517971,
-  "summary": "今天的地球，在低声而持续地呼吸。",
+  "seed": 1195598726,
+  "summary": "深处的震动在织面上留下了宽阔回声。",
   "metrics": {
-    "earthquakeCount": 36,
-    "maxMagnitude": 5.6,
-    "averageDepth": 60.5,
-    "kpIndex": 2,
-    "solarWind": 391,
+    "earthquakeCount": 57,
+    "maxMagnitude": 6.7,
+    "averageDepth": 47.5,
+    "kpIndex": 3,
+    "solarWind": 346,
     "meanTemperature": 14.4,
     "meanWind": 8.7,
-    "moonPhase": 0.3584
+    "moonPhase": 0.3923
   },
   "palette": {
-    "void": "hsl(253 38% 5%)",
-    "ink": "hsl(231 44% 9%)",
-    "aurora": "hsl(230.55555555555554 88% 65%)",
-    "tide": "hsl(297 76% 58.666666666666664%)",
+    "void": "hsl(236 38% 5%)",
+    "ink": "hsl(214 44% 9%)",
+    "aurora": "hsl(219.33333333333334 88% 65%)",
+    "tide": "hsl(280 76% 60%)",
     "ember": "hsl(35.013333333333335 96% 66%)",
-    "mist": "hsl(27 42% 87%)"
+    "mist": "hsl(10 42% 87%)"
   },
   "earthquakes": [
     {
-      "id": "us6000uc4v",
-      "latitude": -24.6996,
-      "longitude": 171.2326,
-      "depth": 10,
-      "magnitude": 5.6,
-      "place": "southeast of the Loyalty Islands",
-      "time": "2026-11-20T00:49:14.102Z"
+      "id": "us6000ucfm",
+      "latitude": -10.8548,
+      "longitude": -75.9779,
+      "depth": 107.991,
+      "magnitude": 6.7,
+      "place": "9 km NE of Carhuamayo, Peru",
+      "time": "2026-11-21T00:09:19.667Z"
     },
     {
-      "id": "us6000uc2q",
-      "latitude": -55.0035,
-      "longitude": -33.5069,
+      "id": "us6000uc82",
+      "latitude": 9.7949,
+      "longitude": 57.7485,
       "depth": 10,
-      "magnitude": 5.3,
-      "place": "South Georgia Island region",
-      "time": "2026-11-19T20:07:49.383Z"
+      "magnitude": 5.4,
+      "place": "Carlsberg Ridge",
+      "time": "2026-11-20T08:44:11.644Z"
     },
     {
-      "id": "nc75468702",
-      "latitude": 36.5934982299805,
-      "longitude": -121.220664978027,
-      "depth": 6.69999980926514,
-      "magnitude": 5.12,
-      "place": "10 km NW of Pinnacles, CA",
-      "time": "2026-11-20T06:49:16.530Z"
-    },
-    {
-      "id": "us6000uc1x",
-      "latitude": -31.8465,
-      "longitude": -72.1843,
-      "depth": 10,
+      "id": "us6000ucd6",
+      "latitude": -14.835,
+      "longitude": 167.29,
+      "depth": 94.53,
       "magnitude": 5.1,
-      "place": "99 km WSW of Illapel, Chile",
-      "time": "2026-11-19T18:09:46.530Z"
+      "place": "32 km NE of Port-Olry, Vanuatu",
+      "time": "2026-11-20T17:53:15.442Z"
     },
     {
-      "id": "us6000uc2t",
-      "latitude": -9.1894,
-      "longitude": -109.9127,
+      "id": "us6000uc96",
+      "latitude": 5.4441,
+      "longitude": 125.2986,
+      "depth": 73.392,
+      "magnitude": 5.1,
+      "place": "15 km SSW of Balangonan, Philippines",
+      "time": "2026-11-20T13:09:04.057Z"
+    },
+    {
+      "id": "us6000uchd",
+      "latitude": -10.913,
+      "longitude": -76.0308,
+      "depth": 110.928,
+      "magnitude": 5,
+      "place": "0 km NE of Carhuamayo, Peru",
+      "time": "2026-11-21T05:12:04.898Z"
+    },
+    {
+      "id": "us6000uc8g",
+      "latitude": -24.7463,
+      "longitude": 171.4327,
       "depth": 10,
       "magnitude": 5,
-      "place": "central East Pacific Rise",
-      "time": "2026-11-19T20:07:09.754Z"
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-11-20T10:30:01.069Z"
     },
     {
-      "id": "us6000ubz1",
-      "latitude": -4.2965,
-      "longitude": 151.8945,
-      "depth": 194.803,
-      "magnitude": 5,
-      "place": "31 km WSW of Rabaul, Papua New Guinea",
-      "time": "2026-11-19T10:53:07.767Z"
-    },
-    {
-      "id": "us6000uc6c",
-      "latitude": -5.219,
-      "longitude": 145.2974,
-      "depth": 97.583,
-      "magnitude": 4.9,
-      "place": "54 km W of Madang, Papua New Guinea",
-      "time": "2026-11-20T05:17:45.106Z"
-    },
-    {
-      "id": "us6000uc26",
-      "latitude": 27.9346,
-      "longitude": 102.1326,
+      "id": "us6000ucgj",
+      "latitude": 58.5457,
+      "longitude": -31.857,
       "depth": 10,
       "magnitude": 4.9,
-      "place": "13 km WNW of Xichang, China",
-      "time": "2026-11-19T18:41:19.631Z"
+      "place": "Reykjanes Ridge",
+      "time": "2026-11-21T02:24:37.289Z"
     },
     {
-      "id": "us6000ubzm",
-      "latitude": 51.6797,
-      "longitude": -174.66,
-      "depth": 46.052,
+      "id": "us6000ucga",
+      "latitude": 58.3017,
+      "longitude": -31.7606,
+      "depth": 10,
       "magnitude": 4.9,
-      "place": "65 km SSW of Atka, Alaska",
-      "time": "2026-11-19T13:05:22.466Z"
+      "place": "Reykjanes Ridge",
+      "time": "2026-11-21T01:26:19.109Z"
     },
     {
-      "id": "us6000uc5s",
-      "latitude": -31.4302,
-      "longitude": -69.1883,
-      "depth": 113.86,
-      "magnitude": 4.8,
-      "place": "24 km ESE of Calingasta, Argentina",
-      "time": "2026-11-20T02:57:18.070Z"
+      "id": "us6000ucf0",
+      "latitude": -20.3204,
+      "longitude": -173.4099,
+      "depth": 10,
+      "magnitude": 4.9,
+      "place": "113 km ESE of Pangai, Tonga",
+      "time": "2026-11-20T22:34:39.096Z"
     },
     {
-      "id": "us6000ubyt",
-      "latitude": -15.3841,
-      "longitude": -76.0248,
+      "id": "us6000ucg8",
+      "latitude": -22.2307,
+      "longitude": -68.6409,
+      "depth": 120.01,
+      "magnitude": 4.7,
+      "place": "38 km NE of Calama, Chile",
+      "time": "2026-11-21T01:24:09.274Z"
+    },
+    {
+      "id": "us6000uc9c",
+      "latitude": -31.7842,
+      "longitude": -72.1485,
       "depth": 10,
       "magnitude": 4.7,
-      "place": "92 km W of San Juan, Peru",
-      "time": "2026-11-19T09:08:13.359Z"
+      "place": "94 km W of Illapel, Chile",
+      "time": "2026-11-20T14:16:15.225Z"
     },
     {
-      "id": "us6000uc3v",
-      "latitude": -6.0263,
-      "longitude": 130.6505,
-      "depth": 124.788,
-      "magnitude": 4.5,
-      "place": "236 km W of Tual, Indonesia",
-      "time": "2026-11-19T21:49:33.219Z"
+      "id": "us6000uc8k",
+      "latitude": -24.6606,
+      "longitude": 171.1906,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "southeast of the Loyalty Islands",
+      "time": "2026-11-20T10:48:44.362Z"
     },
     {
-      "id": "us6000uc0h",
-      "latitude": -5.4474,
-      "longitude": 154.2159,
-      "depth": 113.181,
-      "magnitude": 4.3,
-      "place": "170 km NW of Panguna, Papua New Guinea",
-      "time": "2026-11-19T15:38:20.197Z"
+      "id": "us6000uc81",
+      "latitude": 9.7529,
+      "longitude": 57.8408,
+      "depth": 10,
+      "magnitude": 4.7,
+      "place": "Carlsberg Ridge",
+      "time": "2026-11-20T08:42:54.187Z"
     },
     {
-      "id": "us6000ubz0",
-      "latitude": -19.7086,
-      "longitude": -177.7237,
-      "depth": 445.053,
-      "magnitude": 4.3,
+      "id": "us6000uc8d",
+      "latitude": 36.4406,
+      "longitude": 22.082,
+      "depth": 41.976,
+      "magnitude": 4.6,
+      "place": "40 km SSE of Koróni, Greece",
+      "time": "2026-11-20T10:16:14.294Z"
+    },
+    {
+      "id": "us6000ucg3",
+      "latitude": 52.828,
+      "longitude": 159.104,
+      "depth": 88.946,
+      "magnitude": 4.4,
+      "place": "41 km SE of Petropavlovsk-Kamchatsky, Russia",
+      "time": "2026-11-21T00:32:48.295Z"
+    },
+    {
+      "id": "us6000ucfa",
+      "latitude": -31.7122,
+      "longitude": -72.3842,
+      "depth": 10,
+      "magnitude": 4.4,
+      "place": "115 km W of Illapel, Chile",
+      "time": "2026-11-20T23:37:33.534Z"
+    },
+    {
+      "id": "us6000uce0",
+      "latitude": 58.4869,
+      "longitude": -31.6011,
+      "depth": 10,
+      "magnitude": 4.4,
+      "place": "Reykjanes Ridge",
+      "time": "2026-11-20T20:29:51.959Z"
+    },
+    {
+      "id": "us6000ucax",
+      "latitude": -7.6315,
+      "longitude": 127.4332,
+      "depth": 143.686,
+      "magnitude": 4.4,
+      "place": "109 km NNE of Lospalos, Timor Leste",
+      "time": "2026-11-20T16:41:13.832Z"
+    },
+    {
+      "id": "us6000uc8p",
+      "latitude": -19.4364,
+      "longitude": -178.0132,
+      "depth": 622.356,
+      "magnitude": 4.4,
       "place": "Fiji region",
-      "time": "2026-11-19T10:36:54.782Z"
+      "time": "2026-11-20T10:52:55.274Z"
     },
     {
-      "id": "pr2026323000",
-      "latitude": 18.7751,
-      "longitude": -64.8918,
-      "depth": 47,
-      "magnitude": 4.25,
-      "place": "48 km N of Charlotte Amalie, U.S. Virgin Islands",
-      "time": "2026-11-19T09:06:34.910Z"
-    },
-    {
-      "id": "us6000uc4z",
-      "latitude": 31.9627,
-      "longitude": 138.4096,
-      "depth": 312.575,
+      "id": "us6000ucey",
+      "latitude": -21.1895,
+      "longitude": -68.8815,
+      "depth": 114.345,
       "magnitude": 4.2,
-      "place": "293 km S of Ōyama, Japan",
-      "time": "2026-11-20T01:20:07.698Z"
+      "place": "65 km W of Ollagüe, Chile",
+      "time": "2026-11-20T22:32:13.976Z"
     },
     {
-      "id": "pr71539558",
-      "latitude": 19.493,
-      "longitude": -68.0318333333333,
-      "depth": 42.33,
-      "magnitude": 3.44,
-      "place": "108 km NNE of Punta Cana, Dominican Republic",
-      "time": "2026-11-19T18:19:01.020Z"
+      "id": "us6000ucdj",
+      "latitude": -47.5959,
+      "longitude": 166.2638,
+      "depth": 10,
+      "magnitude": 4.2,
+      "place": "192 km SW of Bluff, New Zealand",
+      "time": "2026-11-20T19:04:54.178Z"
     },
     {
-      "id": "nc75468687",
-      "latitude": 36.5923347473145,
-      "longitude": -121.22233581543,
-      "depth": 6.42999982833862,
-      "magnitude": 3.31,
+      "id": "aka2026xaubpp",
+      "latitude": 60.301,
+      "longitude": -147.79,
+      "depth": 3.6,
+      "magnitude": 4.1,
+      "place": "28 km NNE of Chenega, Alaska",
+      "time": "2026-11-21T04:29:14.724Z"
+    },
+    {
+      "id": "aka2026wzlcvl",
+      "latitude": 51.585,
+      "longitude": -175.474,
+      "depth": 40.2,
+      "magnitude": 4.1,
+      "place": "86 km ESE of Adak, Alaska",
+      "time": "2026-11-20T11:01:12.830Z"
+    },
+    {
+      "id": "ci41364111",
+      "latitude": 34.00633,
+      "longitude": -118.1665,
+      "depth": 15.45,
+      "magnitude": 3.94,
+      "place": "1 km NW of Commerce, CA",
+      "time": "2026-11-20T11:25:35.140Z"
+    },
+    {
+      "id": "aka2026xaapef",
+      "latitude": 62.925,
+      "longitude": -149.527,
+      "depth": 81.6,
+      "magnitude": 3.5,
+      "place": "59 km SSW of Cantwell, Alaska",
+      "time": "2026-11-20T18:45:11.073Z"
+    },
+    {
+      "id": "pr71539618",
+      "latitude": 19.164,
+      "longitude": -64.8121666666667,
+      "depth": 13.44,
+      "magnitude": 3.42,
+      "place": "91 km N of Charlotte Amalie, U.S. Virgin Islands",
+      "time": "2026-11-20T16:52:47.200Z"
+    },
+    {
+      "id": "aka2026xaqfrm",
+      "latitude": 60.323,
+      "longitude": -152.293,
+      "depth": 91.4,
+      "magnitude": 3.4,
+      "place": "46 km NW of Ninilchik, Alaska",
+      "time": "2026-11-21T02:34:07.435Z"
+    },
+    {
+      "id": "aka2026wzgrna",
+      "latitude": 60.787,
+      "longitude": -151.402,
+      "depth": 75.7,
+      "magnitude": 3.4,
+      "place": "12 km NNW of Nikiski, Alaska",
+      "time": "2026-11-20T08:48:06.974Z"
+    },
+    {
+      "id": "nc75468787",
+      "latitude": 36.5688323974609,
+      "longitude": -121.188667297363,
+      "depth": 7,
+      "magnitude": 3.38,
+      "place": "6 km NW of Pinnacles, CA",
+      "time": "2026-11-20T07:14:25.490Z"
+    },
+    {
+      "id": "aka2026wzewmb",
+      "latitude": 54.278,
+      "longitude": -159.694,
+      "depth": 26.2,
+      "magnitude": 3.2,
+      "place": "128 km SSE of Sand Point, Alaska",
+      "time": "2026-11-20T07:53:31.836Z"
+    },
+    {
+      "id": "nc75468942",
+      "latitude": 36.5986671447754,
+      "longitude": -121.216331481934,
+      "depth": 6.6399998664856,
+      "magnitude": 3.06,
       "place": "10 km NW of Pinnacles, CA",
-      "time": "2026-11-20T06:12:10.440Z"
+      "time": "2026-11-20T08:35:27.320Z"
     },
     {
-      "id": "pr71539568",
-      "latitude": 19.5113333333333,
-      "longitude": -67.7706666666667,
-      "depth": 83.49,
-      "magnitude": 3.29,
-      "place": "122 km NNE of Punta Cana, Dominican Republic",
-      "time": "2026-11-19T18:29:38.630Z"
-    },
-    {
-      "id": "tx2026wubzeh",
-      "latitude": 32.365,
-      "longitude": -101.898,
-      "depth": 8.1787,
-      "magnitude": 3.2,
-      "place": "24 km SW of Ackerly, Texas",
-      "time": "2026-11-19T13:09:23.372Z"
-    },
-    {
-      "id": "aka2026wxtfnp",
-      "latitude": 63.26,
-      "longitude": -149.398,
-      "depth": 87,
-      "magnitude": 3.2,
-      "place": "26 km WSW of Cantwell, Alaska",
-      "time": "2026-11-19T13:04:52.568Z"
-    },
-    {
-      "id": "nc75468662",
-      "latitude": 36.5900001525879,
-      "longitude": -121.216499328613,
-      "depth": 7.21000003814697,
-      "magnitude": 3.11,
-      "place": "9 km NW of Pinnacles, CA",
-      "time": "2026-11-20T05:53:23.950Z"
-    },
-    {
-      "id": "pr71539543",
-      "latitude": 18.2296666666667,
-      "longitude": -64.3001666666667,
-      "depth": 16.84,
-      "magnitude": 3.04,
-      "place": "53 km ESE of Cruz Bay, U.S. Virgin Islands",
-      "time": "2026-11-19T13:06:28.440Z"
-    },
-    {
-      "id": "aka2026wzbmul",
-      "latitude": 59.998,
-      "longitude": -152.681,
-      "depth": 94.9,
+      "id": "aka2026wzreib",
+      "latitude": 55.131,
+      "longitude": -154.01,
+      "depth": 5,
       "magnitude": 3,
-      "place": "53 km W of Happy Valley, Alaska",
-      "time": "2026-11-20T06:12:44.187Z"
+      "place": "202 km S of Akhiok, Alaska",
+      "time": "2026-11-20T14:02:14.679Z"
     },
     {
-      "id": "nc75468357",
-      "latitude": 37.4558334350586,
-      "longitude": -118.846168518066,
-      "depth": 3.15000009536743,
-      "magnitude": 2.98,
-      "place": "19 km SW of Toms Place, CA",
-      "time": "2026-11-19T13:58:21.570Z"
+      "id": "aka2026xawcri",
+      "latitude": 56.864,
+      "longitude": -157.111,
+      "depth": 81.6,
+      "magnitude": 2.9,
+      "place": "74 km SSE of Ugashik, Alaska",
+      "time": "2026-11-21T05:30:19.465Z"
     },
     {
-      "id": "nc75468707",
-      "latitude": 36.6098327636719,
-      "longitude": -121.205169677734,
-      "depth": 6.07999992370605,
-      "magnitude": 2.96,
-      "place": "10 km NNW of Pinnacles, CA",
-      "time": "2026-11-20T06:52:33.440Z"
+      "id": "tx2026wvzici",
+      "latitude": 28.539,
+      "longitude": -98.387,
+      "depth": 6.7691,
+      "magnitude": 2.9,
+      "place": "18 km ENE of Tilden, Texas",
+      "time": "2026-11-20T13:57:37.989Z"
     },
     {
-      "id": "aka2026wymdwx",
-      "latitude": 69.334,
-      "longitude": -144.732,
+      "id": "aka2026wzlaba",
+      "latitude": 58.846,
+      "longitude": -154.35,
+      "depth": 128.7,
+      "magnitude": 2.9,
+      "place": "70 km SSE of Kokhanok, Alaska",
+      "time": "2026-11-20T10:57:55.711Z"
+    },
+    {
+      "id": "nc75469462",
+      "latitude": 35.7236671447754,
+      "longitude": -120.181167602539,
+      "depth": 3.10999989509583,
+      "magnitude": 2.84,
+      "place": "10 km E of Cholame, CA",
+      "time": "2026-11-21T00:38:35.700Z"
+    },
+    {
+      "id": "aka2026xalikz",
+      "latitude": 63.651,
+      "longitude": -149.494,
+      "depth": 119.8,
+      "magnitude": 2.8,
+      "place": "30 km WSW of Denali Park, Alaska",
+      "time": "2026-11-21T00:07:15.701Z"
+    },
+    {
+      "id": "aka2026xabinn",
+      "latitude": 55.745,
+      "longitude": -155.577,
+      "depth": 47.9,
+      "magnitude": 2.8,
+      "place": "159 km SSW of Akhiok, Alaska",
+      "time": "2026-11-20T19:07:26.037Z"
+    },
+    {
+      "id": "aka2026wzggdo",
+      "latitude": 61.278,
+      "longitude": -150.706,
+      "depth": 49.8,
+      "magnitude": 2.8,
+      "place": "25 km NE of Beluga, Alaska",
+      "time": "2026-11-20T08:36:07.388Z"
+    },
+    {
+      "id": "hv75073642",
+      "latitude": 19.3073333333333,
+      "longitude": -155.2975,
+      "depth": 30.18,
+      "magnitude": 2.77,
+      "place": "16 km SSW of Volcano, Hawaii",
+      "time": "2026-11-20T11:12:31.820Z"
+    },
+    {
+      "id": "nc75468947",
+      "latitude": 36.5866661071777,
+      "longitude": -121.231498718262,
+      "depth": 3.07999992370605,
+      "magnitude": 2.71,
+      "place": "10 km NW of Pinnacles, CA",
+      "time": "2026-11-20T08:36:04.140Z"
+    },
+    {
+      "id": "pr71539648",
+      "latitude": 18.2418333333333,
+      "longitude": -66.472,
+      "depth": 88.68,
+      "magnitude": 2.7,
+      "place": "8 km W of Orocovis, Puerto Rico",
+      "time": "2026-11-21T06:23:13.420Z"
+    },
+    {
+      "id": "ci41364303",
+      "latitude": 31.867,
+      "longitude": -116.17233,
+      "depth": 11.46,
+      "magnitude": 2.7,
+      "place": "41 km ENE of Maneadero, B.C., MX",
+      "time": "2026-11-21T00:10:03.910Z"
+    },
+    {
+      "id": "aka2026wztmfr",
+      "latitude": 63.302,
+      "longitude": -151.14,
       "depth": 5,
-      "magnitude": 2.9,
-      "place": "98 km SSW of Kaktovik, Alaska",
-      "time": "2026-11-19T22:34:06.053Z"
+      "magnitude": 2.7,
+      "place": "39 km SE of Denali National Park, Alaska",
+      "time": "2026-11-20T15:11:52.850Z"
     },
     {
-      "id": "aka2026wyhwhm",
-      "latitude": 60.147,
-      "longitude": -153.06,
-      "depth": 135.9,
-      "magnitude": 2.9,
-      "place": "69 km E of Port Alsworth, Alaska",
-      "time": "2026-11-19T20:23:56.618Z"
+      "id": "nc75469167",
+      "latitude": 36.5615005493164,
+      "longitude": -121.178337097168,
+      "depth": 6.73000001907349,
+      "magnitude": 2.68,
+      "place": "5 km NW of Pinnacles, CA",
+      "time": "2026-11-20T15:07:18.700Z"
     },
     {
-      "id": "pr71539613",
-      "latitude": 18.7415,
-      "longitude": -67.3871666666667,
-      "depth": 11.58,
-      "magnitude": 2.82,
-      "place": "41 km NW of San Antonio, Puerto Rico",
-      "time": "2026-11-20T05:20:10.960Z"
+      "id": "nc75468807",
+      "latitude": 36.5625,
+      "longitude": -121.186332702637,
+      "depth": 5.09000015258789,
+      "magnitude": 2.68,
+      "place": "5 km NW of Pinnacles, CA",
+      "time": "2026-11-20T07:21:11.480Z"
     },
     {
-      "id": "nc75468302",
-      "latitude": 37.4536666870117,
-      "longitude": -118.842666625977,
-      "depth": 3.14000010490417,
-      "magnitude": 2.75,
-      "place": "19 km SW of Toms Place, CA",
-      "time": "2026-11-19T12:24:26.160Z"
+      "id": "nc75469622",
+      "latitude": 40.2203330993652,
+      "longitude": -124.624664306641,
+      "depth": 1.24000000953674,
+      "magnitude": 2.64,
+      "place": "31 km WSW of Petrolia, CA",
+      "time": "2026-11-21T05:36:48.610Z"
     },
     {
-      "id": "aka2026wyyiax",
-      "latitude": 59.525,
-      "longitude": -152.59,
-      "depth": 77.9,
+      "id": "nc75468797",
+      "latitude": 36.5803337097168,
+      "longitude": -121.216835021973,
+      "depth": 5.21999979019165,
+      "magnitude": 2.64,
+      "place": "9 km NW of Pinnacles, CA",
+      "time": "2026-11-20T07:19:46.810Z"
+    },
+    {
+      "id": "nc75468862",
+      "latitude": 36.5728340148926,
+      "longitude": -121.199165344238,
+      "depth": 5.1100001335144,
       "magnitude": 2.6,
-      "place": "42 km WNW of Nanwalek, Alaska",
-      "time": "2026-11-20T04:37:19.014Z"
+      "place": "7 km NW of Pinnacles, CA",
+      "time": "2026-11-20T07:57:06.280Z"
     },
     {
-      "id": "aka2026wxuoaf",
-      "latitude": 57.423,
-      "longitude": -151.713,
-      "depth": 11.2,
-      "magnitude": 2.6,
-      "place": "40 km ESE of Chiniak, Alaska",
-      "time": "2026-11-19T13:44:34.105Z"
+      "id": "nc75468917",
+      "latitude": 36.5801658630371,
+      "longitude": -121.209167480469,
+      "depth": 6.13000011444092,
+      "magnitude": 2.59,
+      "place": "8 km NW of Pinnacles, CA",
+      "time": "2026-11-20T08:25:28.950Z"
     },
     {
-      "id": "ci41363879",
-      "latitude": 36.1355,
-      "longitude": -118.43717,
-      "depth": 6.01,
+      "id": "nc75468902",
+      "latitude": 36.5696678161621,
+      "longitude": -121.19766998291,
+      "depth": 6.40000009536743,
+      "magnitude": 2.55,
+      "place": "6 km NW of Pinnacles, CA",
+      "time": "2026-11-20T08:14:45.100Z"
+    },
+    {
+      "id": "nc75468852",
+      "latitude": 36.5888328552246,
+      "longitude": -121.217330932617,
+      "depth": 6.84999990463257,
+      "magnitude": 2.55,
+      "place": "9 km NW of Pinnacles, CA",
+      "time": "2026-11-20T07:46:27.620Z"
+    },
+    {
+      "id": "nc75468867",
+      "latitude": 36.571834564209,
+      "longitude": -121.195663452148,
+      "depth": 4.96999979019165,
+      "magnitude": 2.54,
+      "place": "6 km NW of Pinnacles, CA",
+      "time": "2026-11-20T07:58:37.920Z"
+    },
+    {
+      "id": "nc75468732",
+      "latitude": 36.578498840332,
+      "longitude": -121.205001831055,
+      "depth": 5.92000007629395,
+      "magnitude": 2.53,
+      "place": "8 km NW of Pinnacles, CA",
+      "time": "2026-11-20T06:57:14.030Z"
+    },
+    {
+      "id": "nc75469032",
+      "latitude": 36.5681648254395,
+      "longitude": -121.193496704102,
+      "depth": 4.59000015258789,
       "magnitude": 2.52,
-      "place": "42 km WSW of Olancha, CA",
-      "time": "2026-11-19T20:49:27.510Z"
+      "place": "6 km NW of Pinnacles, CA",
+      "time": "2026-11-20T10:49:42.770Z"
     },
     {
-      "id": "aka2026wxifgq",
-      "latitude": 63.102,
-      "longitude": -151.459,
-      "depth": 1.2,
-      "magnitude": 2.5,
-      "place": "50 km SSE of Denali National Park, Alaska",
-      "time": "2026-11-19T07:34:42.544Z"
+      "id": "hv75073882",
+      "latitude": 19.5201663970947,
+      "longitude": -154.880172729492,
+      "depth": 76.0500030517578,
+      "magnitude": 2.51,
+      "place": "3 km ENE of Nanawale Estates, Hawaii",
+      "time": "2026-11-21T00:21:27.300Z"
     },
     {
-      "id": "aka2026wxhghi",
-      "latitude": 56.889,
-      "longitude": -157.209,
-      "depth": 5,
-      "magnitude": 2.5,
-      "place": "70 km S of Ugashik, Alaska",
-      "time": "2026-11-19T07:05:59.188Z"
-    },
-    {
-      "id": "nc75468232",
-      "latitude": 37.4544982910156,
-      "longitude": -118.841667175293,
-      "depth": 2.60999989509583,
-      "magnitude": 2.48,
-      "place": "19 km SW of Toms Place, CA",
-      "time": "2026-11-19T07:56:13.630Z"
+      "id": "nc75468742",
+      "latitude": 36.576000213623,
+      "longitude": -121.21516418457,
+      "depth": 5.44999980926514,
+      "magnitude": 2.46,
+      "place": "8 km NW of Pinnacles, CA",
+      "time": "2026-11-20T06:58:23.890Z"
     }
   ],
   "weatherSamples": [
